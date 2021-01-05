@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "480898520000",
+    "project_id": "infinitysolutionapp",
+    "storage_bucket": "infinitysolutionapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:480898520000:android:10547ebeb8c0003d3aae25",
+        "android_client_info": {
+          "package_name": "com.princekumarsingh.infinityitsolution"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "480898520000-vcj0d80h389f6505l0nisq150pfc8j24.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.princekumarsingh.infinityitsolution",
+            "certificate_hash": "9d90d640b447615c1a529392d91b27fe70c0da9e"
+          }
+        },
+        {
+          "client_id": "480898520000-bna0t9k1ckk6u79s66puqqai3p539u1n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDsnLzSIjjZqFUuO-ZUdd02QA2w_hu9xzI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "480898520000-bna0t9k1ckk6u79s66puqqai3p539u1n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
