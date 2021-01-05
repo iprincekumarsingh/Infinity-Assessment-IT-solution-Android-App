@@ -1,4 +1,4 @@
-WebView App
+Attendance Managment System (Infinity Assessment and IT Solution)
 ===========
 
 This is a WebView App created by [Prince kuamr singh](#).
