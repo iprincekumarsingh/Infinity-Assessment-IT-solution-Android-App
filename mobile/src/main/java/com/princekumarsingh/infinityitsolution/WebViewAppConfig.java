@@ -11,7 +11,7 @@ public class WebViewAppConfig {
 	public static final boolean ACTION_BAR = true;
 
 	// true for showing html title rather than navigation title in the action bar
-	public static final boolean ACTION_BAR_HTML_TITLE = false;
+	public static final boolean ACTION_BAR_HTML_TITLE = true;
 
 	// true for enabling navigation drawer menu
 	public static final boolean NAVIGATION_DRAWER = true;
@@ -43,7 +43,7 @@ public class WebViewAppConfig {
 	// frequency of showing rate my app prompt,
 	// prompt will be shown after each x launches of the app,
 	// set 0 if you do not want to show rate my app prompt
-	public static final int RATE_APP_PROMPT_FREQUENCY = 2;
+	public static final int RATE_APP_PROMPT_FREQUENCY = 10;
 
 	// duration of showing rate my app prompt in milliseconds
 	public static final int RATE_APP_PROMPT_DURATION = 10000;

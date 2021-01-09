@@ -1,20 +1,20 @@
 -- Merging decision tree log ---
 provider#androidx.core.content.FileProvider
-INJECTED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:65:9-73:20
+INJECTED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:67:9-75:20
 	android:grantUriPermissions
-		ADDED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:69:13-47
+		ADDED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:71:13-47
 	android:authorities
 		INJECTED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml
-		ADDED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:67:13-64
+		ADDED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:69:13-64
 	android:exported
-		ADDED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:68:13-37
+		ADDED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:70:13-37
 	android:name
-		ADDED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:66:13-62
+		ADDED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:68:13-62
 manifest
-ADDED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:2:1-100:12
-INJECTED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:2:1-100:12
-INJECTED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:2:1-100:12
-INJECTED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:2:1-100:12
+ADDED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:2:1-102:12
+INJECTED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:2:1-102:12
+INJECTED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:2:1-102:12
+INJECTED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:2:1-102:12
 MERGED from [androidx.multidex:multidex:2.0.1] C:\Users\Prince kumar Singh\.gradle\caches\transforms-2\files-2.1\40c7871668ecd1d9993da2c383330488\multidex-2.0.1\AndroidManifest.xml:17:1-22:12
 MERGED from [:config:] C:\Users\Prince kumar Singh\.gradle\caches\transforms-2\files-2.1\dae86a1bffa745be36d5f0b29c392973\jetified-config\AndroidManifest.xml:2:1-19:12
 MERGED from [com.google.android.ads.consent:consent-library:1.0.8] C:\Users\Prince kumar Singh\.gradle\caches\transforms-2\files-2.1\bf95a2b78424f179a874867f1c810ccf\jetified-consent-library-1.0.8\AndroidManifest.xml:2:1-9:12
@@ -52,6 +52,8 @@ MERGED from [com.google.android.gms:play-services-measurement-base:17.4.4] C:\Us
 MERGED from [com.google.android.gms:play-services-places-placereport:15.0.1] C:\Users\Prince kumar Singh\.gradle\caches\transforms-2\files-2.1\fce9fca8b59e771bc0799ca12414ec65\jetified-play-services-places-placereport-15.0.1\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\Prince kumar Singh\.gradle\caches\transforms-2\files-2.1\17ced37242dabf7662cd24b2c913d980\jetified-play-services-basement-17.0.0\AndroidManifest.xml:17:1-28:12
 MERGED from [androidx.fragment:fragment:1.2.5] C:\Users\Prince kumar Singh\.gradle\caches\transforms-2\files-2.1\4b01a9c6c55730488e2216660ce2d50a\fragment-1.2.5\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-ktx:2.2.0] C:\Users\Prince kumar Singh\.gradle\caches\transforms-2\files-2.1\905746dcaf49a2702c84400d8663fefb\jetified-lifecycle-livedata-ktx-2.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0] C:\Users\Prince kumar Singh\.gradle\caches\transforms-2\files-2.1\9f429ca45a1c77e0bf84374b55969fec\jetified-lifecycle-viewmodel-ktx-2.2.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.browser:browser:1.0.0] C:\Users\Prince kumar Singh\.gradle\caches\transforms-2\files-2.1\0361da34158bf499b27d9a741a8e6a62\browser-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\Prince kumar Singh\.gradle\caches\transforms-2\files-2.1\69ad766602084be054b8e36d06077e84\legacy-support-core-ui-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\Prince kumar Singh\.gradle\caches\transforms-2\files-2.1\d51c9b46bbc0bcf01422d5a9c102ac3e\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
@@ -81,7 +83,8 @@ MERGED from [com.google.firebase:firebase-components:16.0.0] C:\Users\Prince kum
 MERGED from [com.google.firebase:firebase-encoders-json:16.0.0] C:\Users\Prince kumar Singh\.gradle\caches\transforms-2\files-2.1\5fb6bd4605de4dd3c55e9cd113215df0\jetified-firebase-encoders-json-16.0.0\AndroidManifest.xml:15:1-23:12
 MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] C:\Users\Prince kumar Singh\.gradle\caches\transforms-2\files-2.1\2c26bd946a51a53502b93ad2a49d861a\lifecycle-runtime-2.2.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\Prince kumar Singh\.gradle\caches\transforms-2\files-2.1\ff15033be30bb789de71ecd1b1462c06\jetified-savedstate-1.0.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\Prince kumar Singh\.gradle\caches\transforms-2\files-2.1\d1784eef552f522beca22c29d50b5a34\lifecycle-livedata-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.2.0] C:\Users\Prince kumar Singh\.gradle\caches\transforms-2\files-2.1\aa4b88e908c87e853ac5eb1432c52dd3\lifecycle-livedata-2.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.2.0] C:\Users\Prince kumar Singh\.gradle\caches\transforms-2\files-2.1\ce0e106a9acd2e0eb0eb95bf4d293ccd\jetified-lifecycle-livedata-core-ktx-2.2.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.2.0] C:\Users\Prince kumar Singh\.gradle\caches\transforms-2\files-2.1\2269d0361a2cc58ad5bcb38b2b37936b\lifecycle-livedata-core-2.2.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\Prince kumar Singh\.gradle\caches\transforms-2\files-2.1\171c902869749a76d5f7a5dc144cb293\core-runtime-2.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Prince kumar Singh\.gradle\caches\transforms-2\files-2.1\ae07ba16bd9bb0b56bfa5860743f4bb1\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
@@ -90,22 +93,22 @@ MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\User
 MERGED from [androidx.print:print:1.0.0] C:\Users\Prince kumar Singh\.gradle\caches\transforms-2\files-2.1\5e0bcf10224b821ed6b0e737b1fafdf5\print-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.android.datatransport:transport-api:2.2.0] C:\Users\Prince kumar Singh\.gradle\caches\transforms-2\files-2.1\8ee2fbc51a460a427c051bcc48121e8f\jetified-transport-api-2.2.0\AndroidManifest.xml:15:1-22:12
 MERGED from [com.google.android.gms:play-services-ads-base:19.3.0] C:\Users\Prince kumar Singh\.gradle\caches\transforms-2\files-2.1\dc3caf565c92d1c0477402ea7b2b43c6\jetified-play-services-ads-base-19.3.0\AndroidManifest.xml:2:1-9:12
-INJECTED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:2:1-100:12
-INJECTED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:2:1-100:12
-INJECTED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:2:1-100:12
+INJECTED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:2:1-102:12
+INJECTED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:2:1-102:12
+INJECTED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:2:1-102:12
 	package
 		ADDED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:4:5-54
 		INJECTED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml
 		INJECTED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml
-		ADDED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:2:1-100:12
+		ADDED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:2:1-102:12
 		INJECTED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml
 	xmlns:tools
 		ADDED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:3:5-51
 	android:versionCode
 		INJECTED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml
-		ADDED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:2:1-100:12
+		ADDED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:2:1-102:12
 		INJECTED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:2:11-69
@@ -180,7 +183,7 @@ ADDED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.x
 	android:name
 		ADDED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:13:22-62
 application
-ADDED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:15:5-98:19
+ADDED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:15:5-100:19
 MERGED from [:config:] C:\Users\Prince kumar Singh\.gradle\caches\transforms-2\files-2.1\dae86a1bffa745be36d5f0b29c392973\jetified-config\AndroidManifest.xml:13:5-17:19
 MERGED from [:config:] C:\Users\Prince kumar Singh\.gradle\caches\transforms-2\files-2.1\dae86a1bffa745be36d5f0b29c392973\jetified-config\AndroidManifest.xml:13:5-17:19
 MERGED from [com.google.android.material:material:1.1.0] C:\Users\Prince kumar Singh\.gradle\caches\transforms-2\files-2.1\803d56872d1f2ca318b8f5d97f9a8d66\material-1.1.0\AndroidManifest.xml:22:5-20
@@ -260,135 +263,137 @@ MERGED from [com.google.android.gms:play-services-ads-base:19.3.0] C:\Users\Prin
 	android:allowBackup
 		ADDED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:17:9-35
 	android:theme
-		ADDED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:22:9-52
+		ADDED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:22:9-53
 	android:usesCleartextTraffic
 		ADDED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:23:9-44
 	android:name
 		ADDED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:16:9-46
+activity#com.princekumarsingh.infinityitsolution.activity.Emplogin
+ADDED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:25:9-64
+	android:name
+		ADDED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:25:19-52
 activity#com.princekumarsingh.infinityitsolution.activity.Setting
-ADDED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:25:9-26:52
+ADDED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:26:9-28:43
 	android:theme
-		ADDED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:26:13-40
+		ADDED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:28:13-40
 	android:name
-		ADDED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:25:19-51
+		ADDED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:27:13-45
 activity#com.princekumarsingh.infinityitsolution.activity.SplashActivity
-ADDED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:27:9-29:62
+ADDED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:29:9-31:62
 	android:theme
-		ADDED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:29:13-59
+		ADDED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:31:13-59
 	android:name
-		ADDED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:28:13-52
+		ADDED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:30:13-52
 activity#com.princekumarsingh.infinityitsolution.intro.OnboardScreen
-ADDED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:30:9-38:20
-	android:theme
-		ADDED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:32:13-40
+ADDED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:32:9-40:20
 	android:name
-		ADDED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:31:13-48
+		ADDED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:33:13-48
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:33:13-37:29
+ADDED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:35:13-39:29
 action#android.intent.action.MAIN
-ADDED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:34:17-69
+ADDED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:36:17-69
 	android:name
-		ADDED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:34:25-66
+		ADDED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:36:25-66
 category#android.intent.category.LAUNCHER
-ADDED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:36:17-77
+ADDED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:38:17-77
 	android:name
-		ADDED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:36:27-74
+		ADDED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:38:27-74
 activity#com.princekumarsingh.infinityitsolution.activity.MainActivity
-ADDED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:39:9-55:20
+ADDED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:41:9-57:20
 	android:label
-		ADDED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:42:13-45
+		ADDED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:44:13-45
 	android:launchMode
-		ADDED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:43:13-42
+		ADDED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:45:13-42
 	android:configChanges
-		ADDED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:41:13-83
+		ADDED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:43:13-83
 	android:name
-		ADDED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:40:13-50
+		ADDED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:42:13-50
 intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:host:@string/app_deep_link_host+data:pathPattern:@string/app_deep_link_path+data:scheme:http+data:scheme:https
-ADDED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:44:13-54:29
+ADDED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:46:13-56:29
 action#android.intent.action.VIEW
-ADDED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:45:17-69
+ADDED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:47:17-69
 	android:name
-		ADDED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:45:25-66
+		ADDED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:47:25-66
 category#android.intent.category.DEFAULT
-ADDED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:47:17-76
+ADDED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:49:17-76
 	android:name
-		ADDED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:47:27-73
+		ADDED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:49:27-73
 category#android.intent.category.BROWSABLE
-ADDED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:48:17-78
+ADDED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:50:17-78
 	android:name
-		ADDED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:48:27-75
+		ADDED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:50:27-75
 data
-ADDED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:50:17-47
+ADDED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:52:17-47
 	android:host
-		ADDED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:52:23-64
+		ADDED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:54:23-64
 	android:scheme
-		ADDED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:50:23-44
+		ADDED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:52:23-44
 	android:pathPattern
-		ADDED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:53:23-71
+		ADDED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:55:23-71
 service#com.princekumarsingh.infinityitsolution.fcm.WebViewAppFirebaseMessagingService
-ADDED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:57:9-63:19
+ADDED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:59:9-65:19
 	android:exported
-		ADDED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:59:13-37
+		ADDED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:61:13-37
 	android:name
-		ADDED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:58:13-67
+		ADDED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:60:13-67
 intent-filter#action:name:com.google.firebase.MESSAGING_EVENT
-ADDED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:60:13-62:29
+ADDED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:62:13-64:29
 action#com.google.firebase.MESSAGING_EVENT
-ADDED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:61:17-78
+ADDED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:63:17-78
 	android:name
-		ADDED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:61:25-75
+		ADDED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:63:25-75
 meta-data#com.google.firebase.messaging.default_notification_icon
-ADDED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:75:9-77:65
+ADDED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:77:9-79:65
 	android:resource
-		ADDED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:77:13-62
+		ADDED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:79:13-62
 	android:name
-		ADDED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:76:13-83
+		ADDED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:78:13-83
 meta-data#com.google.firebase.messaging.default_notification_color
-ADDED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:78:9-80:61
+ADDED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:80:9-82:61
 	android:resource
-		ADDED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:80:13-58
+		ADDED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:82:13-58
 	android:name
-		ADDED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:79:13-84
+		ADDED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:81:13-84
 meta-data#com.google.firebase.messaging.default_notification_channel_id
-ADDED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:81:9-83:75
+ADDED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:83:9-85:75
 	android:value
-		ADDED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:83:13-72
+		ADDED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:85:13-72
 	android:name
-		ADDED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:82:13-89
+		ADDED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:84:13-89
 meta-data#com.google.android.gms.ads.APPLICATION_ID
-ADDED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:84:9-86:52
+ADDED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:86:9-88:52
 	android:value
-		ADDED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:86:13-49
+		ADDED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:88:13-49
 	android:name
-		ADDED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:85:13-69
+		ADDED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:87:13-69
 meta-data#onesignal_app_id
-ADDED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:87:9-90:45
+ADDED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:89:9-92:45
 MERGED from [com.onesignal:OneSignal:3.15.1] C:\Users\Prince kumar Singh\.gradle\caches\transforms-2\files-2.1\297a96cedbe6c1d6d9ab1644e44f86a8\jetified-OneSignal-3.15.1\AndroidManifest.xml:49:9-51:51
 MERGED from [com.onesignal:OneSignal:3.15.1] C:\Users\Prince kumar Singh\.gradle\caches\transforms-2\files-2.1\297a96cedbe6c1d6d9ab1644e44f86a8\jetified-OneSignal-3.15.1\AndroidManifest.xml:49:9-51:51
 	tools:replace
-		ADDED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:90:13-42
+		ADDED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:92:13-42
 	android:value
-		ADDED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:89:13-53
+		ADDED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:91:13-53
 		REJECTED from [com.onesignal:OneSignal:3.15.1] C:\Users\Prince kumar Singh\.gradle\caches\transforms-2\files-2.1\297a96cedbe6c1d6d9ab1644e44f86a8\jetified-OneSignal-3.15.1\AndroidManifest.xml:51:13-48
 	android:name
-		ADDED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:88:13-44
+		ADDED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:90:13-44
 meta-data#onesignal_google_project_number
-ADDED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:91:9-94:45
+ADDED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:93:9-96:45
 MERGED from [com.onesignal:OneSignal:3.15.1] C:\Users\Prince kumar Singh\.gradle\caches\transforms-2\files-2.1\297a96cedbe6c1d6d9ab1644e44f86a8\jetified-OneSignal-3.15.1\AndroidManifest.xml:53:9-55:70
 MERGED from [com.onesignal:OneSignal:3.15.1] C:\Users\Prince kumar Singh\.gradle\caches\transforms-2\files-2.1\297a96cedbe6c1d6d9ab1644e44f86a8\jetified-OneSignal-3.15.1\AndroidManifest.xml:53:9-55:70
 	tools:replace
-		ADDED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:94:13-42
+		ADDED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:96:13-42
 	android:value
-		ADDED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:93:13-39
+		ADDED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:95:13-39
 		REJECTED from [com.onesignal:OneSignal:3.15.1] C:\Users\Prince kumar Singh\.gradle\caches\transforms-2\files-2.1\297a96cedbe6c1d6d9ab1644e44f86a8\jetified-OneSignal-3.15.1\AndroidManifest.xml:55:13-67
 	android:name
-		ADDED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:92:13-59
+		ADDED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:94:13-59
 meta-data#com.onesignal.NotificationOpened.DEFAULT
-ADDED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:95:9-97:39
+ADDED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:97:9-99:39
 	android:value
-		ADDED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:97:13-36
+		ADDED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:99:13-36
 	android:name
-		ADDED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:96:13-68
+		ADDED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:98:13-68
 uses-sdk
 INJECTED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml
@@ -467,6 +472,10 @@ MERGED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\Prin
 MERGED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\Prince kumar Singh\.gradle\caches\transforms-2\files-2.1\17ced37242dabf7662cd24b2c913d980\jetified-play-services-basement-17.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.fragment:fragment:1.2.5] C:\Users\Prince kumar Singh\.gradle\caches\transforms-2\files-2.1\4b01a9c6c55730488e2216660ce2d50a\fragment-1.2.5\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.fragment:fragment:1.2.5] C:\Users\Prince kumar Singh\.gradle\caches\transforms-2\files-2.1\4b01a9c6c55730488e2216660ce2d50a\fragment-1.2.5\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-ktx:2.2.0] C:\Users\Prince kumar Singh\.gradle\caches\transforms-2\files-2.1\905746dcaf49a2702c84400d8663fefb\jetified-lifecycle-livedata-ktx-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-ktx:2.2.0] C:\Users\Prince kumar Singh\.gradle\caches\transforms-2\files-2.1\905746dcaf49a2702c84400d8663fefb\jetified-lifecycle-livedata-ktx-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0] C:\Users\Prince kumar Singh\.gradle\caches\transforms-2\files-2.1\9f429ca45a1c77e0bf84374b55969fec\jetified-lifecycle-viewmodel-ktx-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0] C:\Users\Prince kumar Singh\.gradle\caches\transforms-2\files-2.1\9f429ca45a1c77e0bf84374b55969fec\jetified-lifecycle-viewmodel-ktx-2.2.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.browser:browser:1.0.0] C:\Users\Prince kumar Singh\.gradle\caches\transforms-2\files-2.1\0361da34158bf499b27d9a741a8e6a62\browser-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.browser:browser:1.0.0] C:\Users\Prince kumar Singh\.gradle\caches\transforms-2\files-2.1\0361da34158bf499b27d9a741a8e6a62\browser-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\Prince kumar Singh\.gradle\caches\transforms-2\files-2.1\69ad766602084be054b8e36d06077e84\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
@@ -525,8 +534,10 @@ MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] C:\Users\Prince kumar S
 MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] C:\Users\Prince kumar Singh\.gradle\caches\transforms-2\files-2.1\2c26bd946a51a53502b93ad2a49d861a\lifecycle-runtime-2.2.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\Prince kumar Singh\.gradle\caches\transforms-2\files-2.1\ff15033be30bb789de71ecd1b1462c06\jetified-savedstate-1.0.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\Prince kumar Singh\.gradle\caches\transforms-2\files-2.1\ff15033be30bb789de71ecd1b1462c06\jetified-savedstate-1.0.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\Prince kumar Singh\.gradle\caches\transforms-2\files-2.1\d1784eef552f522beca22c29d50b5a34\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\Prince kumar Singh\.gradle\caches\transforms-2\files-2.1\d1784eef552f522beca22c29d50b5a34\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.2.0] C:\Users\Prince kumar Singh\.gradle\caches\transforms-2\files-2.1\aa4b88e908c87e853ac5eb1432c52dd3\lifecycle-livedata-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.2.0] C:\Users\Prince kumar Singh\.gradle\caches\transforms-2\files-2.1\aa4b88e908c87e853ac5eb1432c52dd3\lifecycle-livedata-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.2.0] C:\Users\Prince kumar Singh\.gradle\caches\transforms-2\files-2.1\ce0e106a9acd2e0eb0eb95bf4d293ccd\jetified-lifecycle-livedata-core-ktx-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.2.0] C:\Users\Prince kumar Singh\.gradle\caches\transforms-2\files-2.1\ce0e106a9acd2e0eb0eb95bf4d293ccd\jetified-lifecycle-livedata-core-ktx-2.2.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.2.0] C:\Users\Prince kumar Singh\.gradle\caches\transforms-2\files-2.1\2269d0361a2cc58ad5bcb38b2b37936b\lifecycle-livedata-core-2.2.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.2.0] C:\Users\Prince kumar Singh\.gradle\caches\transforms-2\files-2.1\2269d0361a2cc58ad5bcb38b2b37936b\lifecycle-livedata-core-2.2.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\Prince kumar Singh\.gradle\caches\transforms-2\files-2.1\171c902869749a76d5f7a5dc144cb293\core-runtime-2.1.0\AndroidManifest.xml:20:5-22:41
@@ -556,11 +567,11 @@ INJECTED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifes
 		ADDED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml
 		INJECTED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml
 meta-data#android.support.FILE_PROVIDER_PATHS
-ADDED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:70:13-72:64
+ADDED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:72:13-74:54
 	android:resource
-		ADDED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:72:17-51
+		ADDED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:74:17-51
 	android:name
-		ADDED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:71:17-67
+		ADDED from D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:73:17-67
 activity#com.robotemplates.kozuza.KozuzaActivity
 ADDED from [:config:] C:\Users\Prince kumar Singh\.gradle\caches\transforms-2\files-2.1\dae86a1bffa745be36d5f0b29c392973\jetified-config\AndroidManifest.xml:14:9-16:54
 	android:theme

@@ -118,7 +118,7 @@
 55-->[com.google.android.gms:play-services-measurement:17.4.4] C:\Users\Prince kumar Singh\.gradle\caches\transforms-2\files-2.1\1a9b6b13db329346059b78b6dc806321\jetified-play-services-measurement-17.4.4\AndroidManifest.xml:26:22-107
 56
 57    <application
-57-->D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:15:5-98:19
+57-->D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:15:5-100:19
 58        android:name="com.princekumarsingh.infinityitsolution.WebViewAppApplication"
 58-->D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:16:9-46
 59        android:allowBackup="true"
@@ -134,150 +134,151 @@
 64-->D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:20:9-41
 65        android:supportsRtl="true"
 65-->D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:21:9-35
-66        android:theme="@style/Theme.WebViewApp.Red"
-66-->D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:22:9-52
-67        android:usesCleartextTraffic="true" >
-67-->D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:23:9-44
-68        <activity
-68-->D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:25:9-26:52
-69            android:name="com.princekumarsingh.infinityitsolution.activity.Setting"
-69-->D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:25:19-51
-70            android:theme="@style/into" />
-70-->D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:26:13-40
-71        <activity
-71-->D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:27:9-29:62
-72            android:name="com.princekumarsingh.infinityitsolution.activity.SplashActivity"
-72-->D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:28:13-52
-73            android:theme="@style/Theme.WebViewApp.Splash" />
-73-->D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:29:13-59
-74        <activity
-74-->D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:30:9-38:20
-75            android:name="com.princekumarsingh.infinityitsolution.intro.OnboardScreen"
-75-->D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:31:13-48
-76            android:theme="@style/into" >
-76-->D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:32:13-40
+66        android:testOnly="true"
+67        android:theme="@style/Theme.WebViewApp.Gray"
+67-->D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:22:9-53
+68        android:usesCleartextTraffic="true" >
+68-->D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:23:9-44
+69        <activity android:name="com.princekumarsingh.infinityitsolution.activity.Emplogin" />
+69-->D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:25:9-64
+69-->D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:25:19-52
+70        <activity
+70-->D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:26:9-28:43
+71            android:name="com.princekumarsingh.infinityitsolution.activity.Setting"
+71-->D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:27:13-45
+72            android:theme="@style/into" />
+72-->D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:28:13-40
+73        <activity
+73-->D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:29:9-31:62
+74            android:name="com.princekumarsingh.infinityitsolution.activity.SplashActivity"
+74-->D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:30:13-52
+75            android:theme="@style/Theme.WebViewApp.Splash" />
+75-->D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:31:13-59
+76        <activity android:name="com.princekumarsingh.infinityitsolution.intro.OnboardScreen" >
+76-->D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:32:9-40:20
+76-->D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:33:13-48
 77            <intent-filter>
-77-->D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:33:13-37:29
+77-->D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:35:13-39:29
 78                <action android:name="android.intent.action.MAIN" />
-78-->D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:34:17-69
-78-->D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:34:25-66
+78-->D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:36:17-69
+78-->D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:36:25-66
 79
 80                <category android:name="android.intent.category.LAUNCHER" />
-80-->D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:36:17-77
-80-->D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:36:27-74
+80-->D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:38:17-77
+80-->D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:38:27-74
 81            </intent-filter>
 82        </activity>
 83        <activity
-83-->D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:39:9-55:20
+83-->D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:41:9-57:20
 84            android:name="com.princekumarsingh.infinityitsolution.activity.MainActivity"
-84-->D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:40:13-50
+84-->D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:42:13-50
 85            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
-85-->D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:41:13-83
+85-->D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:43:13-83
 86            android:label="@string/app_name"
-86-->D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:42:13-45
+86-->D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:44:13-45
 87            android:launchMode="standard" >
-87-->D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:43:13-42
+87-->D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:45:13-42
 88            <intent-filter>
-88-->D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:44:13-54:29
+88-->D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:46:13-56:29
 89                <action android:name="android.intent.action.VIEW" />
-89-->D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:45:17-69
-89-->D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:45:25-66
+89-->D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:47:17-69
+89-->D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:47:25-66
 90
 91                <category android:name="android.intent.category.DEFAULT" />
-91-->D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:47:17-76
-91-->D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:47:27-73
+91-->D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:49:17-76
+91-->D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:49:27-73
 92                <category android:name="android.intent.category.BROWSABLE" />
-92-->D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:48:17-78
-92-->D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:48:27-75
+92-->D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:50:17-78
+92-->D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:50:27-75
 93
 94                <data android:scheme="http" />
-94-->D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:50:17-47
-94-->D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:50:23-44
+94-->D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:52:17-47
+94-->D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:52:23-44
 95                <data android:scheme="https" />
-95-->D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:50:17-47
-95-->D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:50:23-44
+95-->D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:52:17-47
+95-->D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:52:23-44
 96                <data android:host="@string/app_deep_link_host" />
-96-->D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:50:17-47
-96-->D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:52:23-64
+96-->D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:52:17-47
+96-->D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:54:23-64
 97                <data android:pathPattern="@string/app_deep_link_path" />
-97-->D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:50:17-47
-97-->D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:53:23-71
+97-->D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:52:17-47
+97-->D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:55:23-71
 98            </intent-filter>
 99        </activity>
 100
 101        <service
-101-->D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:57:9-63:19
+101-->D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:59:9-65:19
 102            android:name="com.princekumarsingh.infinityitsolution.fcm.WebViewAppFirebaseMessagingService"
-102-->D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:58:13-67
+102-->D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:60:13-67
 103            android:exported="false" >
-103-->D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:59:13-37
+103-->D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:61:13-37
 104            <intent-filter>
-104-->D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:60:13-62:29
+104-->D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:62:13-64:29
 105                <action android:name="com.google.firebase.MESSAGING_EVENT" />
-105-->D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:61:17-78
-105-->D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:61:25-75
+105-->D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:63:17-78
+105-->D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:63:25-75
 106            </intent-filter>
 107        </service>
 108
 109        <provider
 110            android:name="androidx.core.content.FileProvider"
-110-->D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:66:13-62
+110-->D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:68:13-62
 111            android:authorities="com.princekuamrsingh.infinityitsolution.fileprovider"
-111-->D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:67:13-64
+111-->D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:69:13-64
 112            android:exported="false"
-112-->D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:68:13-37
+112-->D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:70:13-37
 113            android:grantUriPermissions="true" >
-113-->D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:69:13-47
+113-->D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:71:13-47
 114            <meta-data
-114-->D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:70:13-72:64
+114-->D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:72:13-74:54
 115                android:name="android.support.FILE_PROVIDER_PATHS"
-115-->D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:71:17-67
+115-->D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:73:17-67
 116                android:resource="@xml/file_paths" />
-116-->D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:72:17-51
+116-->D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:74:17-51
 117        </provider>
 118
 119        <meta-data
-119-->D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:75:9-77:65
+119-->D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:77:9-79:65
 120            android:name="com.google.firebase.messaging.default_notification_icon"
-120-->D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:76:13-83
+120-->D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:78:13-83
 121            android:resource="@drawable/ic_stat_notification" />
-121-->D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:77:13-62
+121-->D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:79:13-62
 122        <meta-data
-122-->D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:78:9-80:61
+122-->D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:80:9-82:61
 123            android:name="com.google.firebase.messaging.default_notification_color"
-123-->D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:79:13-84
+123-->D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:81:13-84
 124            android:resource="@color/global_color_accent" />
-124-->D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:80:13-58
+124-->D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:82:13-58
 125        <meta-data
-125-->D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:81:9-83:75
+125-->D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:83:9-85:75
 126            android:name="com.google.firebase.messaging.default_notification_channel_id"
-126-->D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:82:13-89
+126-->D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:84:13-89
 127            android:value="@string/fcm_default_notification_channel_id" />
-127-->D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:83:13-72
+127-->D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:85:13-72
 128        <meta-data
-128-->D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:84:9-86:52
+128-->D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:86:9-88:52
 129            android:name="com.google.android.gms.ads.APPLICATION_ID"
-129-->D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:85:13-69
+129-->D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:87:13-69
 130            android:value="@string/admob_app_id" />
-130-->D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:86:13-49
+130-->D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:88:13-49
 131        <meta-data
-131-->D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:87:9-90:45
+131-->D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:89:9-92:45
 132            android:name="onesignal_app_id"
-132-->D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:88:13-44
+132-->D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:90:13-44
 133            android:value="@string/onesignal_app_id" />
-133-->D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:89:13-53
+133-->D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:91:13-53
 134        <meta-data
-134-->D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:91:9-94:45
+134-->D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:93:9-96:45
 135            android:name="onesignal_google_project_number"
-135-->D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:92:13-59
+135-->D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:94:13-59
 136            android:value="str:REMOTE" />
-136-->D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:93:13-39
+136-->D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:95:13-39
 137        <meta-data
-137-->D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:95:9-97:39
+137-->D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:97:9-99:39
 138            android:name="com.onesignal.NotificationOpened.DEFAULT"
-138-->D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:96:13-68
+138-->D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:98:13-68
 139            android:value="DISABLE" />
-139-->D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:97:13-36
+139-->D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:99:13-36
 140
 141        <activity
 141-->[:config:] C:\Users\Prince kumar Singh\.gradle\caches\transforms-2\files-2.1\dae86a1bffa745be36d5f0b29c392973\jetified-config\AndroidManifest.xml:14:9-16:54
@@ -333,8 +334,8 @@
 169            <intent-filter>
 169-->[com.onesignal:OneSignal:3.15.1] C:\Users\Prince kumar Singh\.gradle\caches\transforms-2\files-2.1\297a96cedbe6c1d6d9ab1644e44f86a8\jetified-OneSignal-3.15.1\AndroidManifest.xml:81:13-83:29
 170                <action android:name="android.intent.action.VIEW" />
-170-->D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:45:17-69
-170-->D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:45:25-66
+170-->D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:47:17-69
+170-->D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:47:25-66
 171            </intent-filter>
 172        </activity>
 173
@@ -419,10 +420,10 @@
 215            android:exported="false" >
 215-->[com.google.firebase:firebase-messaging:20.2.4] C:\Users\Prince kumar Singh\.gradle\caches\transforms-2\files-2.1\45f950ee6bcc50d0dc31ebc292493477\jetified-firebase-messaging-20.2.4\AndroidManifest.xml:31:13-37
 216            <intent-filter android:priority="-500" >
-216-->D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:60:13-62:29
+216-->D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:62:13-64:29
 217                <action android:name="com.google.firebase.MESSAGING_EVENT" />
-217-->D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:61:17-78
-217-->D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:61:25-75
+217-->D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:63:17-78
+217-->D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\AndroidManifest.xml:63:25-75
 218            </intent-filter>
 219        </service>
 220        <service

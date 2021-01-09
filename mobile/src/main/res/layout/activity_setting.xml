@@ -55,15 +55,8 @@
                         android:padding="2.0dip"
                         android:layout_width="fill_parent"
                         android:layout_height="wrap_content"
-                        android:text="Contact-us" />
-                    <TextView android:textSize="14.0dip"
-                        android:gravity="center|left"
+                        android:text="@string/contact_us" />
 
-                        android:padding="2.0dip"
-                        android:layout_width="fill_parent"
-                        android:layout_height="wrap_content"
-                        android:text="/label_cache"
-                        android:layout_weight="1.0" />
                 </LinearLayout>
 
             </LinearLayout>

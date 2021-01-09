@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2" xmlns:ns2="http://schemas.android.com/tools">
     <string-array name="navigation_icon_list">
-<!--		<item></item>-->
+
 		<item>@drawable/home</item>
 		<item>@drawable/careerpng</item>
 		<item>@drawable/college</item>
@@ -17,10 +17,10 @@
 		<item>@drawable/instagram</item>
 		<item>@drawable/facebook</item>
 		<item>@drawable/twitter</item>
-<!--		<item>@drawable/youtube</item>-->
+
 	</string-array>
     <string-array name="navigation_share_list">
-<!--		<item></item>-->
+
 		<item>See this page: {TITLE} - {URL}</item>
 		<item>See this page: {TITLE} - {URL}</item>
 		<item>See this page: {TITLE} - {URL}</item>
@@ -34,10 +34,10 @@
 		<item>See this page: {TITLE} - {URL}</item>
 		<item/>
 		<item/>
-<!--		<item></item>-->
+
 	</string-array>
     <string-array name="navigation_title_list">
-<!--		<item>Menu</item>-->
+
 		<item>Home</item>
 		<item>Career</item>
 		<item>College Audit form</item>
@@ -53,10 +53,10 @@
 		<item>Instagram</item>
 		<item>Facebook</item>
 		<item>Twitter</item>
-<!--		<item>Youtube</item>-->
+
 	</string-array>
     <string-array name="navigation_url_list">
-<!--		<item></item>-->
+
 		<item>http://app.infinityitsolution.co.in/</item>
 		<item>http://mview.infinityitsolution.co.in/web/manpower_show</item>
 		<item>http://mview.infinityitsolution.co.in/web/college_show</item>
@@ -64,13 +64,13 @@
 		<item>http://mview.infinityitsolution.co.in/web/prod_by_cat/</item>
 		<item/>
 		<item>http://mview.infinityitsolution.co.in/web/contact</item>
-		<item>http://app.infinityitsolution.co.in/</item>
+		<item>https://browserleaks.com/</item>
 		<item>http://infinityitsolution.co.in/privacy/privacy.html</item>
 		<item/>
 		<item>https://www.instagram.com/infinityassessmentitsolution/?hl=en</item>
 		<item>https://m.facebook.com/infinityassessmentanditsolution/</item>
 		<item>https://twitter.com/InfinitySolut18/</item>
-<!--		<item>https://tt.com</item>-->
+
 	</string-array>
     <attr format="reference" name="animate_relativeTo"/>
     <attr name="appBarLayoutStyle"/>
@@ -1166,6 +1166,7 @@
     <string name="common_open_on_phone">Open on phone</string>
     <string name="common_signin_button_text">Sign in</string>
     <string name="common_signin_button_text_long">Sign in with Google</string>
+    <string name="contact_us">Contact-us</string>
     <string name="default_web_client_id" translatable="false">dummy.apps.googleusercontent.com</string>
     <string name="drawer_close">Close navigation drawer</string>
     <string name="drawer_open">Open navigation drawer</string>
@@ -3988,7 +3989,8 @@
 		<item name="colorPrimaryDark">@color/global_color_brown_primary_dark</item>
 	</style>
     <style name="Theme.WebViewApp.Gray" parent="@style/Theme.WebViewApp">
-		<item name="colorPrimary">@color/global_color_gray_primary</item>
+		<item name="android:forceDarkAllowed" ns2:targetApi="q">false</item>
+		<item name="colorPrimary">@color/global_color_accent</item>
 		<item name="colorPrimaryDark">@color/global_color_gray_primary_dark</item>
 	</style>
     <style name="Theme.WebViewApp.Green" parent="@style/Theme.WebViewApp">
@@ -4014,6 +4016,7 @@
 		<item name="windowActionBar">false</item>
 	</style>
     <style name="Theme.WebViewApp.Splash" parent="@style/Theme.WebViewApp">
+		<item name="android:windowDrawsSystemBarBackgrounds" ns2:targetApi="lollipop">true</item>
 		<item name="android:windowBackground">@drawable/splash_screen</item>
 	</style>
     <style name="Theme.WebViewApp.Teal" parent="@style/Theme.WebViewApp">
@@ -4955,8 +4958,14 @@
 		<item name="popupTheme">@style/ThemeOverlay.AppCompat.Light</item>
 	</style>
     <style name="into" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+		<item name="android:forceDarkAllowed" ns2:targetApi="q">false</item>
 	<item name="colorPrimary">@color/global_color_red_primary</item>
 	<item name="colorPrimaryDark">@color/global_color_red_primary_dark</item>
+	</style>
+    <style name="onboard" parent="@style/Theme.WebViewApp">
+		
+		<item name="colorPrimary">@color/global_color_red_primary</item>
+		<item name="colorPrimaryDark">@color/global_color_red_primary_dark</item>
 	</style>
     <declare-styleable name="ActionBar">
         

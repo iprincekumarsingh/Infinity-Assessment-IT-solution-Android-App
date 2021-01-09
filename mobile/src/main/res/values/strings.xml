@@ -33,4 +33,5 @@
     <string name="main_rate_snackbar">Do you like this app? Rate it on Play Store. Thanks for your support.</string>
     <string name="main_rate_confirm">Rate</string>
     <string name="main_downloading">Downloading…</string>
+    <string name="contact_us">Contact-us</string>
 </resources>

@@ -64,17 +64,17 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/Theme.WebViewApp.Red"
+        android:testOnly="true"
+        android:theme="@style/Theme.WebViewApp.Gray"
         android:usesCleartextTraffic="true" >
+        <activity android:name="com.princekumarsingh.infinityitsolution.activity.Emplogin" />
         <activity
             android:name="com.princekumarsingh.infinityitsolution.activity.Setting"
             android:theme="@style/into" />
         <activity
             android:name="com.princekumarsingh.infinityitsolution.activity.SplashActivity"
             android:theme="@style/Theme.WebViewApp.Splash" />
-        <activity
-            android:name="com.princekumarsingh.infinityitsolution.intro.OnboardScreen"
-            android:theme="@style/into" >
+        <activity android:name="com.princekumarsingh.infinityitsolution.intro.OnboardScreen" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

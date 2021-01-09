@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources xmlns:android="http://schemas.android.com/apk/res/android">
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
 
 	<style name="Widget.WebViewApp.Toolbar" parent="@style/Widget.AppCompat.Toolbar">
 		<item name="android:background">?attr/colorPrimary</item>
@@ -159,8 +159,15 @@
 	</style>
 
 	<style name="into" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+		<item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
 	<item name="colorPrimary">@color/global_color_red_primary</item>
 	<item name="colorPrimaryDark">@color/global_color_red_primary_dark</item>
+	</style>
+
+	<style name="onboard" parent="@style/Theme.WebViewApp">
+		<!-- Customize your theme here. -->
+		<item name="colorPrimary">@color/global_color_red_primary</item>
+		<item name="colorPrimaryDark">@color/global_color_red_primary_dark</item>
 	</style>
 
 </resources>

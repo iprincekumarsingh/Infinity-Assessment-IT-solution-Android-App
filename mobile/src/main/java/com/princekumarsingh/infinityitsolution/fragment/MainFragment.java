@@ -6,6 +6,7 @@ import android.annotation.TargetApi;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
+import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
@@ -17,6 +18,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.WindowManager;
 import android.webkit.CookieSyncManager;
+import android.webkit.ValueCallback;
+import android.webkit.WebChromeClient;
 import android.webkit.WebResourceError;
 import android.webkit.WebResourceRequest;
 import android.webkit.WebSettings;
@@ -276,13 +279,21 @@ public class MainFragment extends TaskFragment implements SwipeRefreshLayout.OnR
 		Logcat.d("");
 	}
 
+//	@Override
+//	public void onDownloadRequested(String url, String userAgent, String contentDisposition, String mimetype, long contentLength) {
+//
+//	}
+
 	@Override
 	public void onDownloadRequested(String url, String suggestedFilename, String mimeType, long contentLength, String contentDisposition, String userAgent) {
 		Logcat.d(url + " / " + suggestedFilename + " / " + mimeType + " / " + userAgent);
 		mPermissionManager.request(this,
 				Manifest.permission.WRITE_EXTERNAL_STORAGE,
 				requestable -> requestable.handleDownloadPermissionGranted(url, suggestedFilename, mimeType, userAgent));
+
 	}
+
+
 
 	@Override
 	public void onExternalPageRequest(String url) {
@@ -404,6 +415,10 @@ public class MainFragment extends TaskFragment implements SwipeRefreshLayout.OnR
 		mWebView.setOnLongClickListener(view -> true);
 		mWebView.setLongClickable(false);
 		mWebView.setHapticFeedbackEnabled(false);
+
+//		mWebView.setWebChromeClient(new WebChromeClient(){
+//			public void openfileChooser(ValueCallback<Uri>)
+//		});
 
 		// user agent
 		if (WebViewAppConfig.WEBVIEW_USER_AGENT != null && !WebViewAppConfig.WEBVIEW_USER_AGENT.equals("")) {

@@ -8,7 +8,7 @@ import androidx.fragment.app.Fragment;
 import java.util.LinkedList;
 import java.util.List;
 
-public class TaskFragment extends Fragment {
+public abstract class TaskFragment extends Fragment {
 	private final Object mLock = new Object();
 	private Boolean mReady = false;
 	private final List<Runnable> mPendingCallbacks = new LinkedList<>();
@@ -44,10 +44,10 @@ public class TaskFragment extends Fragment {
 		else addPending(runnable);
 	}
 
-	protected void executeTask(AsyncTask<Void, ?, ?> task) {
-		// use AsyncTask.THREAD_POOL_EXECUTOR or AsyncTask.SERIAL_EXECUTOR
-		task.executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR);
-	}
+//	protected void executeTask(AsyncTask<Void, ?, ?> task) {
+//		//\\ use AsyncTask.THREAD_POOL_EXECUTOR or AsyncTask.SERIAL_EXECUTOR
+//		task.executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR);
+//	}
 
 	private void runNow(Runnable runnable) {
 		//Logcat.d("TaskFragment.runNow(): " + runnable.getClass().getEnclosingMethod());
@@ -60,4 +60,6 @@ public class TaskFragment extends Fragment {
 			mPendingCallbacks.add(runnable);
 		}
 	}
+
+    public abstract void onDownloadRequested(String url, String suggestedFilename, String mimeType, long contentLength, String contentDisposition, String userAgent);
 }

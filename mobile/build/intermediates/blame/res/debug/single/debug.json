@@ -4,20 +4,20 @@
         "source": "D:\\APP DEVLOPMENT\\App Devlop Beta\\r\\mobile\\src\\main\\res\\layout\\toolbar.xml"
     },
     {
-        "merged": "D:\\APP DEVLOPMENT\\App Devlop Beta\\r\\mobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_navigation_settings.png.flat",
-        "source": "D:\\APP DEVLOPMENT\\App Devlop Beta\\r\\mobile\\src\\main\\res\\drawable-xxhdpi\\ic_navigation_settings.png"
-    },
-    {
         "merged": "D:\\APP DEVLOPMENT\\App Devlop Beta\\r\\mobile\\build\\intermediates\\res\\merged\\debug\\layout_placeholder_offline_swipeable.xml.flat",
         "source": "D:\\APP DEVLOPMENT\\App Devlop Beta\\r\\mobile\\src\\main\\res\\layout\\placeholder_offline_swipeable.xml"
     },
     {
-        "merged": "D:\\APP DEVLOPMENT\\App Devlop Beta\\r\\mobile\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_navigation_stats.png.flat",
-        "source": "D:\\APP DEVLOPMENT\\App Devlop Beta\\r\\mobile\\src\\main\\res\\drawable-hdpi\\ic_navigation_stats.png"
+        "merged": "D:\\APP DEVLOPMENT\\App Devlop Beta\\r\\mobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_navigation_settings.png.flat",
+        "source": "D:\\APP DEVLOPMENT\\App Devlop Beta\\r\\mobile\\src\\main\\res\\drawable-xxhdpi\\ic_navigation_settings.png"
     },
     {
         "merged": "D:\\APP DEVLOPMENT\\App Devlop Beta\\r\\mobile\\build\\intermediates\\res\\merged\\debug\\drawable_email_icon.xml.flat",
         "source": "D:\\APP DEVLOPMENT\\App Devlop Beta\\r\\mobile\\src\\main\\res\\drawable\\email_icon.xml"
+    },
+    {
+        "merged": "D:\\APP DEVLOPMENT\\App Devlop Beta\\r\\mobile\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_navigation_stats.png.flat",
+        "source": "D:\\APP DEVLOPMENT\\App Devlop Beta\\r\\mobile\\src\\main\\res\\drawable-hdpi\\ic_navigation_stats.png"
     },
     {
         "merged": "D:\\APP DEVLOPMENT\\App Devlop Beta\\r\\mobile\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_navigation_contact.png.flat",
@@ -64,12 +64,12 @@
         "source": "D:\\APP DEVLOPMENT\\App Devlop Beta\\r\\mobile\\src\\main\\res\\layout\\activity_onboard_screen.xml"
     },
     {
-        "merged": "D:\\APP DEVLOPMENT\\App Devlop Beta\\r\\mobile\\build\\intermediates\\res\\merged\\debug\\anim_button_animation.xml.flat",
-        "source": "D:\\APP DEVLOPMENT\\App Devlop Beta\\r\\mobile\\src\\main\\res\\anim\\button_animation.xml"
-    },
-    {
         "merged": "D:\\APP DEVLOPMENT\\App Devlop Beta\\r\\mobile\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_stat_onesignal_default.png.flat",
         "source": "D:\\APP DEVLOPMENT\\App Devlop Beta\\r\\mobile\\src\\main\\res\\drawable-xhdpi\\ic_stat_onesignal_default.png"
+    },
+    {
+        "merged": "D:\\APP DEVLOPMENT\\App Devlop Beta\\r\\mobile\\build\\intermediates\\res\\merged\\debug\\anim_button_animation.xml.flat",
+        "source": "D:\\APP DEVLOPMENT\\App Devlop Beta\\r\\mobile\\src\\main\\res\\anim\\button_animation.xml"
     },
     {
         "merged": "D:\\APP DEVLOPMENT\\App Devlop Beta\\r\\mobile\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_navigation_shipping.png.flat",
@@ -94,6 +94,10 @@
     {
         "merged": "D:\\APP DEVLOPMENT\\App Devlop Beta\\r\\mobile\\build\\intermediates\\res\\merged\\debug\\drawable_privacy.png.flat",
         "source": "D:\\APP DEVLOPMENT\\App Devlop Beta\\r\\mobile\\src\\main\\res\\drawable\\privacy.png"
+    },
+    {
+        "merged": "D:\\APP DEVLOPMENT\\App Devlop Beta\\r\\mobile\\build\\intermediates\\res\\merged\\debug\\drawable_shopp.png.flat",
+        "source": "D:\\APP DEVLOPMENT\\App Devlop Beta\\r\\mobile\\src\\main\\res\\drawable\\shopp.png"
     },
     {
         "merged": "D:\\APP DEVLOPMENT\\App Devlop Beta\\r\\mobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_navigation_weather.png.flat",
@@ -132,12 +136,16 @@
         "source": "D:\\APP DEVLOPMENT\\App Devlop Beta\\r\\mobile\\src\\main\\res\\mipmap-hdpi\\ic_launcher_foreground.png"
     },
     {
+        "merged": "D:\\APP DEVLOPMENT\\App Devlop Beta\\r\\mobile\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_foreground.png.flat",
+        "source": "D:\\APP DEVLOPMENT\\App Devlop Beta\\r\\mobile\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_foreground.png"
+    },
+    {
         "merged": "D:\\APP DEVLOPMENT\\App Devlop Beta\\r\\mobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_navigation_extension.png.flat",
         "source": "D:\\APP DEVLOPMENT\\App Devlop Beta\\r\\mobile\\src\\main\\res\\drawable-xxhdpi\\ic_navigation_extension.png"
     },
     {
-        "merged": "D:\\APP DEVLOPMENT\\App Devlop Beta\\r\\mobile\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_foreground.png.flat",
-        "source": "D:\\APP DEVLOPMENT\\App Devlop Beta\\r\\mobile\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_foreground.png"
+        "merged": "D:\\APP DEVLOPMENT\\App Devlop Beta\\r\\mobile\\build\\intermediates\\res\\merged\\debug\\layout_emp_fragment.xml.flat",
+        "source": "D:\\APP DEVLOPMENT\\App Devlop Beta\\r\\mobile\\src\\main\\res\\layout\\emp_fragment.xml"
     },
     {
         "merged": "D:\\APP DEVLOPMENT\\App Devlop Beta\\r\\mobile\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_foreground.png.flat",
@@ -148,12 +156,12 @@
         "source": "D:\\APP DEVLOPMENT\\App Devlop Beta\\r\\mobile\\src\\main\\res\\drawable\\home.png"
     },
     {
-        "merged": "D:\\APP DEVLOPMENT\\App Devlop Beta\\r\\mobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_navigation_social.png.flat",
-        "source": "D:\\APP DEVLOPMENT\\App Devlop Beta\\r\\mobile\\src\\main\\res\\drawable-xxhdpi\\ic_navigation_social.png"
-    },
-    {
         "merged": "D:\\APP DEVLOPMENT\\App Devlop Beta\\r\\mobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_navigation_extension.png.flat",
         "source": "D:\\APP DEVLOPMENT\\App Devlop Beta\\r\\mobile\\src\\main\\res\\drawable-xxxhdpi\\ic_navigation_extension.png"
+    },
+    {
+        "merged": "D:\\APP DEVLOPMENT\\App Devlop Beta\\r\\mobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_navigation_social.png.flat",
+        "source": "D:\\APP DEVLOPMENT\\App Devlop Beta\\r\\mobile\\src\\main\\res\\drawable-xxhdpi\\ic_navigation_social.png"
     },
     {
         "merged": "D:\\APP DEVLOPMENT\\App Devlop Beta\\r\\mobile\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
@@ -200,12 +208,12 @@
         "source": "D:\\APP DEVLOPMENT\\App Devlop Beta\\r\\mobile\\src\\main\\res\\drawable-xhdpi\\ic_navigation_contact.png"
     },
     {
-        "merged": "D:\\APP DEVLOPMENT\\App Devlop Beta\\r\\mobile\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_navigation_email.png.flat",
-        "source": "D:\\APP DEVLOPMENT\\App Devlop Beta\\r\\mobile\\src\\main\\res\\drawable-mdpi\\ic_navigation_email.png"
-    },
-    {
         "merged": "D:\\APP DEVLOPMENT\\App Devlop Beta\\r\\mobile\\build\\intermediates\\res\\merged\\debug\\drawable_login.png.flat",
         "source": "D:\\APP DEVLOPMENT\\App Devlop Beta\\r\\mobile\\src\\main\\res\\drawable\\login.png"
+    },
+    {
+        "merged": "D:\\APP DEVLOPMENT\\App Devlop Beta\\r\\mobile\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_navigation_email.png.flat",
+        "source": "D:\\APP DEVLOPMENT\\App Devlop Beta\\r\\mobile\\src\\main\\res\\drawable-mdpi\\ic_navigation_email.png"
     },
     {
         "merged": "D:\\APP DEVLOPMENT\\App Devlop Beta\\r\\mobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_navigation_photo.png.flat",
@@ -326,6 +334,10 @@
     {
         "merged": "D:\\APP DEVLOPMENT\\App Devlop Beta\\r\\mobile\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi_splash.png.flat",
         "source": "D:\\APP DEVLOPMENT\\App Devlop Beta\\r\\mobile\\src\\main\\res\\drawable-nodpi\\splash.png"
+    },
+    {
+        "merged": "D:\\APP DEVLOPMENT\\App Devlop Beta\\r\\mobile\\build\\intermediates\\res\\merged\\debug\\layout_emplogin_activity.xml.flat",
+        "source": "D:\\APP DEVLOPMENT\\App Devlop Beta\\r\\mobile\\src\\main\\res\\layout\\emplogin_activity.xml"
     },
     {
         "merged": "D:\\APP DEVLOPMENT\\App Devlop Beta\\r\\mobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_navigation_help.png.flat",
@@ -452,6 +464,10 @@
         "source": "D:\\APP DEVLOPMENT\\App Devlop Beta\\r\\mobile\\src\\main\\res\\drawable-xxxhdpi\\ic_navigation_key.png"
     },
     {
+        "merged": "D:\\APP DEVLOPMENT\\App Devlop Beta\\r\\mobile\\build\\intermediates\\res\\merged\\debug\\drawable_attend.png.flat",
+        "source": "D:\\APP DEVLOPMENT\\App Devlop Beta\\r\\mobile\\src\\main\\res\\drawable\\attend.png"
+    },
+    {
         "merged": "D:\\APP DEVLOPMENT\\App Devlop Beta\\r\\mobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_stat_notification.png.flat",
         "source": "D:\\APP DEVLOPMENT\\App Devlop Beta\\r\\mobile\\src\\main\\res\\drawable-xxhdpi\\ic_stat_notification.png"
     },
@@ -538,6 +554,10 @@
     {
         "merged": "D:\\APP DEVLOPMENT\\App Devlop Beta\\r\\mobile\\build\\intermediates\\res\\merged\\debug\\drawable_ic_sharp_star_rate_24.xml.flat",
         "source": "D:\\APP DEVLOPMENT\\App Devlop Beta\\r\\mobile\\src\\main\\res\\drawable\\ic_sharp_star_rate_24.xml"
+    },
+    {
+        "merged": "D:\\APP DEVLOPMENT\\App Devlop Beta\\r\\mobile\\build\\intermediates\\res\\merged\\debug\\drawable_welcome.png.flat",
+        "source": "D:\\APP DEVLOPMENT\\App Devlop Beta\\r\\mobile\\src\\main\\res\\drawable\\welcome.png"
     },
     {
         "merged": "D:\\APP DEVLOPMENT\\App Devlop Beta\\r\\mobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_navigation_home.png.flat",

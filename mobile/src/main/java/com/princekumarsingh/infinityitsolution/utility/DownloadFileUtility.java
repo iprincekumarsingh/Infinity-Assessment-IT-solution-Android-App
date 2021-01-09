@@ -20,7 +20,7 @@ public final class DownloadFileUtility {
 
 	public static void downloadFile(@NonNull Context context, @NonNull String url, @NonNull String suggestedFilename, @Nullable String mimeType, @Nullable String userAgent) {
 		DownloadManager.Request request = new DownloadManager.Request(Uri.parse(url));
-
+//package im.delight.android.webview;
 		request.setTitle(suggestedFilename);
 		request.setDescription(context.getString(R.string.main_downloading));
 		request.setDestinationInExternalPublicDir(Environment.DIRECTORY_DOWNLOADS, suggestedFilename);

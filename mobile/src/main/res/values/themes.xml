@@ -42,6 +42,7 @@
 
 	<!-- splash theme -->
 	<style name="Theme.WebViewApp.Splash" parent="@style/Theme.WebViewApp">
+		<item name="android:windowDrawsSystemBarBackgrounds" tools:targetApi="lollipop">true</item>
 		<item name="android:windowBackground">@drawable/splash_screen</item>
 	</style>
 
@@ -59,7 +60,8 @@
 
 	<!-- gray theme -->
 	<style name="Theme.WebViewApp.Gray" parent="@style/Theme.WebViewApp">
-		<item name="colorPrimary">@color/global_color_gray_primary</item>
+		<item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
+		<item name="colorPrimary">@color/global_color_accent</item>
 		<item name="colorPrimaryDark">@color/global_color_gray_primary_dark</item>
 	</style>
 

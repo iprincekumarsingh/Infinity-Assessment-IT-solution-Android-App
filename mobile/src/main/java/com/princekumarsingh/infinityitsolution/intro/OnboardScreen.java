@@ -1,6 +1,7 @@
 package com.princekumarsingh.infinityitsolution.intro;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatDelegate;
 import androidx.viewpager.widget.ViewPager;
 
 import android.content.Intent;
@@ -36,7 +37,7 @@ public class OnboardScreen extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-//        setContentView(R.layout.activity_onboard_screen);
+
 //        requestWindowFeature(Window.FEATURE_NO_TITLE);
 //        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
 //                WindowManager.LayoutParams.FLAG_FULLSCREEN);
@@ -46,7 +47,7 @@ public class OnboardScreen extends AppCompatActivity {
 
         if (restorePrefData()) {
 
-            Intent mainActivity = new Intent(getApplicationContext(), SplashActivity.class );
+            Intent mainActivity = new Intent(getApplicationContext(),SplashActivity.class );
             startActivity(mainActivity);
             finish();
 
@@ -54,10 +55,11 @@ public class OnboardScreen extends AppCompatActivity {
         }
 
         setContentView(R.layout.activity_onboard_screen);
+        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
 
         // hide the action bar
-
 //        getSupportActionBar().hide();
+
 
         // ini views
         btnNext = findViewById(R.id.btn_next);
@@ -69,9 +71,10 @@ public class OnboardScreen extends AppCompatActivity {
         // fill list screen
 
         final List<ScreenItem> mList = new ArrayList<>();
-        mList.add(new ScreenItem("Infinity Assessment and IT Solution","Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua, consectetur  consectetur adipiscing elit",R.drawable.logo));
-        mList.add(new ScreenItem("Fast Delivery","Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua, consectetur  consectetur adipiscing elit",R.drawable.img2));
-        mList.add(new ScreenItem("Easy Payment","Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua, consectetur  consectetur adipiscing elit",R.drawable.img3));
+        mList.add(new ScreenItem("Welcome","Slide right to use the application",R.drawable.welcome));
+//        mList.add(new ScreenItem("Infinity Assessment and IT Solution","Providing fully customizable Online Examnination system for conducting computer based examination",R.drawable.logo));
+        mList.add(new ScreenItem("Hassle Free Attendance ","Submit your attendance within 20 sec . and view your attendance with the date ",R.drawable.attend));
+        mList.add(new ScreenItem("Shop and Easy Payment","Shop and make a payment with the Secure with the End to End encryption of payment and yours details",R.drawable.shopp));
 //        mList.add(new ScreenItem("Infinity Assessment and IT Solution","Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua, consectetur  consectetur adipiscing elit",R.drawable.logo));
 //        mList.add(new ScreenItem("Fast Delivery","Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua, consectetur  consectetur adipiscing elit",R.drawable.img2));
 //        mList.add(new ScreenItem("Easy Payment","Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua, consectetur  consectetur adipiscing elit",R.drawable.img3));

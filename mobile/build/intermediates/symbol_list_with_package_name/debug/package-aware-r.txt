@@ -1603,6 +1603,7 @@ drawable abc_textfield_search_activated_mtrl_alpha
 drawable abc_textfield_search_default_mtrl_alpha
 drawable abc_textfield_search_material
 drawable abc_vector_test
+drawable attend
 drawable avd_hide_password
 drawable avd_show_password
 drawable border_bottom_settings
@@ -1744,6 +1745,7 @@ drawable privacy
 drawable selector_clickable_item_bg
 drawable selector_selectable_item_bg
 drawable shop
+drawable shopp
 drawable side_nav_bar
 drawable splash
 drawable splash_bg
@@ -1752,6 +1754,7 @@ drawable test_custom_background
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
 drawable twitter
+drawable welcome
 drawable youtube
 id ALT
 id BOTTOM_END
@@ -1916,6 +1919,7 @@ id easeIn
 id easeInOut
 id easeOut
 id edit_query
+id emplogin
 id empty
 id end
 id enterAlways
@@ -2251,6 +2255,8 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout emp_fragment
+layout emplogin_activity
 layout fragment_main
 layout fragment_main_swipeable
 layout layout_screen
@@ -2381,6 +2387,7 @@ string common_google_play_services_wear_update_text
 string common_open_on_phone
 string common_signin_button_text
 string common_signin_button_text_long
+string contact_us
 string default_web_client_id
 string drawer_close
 string drawer_open
@@ -3184,6 +3191,7 @@ style Widget_MaterialComponents_Toolbar_Surface
 style Widget_Support_CoordinatorLayout
 style Widget_WebViewApp_Toolbar
 style into
+style onboard
 styleable ActionBar background backgroundSplit backgroundStacked contentInsetEnd contentInsetEndWithActions contentInsetLeft contentInsetRight contentInsetStart contentInsetStartWithNavigation customNavigationLayout displayOptions divider elevation height hideOnContentScroll homeAsUpIndicator homeLayout icon indeterminateProgressStyle itemPadding logo navigationMode popupTheme progressBarPadding progressBarStyle subtitle subtitleTextStyle title titleTextStyle
 styleable ActionBarLayout android_layout_gravity
 styleable ActionMenuItemView android_minWidth

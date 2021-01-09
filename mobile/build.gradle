@@ -88,6 +88,8 @@ dependencies {
 	implementation "org.alfonz:alfonz-utility:0.9.2"
 	implementation "org.alfonz:alfonz-view:0.9.2"
     implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.2.0'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0'
 }
 
 apply plugin: "com.google.gms.google-services"
