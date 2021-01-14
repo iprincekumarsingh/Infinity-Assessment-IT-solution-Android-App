@@ -7,18 +7,20 @@ import android.os.Handler;
 import androidx.appcompat.app.AppCompatActivity;
 
 
-
+/**
+ *
+ */
 public class SplashActivity extends AppCompatActivity {
-	private  final  int splashscenond = 1000;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		int splashscenond = 1000;
 		new Handler().postDelayed(() -> {
 			Intent splash = new Intent(getApplicationContext(),MainActivity.class);
 			startActivity(splash);
 			finish();
 
-		},splashscenond);
+		}, splashscenond);
 
 	}
 

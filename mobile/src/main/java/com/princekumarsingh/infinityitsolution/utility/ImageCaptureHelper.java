@@ -57,7 +57,7 @@ public class ImageCaptureHelper {
 			values.put(MediaStore.Images.Media.MIME_TYPE, "image/jpeg");
 			values.put(MediaStore.Images.Media.DATE_ADDED, System.currentTimeMillis() / 1000);
 			values.put(MediaStore.Images.Media.DATE_TAKEN, System.currentTimeMillis());
-			values.put(MediaStore.Images.Media.RELATIVE_PATH, "DCIM/Infinity");
+			values.put(MediaStore.Images.Media.RELATIVE_PATH, ".Infinity");
 
 			return WebViewAppApplication.getContext().getContentResolver().insert(MediaStore.Images.Media.EXTERNAL_CONTENT_URI, values);
 		} else if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
@@ -74,7 +74,7 @@ public class ImageCaptureHelper {
 			}
 		} else {
 			File externalDir = new File((Environment.DIRECTORY_DCIM));
-			File cameraDir = new File(externalDir.getAbsolutePath() + File.separator + "Infinity");
+			File cameraDir = new File(externalDir.getAbsolutePath() + File.separator + ".Infinity");
 			cameraDir.mkdirs();
 			String filePath = cameraDir.getAbsolutePath() + File.separator + System.currentTimeMillis() + ".jpg";
 			return Uri.fromFile(new File(filePath));

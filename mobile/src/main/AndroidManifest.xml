@@ -7,6 +7,7 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
@@ -22,13 +23,12 @@
         android:theme="@style/Theme.WebViewApp.Gray"
         android:usesCleartextTraffic="true"
         tools:ignore="AllowBackup,UnusedAttribute">
-        <activity android:name=".activity.Emplogin"></activity>
         <activity
             android:name=".activity.Setting"
             android:theme="@style/into" />
         <activity
             android:name=".activity.SplashActivity"
-            android:theme="@style/Theme.WebViewApp.Splash" />
+            android:theme="@style/splashteme" />
         <activity
             android:name=".intro.OnboardScreen"
            >

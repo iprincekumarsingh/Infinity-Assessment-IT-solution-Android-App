@@ -2,7 +2,7 @@
 <resources>
     <string name="app_name" translatable="false">Infinity Assessment</string>
     <string name="app_store_uri" translatable="false">https://play.google.com/store/apps/details?id=%1$s</string>
-    <string name="app_deep_link_host" translatable="false">robotemplates.com</string>
+    <string name="app_deep_link_host" translatable="false">infinityitsolutions.co.in</string>
     <string name="app_deep_link_path" translatable="false">/.*</string>
     <string name="fcm_default_notification_channel_id" translatable="false">general</string>
     <string name="fcm_default_notification_channel_title">General notifications</string>
@@ -34,4 +34,13 @@
     <string name="main_rate_confirm">Rate</string>
     <string name="main_downloading">Downloading…</string>
     <string name="contact_us">Contact-us</string>
+    <string name="clear_cache">Clear cache</string>
+
+    <string name="app_version">App Version</string>
+    <string name="todo">TODO</string>
+    <string name="v_1_0">V 1.0</string>
+    <string name="get_started">Get Started</string>
+    <string name="next">Next</string>
+    <string name="skip">Skip</string>
+    <string name="setting">Setting</string>
 </resources>

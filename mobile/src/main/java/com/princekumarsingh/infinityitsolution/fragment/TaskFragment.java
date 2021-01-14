@@ -5,6 +5,8 @@ import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
 
+import org.alfonz.utility.Logcat;
+
 import java.util.LinkedList;
 import java.util.List;
 
@@ -45,7 +47,7 @@ public abstract class TaskFragment extends Fragment {
 	}
 
 //	protected void executeTask(AsyncTask<Void, ?, ?> task) {
-//		//\\ use AsyncTask.THREAD_POOL_EXECUTOR or AsyncTask.SERIAL_EXECUTOR
+//		 use AsyncTask.THREAD_POOL_EXECUTOR or AsyncTask.SERIAL_EXECUTOR
 //		task.executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR);
 //	}
 
@@ -56,7 +58,7 @@ public abstract class TaskFragment extends Fragment {
 
 	private void addPending(Runnable runnable) {
 		synchronized (mLock) {
-			//Logcat.d("TaskFragment.addPending(): " + runnable.getClass().getEnclosingMethod());
+			Logcat.d("TaskFragment.addPending(): " + runnable.getClass().getEnclosingMethod());
 			mPendingCallbacks.add(runnable);
 		}
 	}

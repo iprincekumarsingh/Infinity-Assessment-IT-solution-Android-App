@@ -6,7 +6,6 @@ import android.annotation.TargetApi;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
-import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
@@ -18,8 +17,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.WindowManager;
 import android.webkit.CookieSyncManager;
-import android.webkit.ValueCallback;
-import android.webkit.WebChromeClient;
 import android.webkit.WebResourceError;
 import android.webkit.WebResourceRequest;
 import android.webkit.WebSettings;
@@ -388,7 +385,7 @@ public class MainFragment extends TaskFragment implements SwipeRefreshLayout.OnR
 		mProgress = visible;
 	}
 
-	private void showContent(final long delay) {
+	private void showContent() {
 		final Handler timerHandler = new Handler();
 		final Runnable timerRunnable = () -> runTaskCallback(() -> {
 			if (getActivity() != null && mRootView != null) {
@@ -396,7 +393,7 @@ public class MainFragment extends TaskFragment implements SwipeRefreshLayout.OnR
 				mStatefulLayout.showContent();
 			}
 		});
-		timerHandler.postDelayed(timerRunnable, delay);
+		timerHandler.postDelayed(timerRunnable, 500);
 	}
 
 	@SuppressLint("SetJavaScriptEnabled")
@@ -582,7 +579,7 @@ public class MainFragment extends TaskFragment implements SwipeRefreshLayout.OnR
 		public void onPageFinished(final WebView view, final String url) {
 			runTaskCallback(() -> {
 				if (getActivity() != null && mSuccess) {
-					showContent(500); // hide progress bar with delay to show webview content smoothly
+					showContent(); // hide progress bar with delay to show webview content smoothly
 					showProgress(false);
 					if (WebViewAppConfig.ACTION_BAR_HTML_TITLE) {
 						((AppCompatActivity) getActivity()).getSupportActionBar().setTitle(view.getTitle());

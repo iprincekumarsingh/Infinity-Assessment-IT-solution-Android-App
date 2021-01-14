@@ -11,7 +11,7 @@ public class WebViewAppConfig {
 	public static final boolean ACTION_BAR = true;
 
 	// true for showing html title rather than navigation title in the action bar
-	public static final boolean ACTION_BAR_HTML_TITLE = true;
+	public static final boolean ACTION_BAR_HTML_TITLE = false;
 
 	// true for enabling navigation drawer menu
 	public static final boolean NAVIGATION_DRAWER = true;
