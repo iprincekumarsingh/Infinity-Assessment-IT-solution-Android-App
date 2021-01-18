@@ -20,7 +20,7 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/Theme.WebViewApp.Gray"
+        android:theme="@style/main"
         android:usesCleartextTraffic="true"
         tools:ignore="AllowBackup,UnusedAttribute">
         <activity
@@ -41,7 +41,7 @@
         <activity
             android:name=".activity.MainActivity"
             android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
-            android:label="@string/app_name"
+            android:label=""
             android:launchMode="standard">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />

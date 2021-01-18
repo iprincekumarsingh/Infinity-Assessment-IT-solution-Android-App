@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.Window;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBar;
@@ -63,6 +64,8 @@ public class MainActivity extends AppCompatActivity implements LoadUrlListener, 
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 
+
+
 		// handle intent extras
 		Bundle extras = getIntent().getExtras();
 		if (extras != null) {
@@ -79,6 +82,8 @@ public class MainActivity extends AppCompatActivity implements LoadUrlListener, 
 		setupActionBar();
 		setupDrawer(savedInstanceState);
 
+//		getActionBar().setDisplayShowTitleEnabled(false);
+getSupportActionBar().setDisplayShowTitleEnabled(false);
 		// bind data
 		setupView();
 

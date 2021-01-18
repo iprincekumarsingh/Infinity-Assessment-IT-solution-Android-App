@@ -101,6 +101,7 @@
 	<style name="Theme.WebViewApp.Teal" parent="@style/Theme.WebViewApp">
 		<item name="colorPrimary">@color/global_color_teal_primary</item>
 		<item name="colorPrimaryDark">@color/global_color_teal_primary_dark</item>
+		<item name="android:windowBackground">@color/global_color_gray_primary</item>
 	</style>
 
 	<!-- violet theme -->

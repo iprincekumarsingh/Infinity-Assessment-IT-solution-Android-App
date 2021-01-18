@@ -7,20 +7,12 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:480898520000:android:10547ebeb8c0003d3aae25",
+        "mobilesdk_app_id": "1:480898520000:android:2a1581b47dcc03013aae25",
         "android_client_info": {
-          "package_name": "com.princekumarsingh.infinityitsolution"
+          "package_name": "com.princekuamrsingh.infinityitsolution"
         }
       },
       "oauth_client": [
-        {
-          "client_id": "480898520000-vcj0d80h389f6505l0nisq150pfc8j24.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.princekumarsingh.infinityitsolution",
-            "certificate_hash": "9d90d640b447615c1a529392d91b27fe70c0da9e"
-          }
-        },
         {
           "client_id": "480898520000-bna0t9k1ckk6u79s66puqqai3p539u1n.apps.googleusercontent.com",
           "client_type": 3

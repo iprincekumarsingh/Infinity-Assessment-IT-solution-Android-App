@@ -15,6 +15,7 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.Window;
 import android.view.WindowManager;
 import android.webkit.CookieSyncManager;
 import android.webkit.WebResourceError;
@@ -119,6 +120,7 @@ public class MainFragment extends TaskFragment implements SwipeRefreshLayout.OnR
 
 		// setup webview
 		setupView();
+
 
 		// pull to refresh
 		setupSwipeRefreshLayout();
