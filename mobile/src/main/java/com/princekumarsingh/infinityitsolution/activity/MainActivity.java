@@ -23,6 +23,8 @@ import androidx.fragment.app.FragmentManager;
 
 import com.google.android.material.navigation.NavigationView;
 import com.google.android.material.snackbar.Snackbar;
+import com.google.firebase.crashlytics.FirebaseCrashlytics;
+import com.google.firebase.crashlytics.internal.common.CrashlyticsCore;
 import com.princekumarsingh.infinityitsolution.R;
 import com.princekumarsingh.infinityitsolution.listener.DrawerStateListener;
 import com.princekumarsingh.infinityitsolution.listener.LoadUrlListener;

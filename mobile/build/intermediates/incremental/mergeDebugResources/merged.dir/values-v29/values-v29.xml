@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="http://schemas.android.com/tools">
+    <style name="Theme.WebViewApp.Gray" parent="@style/Theme.WebViewApp">
+        <item name="android:forceDarkAllowed">false</item>
+        <item name="colorPrimary">@color/global_color_accent</item>
+        <item name="colorPrimaryDark">@color/global_color_gray_primary_dark</item>
+    </style>
+    <style name="into" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:forceDarkAllowed" ns1:targetApi="q">false</item>
+        <item name="colorPrimary">@color/global_color_red_primary</item>
+        <item name="colorPrimaryDark">@color/global_color_red_primary_dark</item>
+    </style>
+</resources>
