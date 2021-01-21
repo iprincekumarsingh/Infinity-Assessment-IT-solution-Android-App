@@ -22,6 +22,7 @@
 		<item>Website</item>
 
 		<item>Social Network</item>
+
 		<item>Instagram</item>
 		<item>Facebook</item>
 		<item>Twitter</item>
@@ -51,7 +52,8 @@
 		<item>https://www.instagram.com/infinityassessmentitsolution/?hl=en</item>
 		<item>https://m.facebook.com/infinityassessmentanditsolution/</item>
 		<item>https://twitter.com/InfinitySolut18/</item>
-<!--		<item>https://tt.com</item>-->
+
+<!--		<item>https://m.youtube.com/</item>-->
 	</string-array>
 
 	<!-- List of icons in navigation drawer menu -->
@@ -67,7 +69,6 @@
 		<item>@drawable/ii</item>
 		<item>@drawable/privacy</item>
 		<item>@drawable/ic_sharp_web_24</item>
-
 
 		<item></item>
 		<item>@drawable/instagram</item>
@@ -93,10 +94,13 @@
 		<item>See this page: {TITLE} - {URL}</item>
 		<item>See this page: {TITLE} - {URL}</item>
 		<item>See this page: {TITLE} - {URL}</item>
-		<item></item>
 		<item>See this page: {TITLE} - {URL}</item>
 		<item></item>
-		<item></item>
+		<item>See this page: {TITLE} - {URL}</item>
+		<item>See this page: {TITLE} - {URL}</item>
+		<item>See this page: {TITLE} - {URL}</item>
+
+
 <!--		<item></item>-->
 	</string-array>
 </resources>

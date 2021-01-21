@@ -5818,6 +5818,7 @@
 		<item>Website</item>
 
 		<item>Social Network</item>
+
 		<item>Instagram</item>
 		<item>Facebook</item>
 		<item>Twitter</item>
@@ -5837,8 +5838,9 @@
 		<item/>
 		<item>https://www.instagram.com/infinityassessmentitsolution/?hl=en</item>
 		<item>https://m.facebook.com/infinityassessmentanditsolution/</item>
-		<item>https://twitter.com/InfinitySolut18/</item>
 
+
+		<item>https://m.youtube.com/</item>
 	</string-array><string-array name="navigation_icon_list">
 
 		<item>@drawable/home</item>
@@ -5851,7 +5853,6 @@
 		<item>@drawable/ii</item>
 		<item>@drawable/privacy</item>
 		<item>@drawable/ic_sharp_web_24</item>
-
 
 		<item/>
 		<item>@drawable/instagram</item>
@@ -5869,10 +5870,13 @@
 		<item>See this page: {TITLE} - {URL}</item>
 		<item>See this page: {TITLE} - {URL}</item>
 		<item>See this page: {TITLE} - {URL}</item>
-		<item/>
 		<item>See this page: {TITLE} - {URL}</item>
 		<item/>
-		<item/>
+		<item>See this page: {TITLE} - {URL}</item>
+		<item>See this page: {TITLE} - {URL}</item>
+		<item>See this page: {TITLE} - {URL}</item>
+
+
 
 	</string-array></file><file path="D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\res\values\onesignal.xml" qualifiers=""><string name="onesignal_app_id" translatable="false">XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX</string></file><file path="D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\res\values\prefs.xml" qualifiers=""><string name="prefs_key_rate_counter" translatable="false">rate_counter</string><string name="prefs_key_fcm_registration_token" translatable="false">fcm_registration_token</string><string name="prefs_key_one_signal_user_id" translatable="false">one_signal_user_id</string></file><file path="D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\res\values\strings.xml" qualifiers=""><string name="app_name" translatable="false">Infinity Assessment</string><string name="app_store_uri" translatable="false">https://play.google.com/store/apps/details?id=%1$s</string><string name="app_deep_link_host" translatable="false">infinityitsolutions.co.in</string><string name="app_deep_link_path" translatable="false">/.*</string><string name="fcm_default_notification_channel_id" translatable="false">general</string><string name="fcm_default_notification_channel_title">General notifications</string><string name="navigation_header_title">Infinity Assessment</string><string name="global_network_offline">No Internet connection available</string><string name="menu_main_share">Share</string><string name="drawer_open">Open navigation drawer</string><string name="drawer_close">Close navigation drawer</string><string name="placeholder_empty">Not found</string><string name="placeholder_offline">No Internet connection available</string><string name="permission_read_external_storage">Permission to read files is required</string><string name="permission_write_external_storage">Permission to write files is required</string><string name="permission_access_location">Permission to access your location is required</string><string name="permission_camera">Permission to access your camera is required</string><string name="permission_unknown">Permission is required</string><string name="location_settings_snackbar">Device location is disabled</string><string name="location_settings_confirm">Settings</string><string name="main_exit_snackbar">Are you sure you want to exit?</string><string name="main_exit_confirm">Yes</string><string name="main_rate_snackbar">Do you like this app? Rate it on Play Store. Thanks for your support.</string><string name="main_rate_confirm">Rate</string><string name="main_downloading">Downloading…</string><string name="contact_us">Contact-us</string><string name="clear_cache">Clear cache</string><string name="app_version">App Version</string><string name="todo">TODO</string><string name="v_1_0">V 1.0</string><string name="get_started">Get Started</string><string name="next">Next</string><string name="skip">Skip</string><string name="setting">Setting</string></file><file path="D:\APP DEVLOPMENT\App Devlop Beta\r\mobile\src\main\res\values\styles.xml" qualifiers=""><style name="Widget.WebViewApp.Toolbar" parent="@style/Widget.AppCompat.Toolbar">
 		<item name="android:background">?attr/colorPrimary</item>

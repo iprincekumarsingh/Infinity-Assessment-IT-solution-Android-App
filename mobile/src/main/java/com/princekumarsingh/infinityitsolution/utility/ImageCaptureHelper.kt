@@ -9,8 +9,11 @@ import android.os.Parcelable
 import android.provider.MediaStore
 import androidx.core.content.FileProvider
 import com.princekumarsingh.infinityitsolution.WebViewAppApplication
+
 import java.io.File
 import java.io.IOException
+import java.security.AccessController.getContext
+
 
 class ImageCaptureHelper {
     private var mCapturedImageUri: Uri? = null
