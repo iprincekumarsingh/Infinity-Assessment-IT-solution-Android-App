@@ -3,8 +3,9 @@
     <CLASSES>
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/abf7e25655cf767d24ae92e7c287b6ba/jetified-alfonz-utility-0.9.2/res" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/13416878382238fbe77feb0b9d502b64/jetified-alfonz-utility-0.9.2/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/13416878382238fbe77feb0b9d502b64/jetified-alfonz-utility-0.9.2/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/13416878382238fbe77feb0b9d502b64/jetified-alfonz-utility-0.9.2/jars/classes.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/6bdda52cee0dcc5a6dcaa43e8dbf63de/jetified-alfonz-utility-0.9.2/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/6bdda52cee0dcc5a6dcaa43e8dbf63de/jetified-alfonz-utility-0.9.2/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/6bdda52cee0dcc5a6dcaa43e8dbf63de/jetified-alfonz-utility-0.9.2/res" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.alfonz/alfonz-utility/0.9.2/f3e7ade5628be4a88196102af71a2c643524dd70/alfonz-utility-0.9.2-javadoc.jar!/" />

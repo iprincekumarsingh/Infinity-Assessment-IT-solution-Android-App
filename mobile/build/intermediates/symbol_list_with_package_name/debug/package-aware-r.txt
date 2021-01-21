@@ -598,9 +598,11 @@ attr maxActionInlineWidth
 attr maxButtonHeight
 attr maxCharacterCount
 attr maxHeight
+attr maxHeightPct
 attr maxImageSize
 attr maxVelocity
 attr maxWidth
+attr maxWidthPct
 attr measureWithLargestChild
 attr menu
 attr minHeight
@@ -1127,6 +1129,7 @@ color navigationBarDark
 color navigation_icon_tint
 color notification_action_color_filter
 color notification_icon_bg_color
+color notification_material_background_media_default_color
 color primary_dark_material_dark
 color primary_dark_material_light
 color primary_material_dark
@@ -1237,6 +1240,8 @@ dimen action_bar_size
 dimen activity_horizontal_margin
 dimen activity_vertical_margin
 dimen appcompat_dialog_background_inset
+dimen bannerContentWeight
+dimen bannerWeightSum
 dimen browser_actions_context_menu_max_width
 dimen browser_actions_context_menu_min_padding
 dimen cardview_compat_inset_shadow
@@ -1296,6 +1301,8 @@ dimen design_tab_scrollable_min_width
 dimen design_tab_text_size
 dimen design_tab_text_size_2line
 dimen design_textinput_caption_translate_y
+dimen dialogHeightPct
+dimen dialogWidthPct
 dimen disabled_alpha_material_dark
 dimen disabled_alpha_material_light
 dimen fab_margin
@@ -1346,6 +1353,8 @@ dimen material_emphasis_high_type
 dimen material_emphasis_medium
 dimen material_text_view_test_line_height
 dimen material_text_view_test_line_height_override
+dimen minImageHeight
+dimen minImageWidth
 dimen mtrl_alert_dialog_background_inset_bottom
 dimen mtrl_alert_dialog_background_inset_end
 dimen mtrl_alert_dialog_background_inset_start
@@ -1509,8 +1518,13 @@ dimen notification_small_icon_size_as_large
 dimen notification_subtext_size
 dimen notification_top_pad
 dimen notification_top_pad_large_text
+dimen paddingSmall
 dimen placeholder_image_size
 dimen splash_image_size
+dimen subtitle_corner_radius
+dimen subtitle_outline_width
+dimen subtitle_shadow_offset
+dimen subtitle_shadow_radius
 dimen test_mtrl_calendar_day_cornerSize
 dimen tooltip_corner_radius
 dimen tooltip_horizontal_padding
@@ -1614,6 +1628,7 @@ drawable btn_checkbox_checked_mtrl
 drawable btn_checkbox_checked_to_unchecked_mtrl_animation
 drawable btn_checkbox_unchecked_mtrl
 drawable btn_checkbox_unchecked_to_checked_mtrl_animation
+drawable btn_clear
 drawable btn_gradient_style
 drawable btn_radio_off_mtrl
 drawable btn_radio_off_to_on_mtrl_animation
@@ -1621,6 +1636,7 @@ drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
 drawable careerpng
 drawable carrer_24
+drawable collapse
 drawable college
 drawable common_full_open_on_phone
 drawable common_google_signin_btn_icon_dark
@@ -1708,6 +1724,7 @@ drawable ic_sharp_web_24
 drawable ic_stat_notification
 drawable ic_stat_onesignal_default
 drawable ii
+drawable image_placeholder
 drawable img1
 drawable img2
 drawable img3
@@ -1746,6 +1763,7 @@ drawable phonebook
 drawable placeholder_empty
 drawable placeholder_offline
 drawable privacy
+drawable rounded_layout
 drawable selector_clickable_item_bg
 drawable selector_selectable_item_bg
 drawable shop
@@ -1808,6 +1826,7 @@ id accessibility_custom_action_6
 id accessibility_custom_action_7
 id accessibility_custom_action_8
 id accessibility_custom_action_9
+id action0
 id action_bar
 id action_bar_activity_content
 id action_bar_container
@@ -1843,11 +1862,17 @@ id auto
 id autoComplete
 id autoCompleteToEnd
 id autoCompleteToStart
+id banner_body
+id banner_content_root
+id banner_image
+id banner_root
+id banner_title
 id barrier
 id baseline
 id beginOnFirstDraw
 id beginning
 id blocking
+id body_scroll
 id bottom
 id bounce
 id browser_actions_header_text
@@ -1857,9 +1882,13 @@ id browser_actions_menu_items
 id browser_actions_menu_view
 id btn_get_started
 id btn_next
+id button
 id buttonPanel
 id cache_measures
+id cancel_action
 id cancel_button
+id card_content_root
+id card_root
 id center
 id center_horizontal
 id center_vertical
@@ -1875,6 +1904,7 @@ id clearcache
 id clip_horizontal
 id clip_vertical
 id collapseActionView
+id collapse_button
 id confirm_button
 id container
 id container_content
@@ -1924,6 +1954,7 @@ id easeOut
 id edit_query
 id empty
 id end
+id end_padder
 id enterAlways
 id enterAlwaysCollapsed
 id exitUntilCollapsed
@@ -1962,10 +1993,14 @@ id ifRoom
 id ignore
 id ignoreRequest
 id image
+id image_content_root
+id image_root
+id image_view
 id info
 id intro_description
 id intro_img
 id intro_title
+id introt
 id invisible
 id italic
 id item_touch_helper_previous_elevation
@@ -1990,11 +2025,16 @@ id main_stateful_layout
 id main_video_layout
 id main_webview
 id masked
+id media_actions
 id menu_main_share
 id menu_setting
 id message
+id message_body
+id message_title
 id middle
 id mini
+id modal_content_root
+id modal_root
 id month_grid
 id month_navigation_bar
 id month_navigation_fragment_toggle
@@ -2056,6 +2096,7 @@ id percent
 id pin
 id position
 id postLayout
+id primary_button
 id progress
 id progress_circular
 id progress_horizontal
@@ -2088,6 +2129,7 @@ id search_mag_icon
 id search_plate
 id search_src_text
 id search_voice_btn
+id secondary_button
 id select_dialog_listview
 id selected
 id shortcut
@@ -2117,6 +2159,7 @@ id startHorizontal
 id startVertical
 id staticLayout
 id staticPostLayout
+id status_bar_latest_event_content
 id stop
 id stretch
 id submenuarrow
@@ -2239,8 +2282,12 @@ layout activity_kozuza
 layout activity_main
 layout activity_onboard_screen
 layout activity_setting
+layout banner
 layout browser_actions_context_menu_page
 layout browser_actions_context_menu_row
+layout card
+layout card_landscape_inner
+layout card_portrait_inner
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -2259,7 +2306,10 @@ layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout fragment_main
 layout fragment_main_swipeable
+layout image
 layout layout_screen
+layout modal
+layout modal_portrait_inner
 layout mtrl_alert_dialog
 layout mtrl_alert_dialog_actions
 layout mtrl_alert_dialog_title
@@ -2291,8 +2341,17 @@ layout mtrl_picker_text_input_date_range
 layout navigation_header
 layout notification_action
 layout notification_action_tombstone
+layout notification_media_action
+layout notification_media_cancel_action
+layout notification_template_big_media
+layout notification_template_big_media_custom
+layout notification_template_big_media_narrow
+layout notification_template_big_media_narrow_custom
 layout notification_template_custom_big
 layout notification_template_icon_group
+layout notification_template_lines_media
+layout notification_template_media
+layout notification_template_media_custom
 layout notification_template_part_chronometer
 layout notification_template_part_time
 layout onesignal_bgimage_notif_layout
@@ -2365,6 +2424,7 @@ string app_store_uri
 string app_version
 string appbar_scrolling_view_behavior
 string bottom_sheet_behavior
+string card_content_descriptor
 string character_counter_content_description
 string character_counter_overflowed_content_description
 string character_counter_pattern
@@ -2422,6 +2482,8 @@ string main_exit_snackbar
 string main_rate_confirm
 string main_rate_snackbar
 string menu_main_share
+string modal_content_descriptor
+string modal_inner_content_descriptor
 string mtrl_badge_numberless_content_description
 string mtrl_chip_close_icon_content_description
 string mtrl_exceed_max_badge_number_suffix
@@ -2715,6 +2777,21 @@ style CardView
 style CardView_Dark
 style CardView_Light
 style EmptyTheme
+style FiamUI
+style FiamUI_Banner
+style FiamUI_Card
+style FiamUI_Card_ActionBar
+style FiamUI_Card_ActionBar_Button
+style FiamUI_Card_ImageView
+style FiamUI_Card_Scroll
+style FiamUI_CollapseButton
+style FiamUI_CollapseButtonBase
+style FiamUI_Modal
+style FiamUI_ModalBody
+style FiamUI_ModalImageView
+style FiamUI_ResizableImageView
+style FiamUI_Text_BannerTitle
+style FiamUI_Text_Title
 style MaterialAlertDialog_MaterialComponents
 style MaterialAlertDialog_MaterialComponents_Body_Text
 style MaterialAlertDialog_MaterialComponents_Picker_Date_Calendar
@@ -2837,9 +2914,14 @@ style TextAppearance_AppCompat_Widget_Switch
 style TextAppearance_AppCompat_Widget_TextView_SpinnerItem
 style TextAppearance_Compat_Notification
 style TextAppearance_Compat_Notification_Info
+style TextAppearance_Compat_Notification_Info_Media
 style TextAppearance_Compat_Notification_Line2
+style TextAppearance_Compat_Notification_Line2_Media
+style TextAppearance_Compat_Notification_Media
 style TextAppearance_Compat_Notification_Time
+style TextAppearance_Compat_Notification_Time_Media
 style TextAppearance_Compat_Notification_Title
+style TextAppearance_Compat_Notification_Title_Media
 style TextAppearance_Design_CollapsingToolbar_Expanded
 style TextAppearance_Design_Counter
 style TextAppearance_Design_Counter_Overflow
@@ -3291,6 +3373,7 @@ styleable MenuGroup android_enabled android_id android_visible android_menuCateg
 styleable MenuItem android_icon android_enabled android_id android_checked android_visible android_menuCategory android_orderInCategory android_title android_titleCondensed android_alphabeticShortcut android_numericShortcut android_checkable android_onClick actionLayout actionProviderClass actionViewClass alphabeticModifiers contentDescription iconTint iconTintMode numericModifiers showAsAction tooltipText
 styleable MenuView android_windowAnimationStyle android_itemTextAppearance android_horizontalDivider android_verticalDivider android_headerBackground android_itemBackground android_itemIconDisabledAlpha preserveIconSpacing subMenuArrow
 styleable MockView mock_diagonalsColor mock_label mock_labelBackgroundColor mock_labelColor mock_showDiagonals mock_showLabel
+styleable ModalLayout maxHeightPct maxWidthPct
 styleable Motion animate_relativeTo drawPath motionPathRotate motionStagger pathMotionArc transitionEasing
 styleable MotionHelper onHide onShow
 styleable MotionLayout applyMotionScene currentState layoutDescription motionDebug motionProgress showPaths

@@ -17,6 +17,7 @@ import android.widget.TextView;
 
 import com.google.android.material.tabs.TabLayout;
 import com.princekumarsingh.infinityitsolution.R;
+import com.princekumarsingh.infinityitsolution.activity.Setting;
 import com.princekumarsingh.infinityitsolution.activity.SplashActivity;
 
 
@@ -47,7 +48,7 @@ public class OnboardScreen extends AppCompatActivity {
 
         if (restorePrefData()) {
 
-            Intent mainActivity = new Intent(getApplicationContext(),SplashActivity.class );
+            Intent mainActivity = new Intent(getApplication(), SplashActivity.class);
             startActivity(mainActivity);
             finish();
 
@@ -156,7 +157,7 @@ public class OnboardScreen extends AppCompatActivity {
 
                 //open main activity
 
-                Intent mainActivity = new Intent(getApplicationContext(), SplashActivity.class);
+                Intent mainActivity = new Intent(OnboardScreen.this, SplashActivity.class);
                 startActivity(mainActivity);
                 // also we need to save a boolean value to storage so next time when the user run the app
                 // we could know that he is already checked the intro screen activity

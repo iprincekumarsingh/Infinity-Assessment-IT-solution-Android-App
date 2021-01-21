@@ -248,7 +248,7 @@ public class MainFragment extends TaskFragment implements SwipeRefreshLayout.OnR
 
 
 		}
-		
+
 
 		return super.onOptionsItemSelected(item);
 	}

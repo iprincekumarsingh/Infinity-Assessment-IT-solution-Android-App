@@ -1,12 +1,12 @@
 <component name="libraryTable">
   <library name="Gradle: org.alfonz:alfonz-view:0.9.2@aar">
     <ANNOTATIONS>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/6a3be5571773a8f939238029c05db741/jetified-alfonz-view-0.9.2/annotations.zip!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/9e2bd58f276bd5ed7634c4d3df945411/jetified-alfonz-view-0.9.2/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/6a3be5571773a8f939238029c05db741/jetified-alfonz-view-0.9.2/res" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/6a3be5571773a8f939238029c05db741/jetified-alfonz-view-0.9.2/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/6a3be5571773a8f939238029c05db741/jetified-alfonz-view-0.9.2/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/9e2bd58f276bd5ed7634c4d3df945411/jetified-alfonz-view-0.9.2/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/9e2bd58f276bd5ed7634c4d3df945411/jetified-alfonz-view-0.9.2/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/9e2bd58f276bd5ed7634c4d3df945411/jetified-alfonz-view-0.9.2/res" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.alfonz/alfonz-view/0.9.2/ef0e57f2162a78b17ee3af665111623b37e2929d/alfonz-view-0.9.2-javadoc.jar!/" />

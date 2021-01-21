@@ -246,6 +246,20 @@
       <item name="android:popupElevation">8dp</item>
       <item name="android:dropDownVerticalOffset">1dp</item>
     </style>
+    <style name="FiamUI.Banner" parent="@style/FiamUI">
+        <item name="android:elevation">4dp</item>
+    </style>
+    <style name="FiamUI.Card" parent="@style/FiamUI">
+        <item name="android:elevation">4dp</item>
+    </style>
+    <style name="FiamUI.CollapseButton" parent="FiamUI.CollapseButtonBase">
+        <item name="android:foreground">?android:attr/selectableItemBackgroundBorderless</item>
+        <item name="android:stateListAnimator">@null</item>
+        <item name="android:elevation">8dp</item>
+    </style>
+    <style name="FiamUI.Modal" parent="@style/FiamUI">
+        <item name="android:elevation">4dp</item>
+    </style>
     <style name="MaterialAlertDialog.MaterialComponents.Picker.Date.Calendar" parent="android:Widget.DeviceDefault.DatePicker">
     <item name="backgroundInsetTop">@dimen/mtrl_alert_dialog_picker_background_inset</item>
     <item name="backgroundInsetBottom">@dimen/mtrl_alert_dialog_picker_background_inset</item>
@@ -303,8 +317,20 @@
     </style>
     <style name="TextAppearance.Compat.Notification" parent="@android:style/TextAppearance.Material.Notification"/>
     <style name="TextAppearance.Compat.Notification.Info" parent="@android:style/TextAppearance.Material.Notification.Info"/>
+    <style name="TextAppearance.Compat.Notification.Info.Media">
+        <item name="android:textColor">@color/secondary_text_default_material_dark</item>
+    </style>
+    <style name="TextAppearance.Compat.Notification.Media">
+        <item name="android:textColor">@color/secondary_text_default_material_dark</item>
+    </style>
     <style name="TextAppearance.Compat.Notification.Time" parent="@android:style/TextAppearance.Material.Notification.Time"/>
+    <style name="TextAppearance.Compat.Notification.Time.Media">
+        <item name="android:textColor">@color/secondary_text_default_material_dark</item>
+    </style>
     <style name="TextAppearance.Compat.Notification.Title" parent="@android:style/TextAppearance.Material.Notification.Title"/>
+    <style name="TextAppearance.Compat.Notification.Title.Media">
+        <item name="android:textColor">@color/primary_text_default_material_dark</item>
+    </style>
     <style name="TextAppearance.MaterialComponents.Badge" parent="Base.TextAppearance.MaterialComponents.Badge">
     <!-- Roboto Medium was added in this api level -->
     <item name="fontFamily">sans-serif-medium</item>

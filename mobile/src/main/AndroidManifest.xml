@@ -23,15 +23,14 @@
         android:theme="@style/main"
         android:usesCleartextTraffic="true"
         tools:ignore="AllowBackup,UnusedAttribute">
+        <activity android:name=".kot.kk"></activity>
         <activity
             android:name=".activity.Setting"
             android:theme="@style/into" />
         <activity
             android:name=".activity.SplashActivity"
             android:theme="@style/splashteme" />
-        <activity
-            android:name=".intro.OnboardScreen"
-           >
+        <activity android:name=".intro.OnboardScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

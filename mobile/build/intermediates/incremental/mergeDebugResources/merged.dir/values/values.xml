@@ -613,6 +613,7 @@
     <color name="navigation_icon_tint">#8a000000</color>
     <color name="notification_action_color_filter">#ffffffff</color>
     <color name="notification_icon_bg_color">#ff9e9e9e</color>
+    <color name="notification_material_background_media_default_color">#ff424242</color>
     <color name="primary_dark_material_dark">@android:color/black</color>
     <color name="primary_dark_material_light">@color/material_grey_600</color>
     <color name="primary_material_dark">@color/material_grey_900</color>
@@ -719,6 +720,8 @@
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="appcompat_dialog_background_inset">16dp</dimen>
+    <item format="float" name="bannerContentWeight" type="dimen">1.0</item>
+    <item format="float" name="bannerWeightSum" type="dimen">1.0</item>
     <dimen name="browser_actions_context_menu_max_width">500dp</dimen>
     <dimen name="browser_actions_context_menu_min_padding">20dp</dimen>
     <dimen name="cardview_compat_inset_shadow">1dp</dimen>
@@ -778,6 +781,8 @@
     <dimen name="design_tab_text_size">14sp</dimen>
     <dimen name="design_tab_text_size_2line">12sp</dimen>
     <dimen name="design_textinput_caption_translate_y">5dp</dimen>
+    <item format="float" name="dialogHeightPct" type="dimen">0.80</item>
+    <item format="float" name="dialogWidthPct" type="dimen">0.85</item>
     <item format="float" name="disabled_alpha_material_dark" type="dimen">0.30</item>
     <item format="float" name="disabled_alpha_material_light" type="dimen">0.26</item>
     <dimen name="fab_margin">16dp</dimen>
@@ -828,6 +833,8 @@
     <item format="float" name="material_emphasis_medium" type="dimen">0.6</item>
     <dimen name="material_text_view_test_line_height">200px</dimen>
     <dimen name="material_text_view_test_line_height_override">100px</dimen>
+    <dimen name="minImageHeight">50dp</dimen>
+    <dimen name="minImageWidth">50dp</dimen>
     <dimen name="mtrl_alert_dialog_background_inset_bottom">80dp</dimen>
     <dimen name="mtrl_alert_dialog_background_inset_end">24dp</dimen>
     <dimen name="mtrl_alert_dialog_background_inset_start">24dp</dimen>
@@ -991,8 +998,13 @@
     <dimen name="notification_subtext_size">13sp</dimen>
     <dimen name="notification_top_pad">10dp</dimen>
     <dimen name="notification_top_pad_large_text">5dp</dimen>
+    <dimen name="paddingSmall">16dp</dimen>
     <dimen name="placeholder_image_size">144dp</dimen>
     <dimen name="splash_image_size">144dp</dimen>
+    <dimen name="subtitle_corner_radius">2dp</dimen>
+    <dimen name="subtitle_outline_width">2dp</dimen>
+    <dimen name="subtitle_shadow_offset">2dp</dimen>
+    <dimen name="subtitle_shadow_radius">2dp</dimen>
     <dimen name="test_mtrl_calendar_day_cornerSize">52dp</dimen>
     <dimen name="tooltip_corner_radius">2dp</dimen>
     <dimen name="tooltip_horizontal_padding">16dp</dimen>
@@ -1150,6 +1162,7 @@
     <string name="app_version">App Version</string>
     <string name="appbar_scrolling_view_behavior" translatable="false">com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior</string>
     <string name="bottom_sheet_behavior" translatable="false">com.google.android.material.bottomsheet.BottomSheetBehavior</string>
+    <string name="card_content_descriptor">card</string>
     <string name="character_counter_content_description">Characters entered %1$d of %2$d</string>
     <string name="character_counter_overflowed_content_description">Character limit exceeded %1$d of %2$d</string>
     <string name="character_counter_pattern" translatable="false">%1$d / %2$d</string>
@@ -1207,6 +1220,8 @@
     <string name="main_rate_confirm">Rate</string>
     <string name="main_rate_snackbar">Do you like this app? Rate it on Play Store. Thanks for your support.</string>
     <string name="menu_main_share">Share</string>
+    <string name="modal_content_descriptor">modal</string>
+    <string name="modal_inner_content_descriptor">modal inner</string>
     <string description="Content description for new notification (no number count) [CHAR_LIMIT=NONE]" name="mtrl_badge_numberless_content_description">New notification</string>
     <string description="Content description for a close icon that lets the user remove content from the screen" name="mtrl_chip_close_icon_content_description">Remove %1$s</string>
     <string name="mtrl_exceed_max_badge_number_suffix" translatable="false"><ns1:g example="999" id="maximum number">%1$d</ns1:g><ns1:g example="+" id="suffix">%2$s</ns1:g></string>
@@ -3133,6 +3148,91 @@
         <item name="cardBackgroundColor">@color/cardview_light_background</item>
     </style>
     <style name="EmptyTheme"/>
+    <style name="FiamUI" parent="Theme.AppCompat.Light"/>
+    <style name="FiamUI.Banner" parent="@style/FiamUI">
+        <!-- nothing here, see values-v21 -->
+    </style>
+    <style name="FiamUI.Card" parent="@style/FiamUI">
+        <!-- nothing here, see values-v21 -->
+    </style>
+    <style name="FiamUI.Card.ActionBar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">right</item>
+        <item name="android:padding">@dimen/paddingSmall</item>
+    </style>
+    <style name="FiamUI.Card.ActionBar.Button" parent="@style/Base.Widget.AppCompat.Button.Borderless">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+    </style>
+    <style name="FiamUI.Card.ImageView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:scaleType">centerCrop</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:minHeight">@dimen/minImageHeight</item>
+        <item name="android:minWidth">@dimen/minImageWidth</item>
+        <item name="android:src">@drawable/image_placeholder</item>
+    </style>
+    <style name="FiamUI.Card.Scroll">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">@dimen/paddingSmall</item>
+        <item name="android:paddingLeft">@dimen/paddingSmall</item>
+        <item name="android:paddingRight">@dimen/paddingSmall</item>
+    </style>
+    <style name="FiamUI.CollapseButton" parent="FiamUI.CollapseButtonBase">
+        <!-- nothing here, see values-v21 -->
+    </style>
+    <style name="FiamUI.CollapseButtonBase" parent="@style/Base.Widget.AppCompat.Button">
+        <item name="android:layout_width">24dp</item>
+        <item name="android:layout_height">24dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:background">@drawable/collapse</item>
+
+        <item name="android:layout_marginRight">-12dp</item>
+        <item name="android:layout_marginTop">-12dp</item>
+    </style>
+    <style name="FiamUI.Modal" parent="@style/FiamUI">
+        <!-- nothing here, see values-v21 -->
+    </style>
+    <style name="FiamUI.ModalBody" parent="@style/Base.TextAppearance.AppCompat.Body1">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+    <style name="FiamUI.ModalImageView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:minHeight">@dimen/minImageHeight</item>
+        <item name="android:minWidth">@dimen/minImageWidth</item>
+        <item name="android:src">@drawable/image_placeholder</item>
+    </style>
+    <style name="FiamUI.ResizableImageView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:minHeight">@dimen/minImageHeight</item>
+        <item name="android:minWidth">@dimen/minImageWidth</item>
+        <item name="android:src">@drawable/image_placeholder</item>
+    </style>
+    <style name="FiamUI.Text.BannerTitle" parent="@style/Base.TextAppearance.AppCompat.Body1">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="FiamUI.Text.Title" parent="@style/Base.TextAppearance.AppCompat.Headline">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">24sp</item>
+    </style>
     <style name="MaterialAlertDialog.MaterialComponents" parent="AlertDialog.AppCompat">
     <item name="android:layout">@layout/mtrl_alert_dialog</item>
     <item name="listItemLayout">@layout/mtrl_alert_select_dialog_item</item>
@@ -3574,12 +3674,17 @@
         <item name="android:textSize">12sp</item>
         <item name="android:textColor">?android:attr/textColorSecondary</item>
     </style>
+    <style name="TextAppearance.Compat.Notification.Info.Media"/>
     <style name="TextAppearance.Compat.Notification.Line2" parent="TextAppearance.Compat.Notification.Info"/>
+    <style name="TextAppearance.Compat.Notification.Line2.Media" parent="TextAppearance.Compat.Notification.Info.Media"/>
+    <style name="TextAppearance.Compat.Notification.Media"/>
     <style name="TextAppearance.Compat.Notification.Time">
         <item name="android:textSize">12sp</item>
         <item name="android:textColor">?android:attr/textColorSecondary</item>
     </style>
+    <style name="TextAppearance.Compat.Notification.Time.Media"/>
     <style name="TextAppearance.Compat.Notification.Title" parent="@android:style/TextAppearance.StatusBar.EventContent.Title"/>
+    <style name="TextAppearance.Compat.Notification.Title.Media"/>
     <style name="TextAppearance.Design.CollapsingToolbar.Expanded" parent="TextAppearance.AppCompat.Display1">
     <item name="android:textColor">?android:attr/textColorPrimary</item>
   </style>
@@ -7009,6 +7114,10 @@
         <attr format="reference" name="subMenuArrow"/>
     </declare-styleable>
     <declare-styleable name="MockView"><attr format="string" name="mock_label"/><attr format="color" name="mock_labelColor"/><attr format="color" name="mock_labelBackgroundColor"/><attr format="color" name="mock_diagonalsColor"/><attr format="boolean" name="mock_showDiagonals"/><attr format="boolean" name="mock_showLabel"/></declare-styleable>
+    <declare-styleable name="ModalLayout">
+    <attr format="float" name="maxWidthPct" type="dimen"/>
+    <attr format="float" name="maxHeightPct" type="dimen"/>
+  </declare-styleable>
     <declare-styleable name="Motion"><attr name="animate_relativeTo"/><attr name="transitionEasing"/><attr name="pathMotionArc"/><attr name="motionPathRotate"/><attr name="motionStagger"/><attr name="drawPath"/></declare-styleable>
     <declare-styleable name="MotionHelper"><attr format="boolean" name="onShow"/><attr format="boolean" name="onHide"/></declare-styleable>
     <declare-styleable name="MotionLayout"><attr name="layoutDescription"/><attr format="reference" name="currentState"/><attr name="motionProgress"/><attr format="boolean" name="applyMotionScene"/><attr format="boolean" name="showPaths"/><attr format="enum" name="motionDebug">
