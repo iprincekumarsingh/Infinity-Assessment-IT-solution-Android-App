@@ -23,7 +23,9 @@
         android:theme="@style/main"
         android:usesCleartextTraffic="true"
         tools:ignore="AllowBackup,UnusedAttribute">
-        <activity android:name=".kot.kk"></activity>
+        <activity android:name=".activity.SplashScreeen"
+            android:theme="@style/splashteme"></activity>
+        <activity android:name=".kot.kk" />
         <activity
             android:name=".activity.Setting"
             android:theme="@style/into" />

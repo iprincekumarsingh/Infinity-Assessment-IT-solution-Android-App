@@ -79,6 +79,9 @@
         android:testOnly="true"
         android:theme="@style/main"
         android:usesCleartextTraffic="true" >
+        <activity
+            android:name="com.princekumarsingh.infinityitsolution.activity.SplashScreeen"
+            android:theme="@style/splashteme" />
         <activity android:name="com.princekumarsingh.infinityitsolution.kot.kk" />
         <activity
             android:name="com.princekumarsingh.infinityitsolution.activity.Setting"

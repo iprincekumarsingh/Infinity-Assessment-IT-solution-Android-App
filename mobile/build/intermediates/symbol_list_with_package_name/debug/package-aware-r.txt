@@ -1993,6 +1993,7 @@ id ifRoom
 id ignore
 id ignoreRequest
 id image
+id imageView
 id image_content_root
 id image_root
 id image_view
@@ -2282,6 +2283,7 @@ layout activity_kozuza
 layout activity_main
 layout activity_onboard_screen
 layout activity_setting
+layout activity_splash_screeen
 layout banner
 layout browser_actions_context_menu_page
 layout browser_actions_context_menu_row

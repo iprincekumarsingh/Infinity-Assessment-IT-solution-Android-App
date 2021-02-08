@@ -173,8 +173,8 @@
 
 	<style name="splashteme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
 
-		<item name="android:windowDrawsSystemBarBackgrounds" tools:targetApi="lollipop">true</item>
-		<item name="android:windowBackground">@drawable/splash_screen</item>
+<!--		<item name="android:windowDrawsSystemBarBackgrounds" tools:targetApi="lollipop">true</item>-->
+<!--		<item name="android:windowBackground">@drawable/splash_screen</item>-->
 	</style>
 	<style name="main" parent="Theme.MaterialComponents.DayNight.NoActionBar">
 

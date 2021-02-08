@@ -2,6 +2,7 @@ package com.princekumarsingh.infinityitsolution.activity;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.res.Configuration;
 import android.content.res.TypedArray;
@@ -14,6 +15,7 @@ import android.view.Window;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.ActionBarDrawerToggle;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
@@ -26,6 +28,7 @@ import com.google.android.material.snackbar.Snackbar;
 import com.google.firebase.crashlytics.FirebaseCrashlytics;
 import com.google.firebase.crashlytics.internal.common.CrashlyticsCore;
 import com.princekumarsingh.infinityitsolution.R;
+
 import com.princekumarsingh.infinityitsolution.listener.DrawerStateListener;
 import com.princekumarsingh.infinityitsolution.listener.LoadUrlListener;
 import com.robotemplates.kozuza.Kozuza;
@@ -181,10 +184,22 @@ getSupportActionBar().setDisplayShowTitleEnabled(false);
 			mDrawerLayout.closeDrawer(GravityCompat.START);
 		} else {
 			if (WebViewAppConfig.EXIT_CONFIRMATION) {
-				Snackbar
-						.make(findViewById(R.id.main_coordinator_layout), R.string.main_exit_snackbar, Snackbar.LENGTH_LONG)
-						.setAction(R.string.main_exit_confirm, view -> MainActivity.super.onBackPressed())
-						.show();
+//				Snackbar
+//						.make(findViewById(R.id.main_coordinator_layout), R.string.main_exit_snackbar, Snackbar.LENGTH_LONG)
+//						.setAction(R.string.main_exit_confirm, view -> MainActivity.super.onBackPressed())
+//						.show();
+				AlertDialog.Builder builder = new AlertDialog.Builder(this);
+				builder.setMessage(R.string.main_exit_snackbar);
+				builder.setCancelable(false);
+				builder.setPositiveButton(R.string.main_exit_confirm, new DialogInterface.OnClickListener() {
+					@Override
+					public void onClick(DialogInterface dialog, int which) {
+						finish();
+					}
+				});
+				builder.setNegativeButton("No",null);
+				AlertDialog alertDialog = builder.create();
+				alertDialog.show();
 			} else {
 				super.onBackPressed();
 			}
@@ -392,13 +407,27 @@ getSupportActionBar().setDisplayShowTitleEnabled(false);
 
 		// show rate message
 		if (showMessage) {
-			Snackbar
-					.make(findViewById(R.id.main_coordinator_layout), R.string.main_rate_snackbar, WebViewAppConfig.RATE_APP_PROMPT_DURATION)
-					.setAction(R.string.main_rate_confirm, view -> {
-						IntentUtility.startStoreActivity(MainActivity.this);
-						preferences.setRateCounter(-1);
-					})
-					.show();
+//			Snackbar
+//					.make(findViewById(R.id.main_coordinator_layout), R.string.main_rate_snackbar, WebViewAppConfig.RATE_APP_PROMPT_DURATION)
+//					.setAction(R.string.main_rate_confirm, view -> {
+//						IntentUtility.startStoreActivity(MainActivity.this);
+//						preferences.setRateCounter(-1);
+//					})
+//					.show();
+//Sncak bar libray is not used instead of that AlertDialog builder is being used ;;;git
+			AlertDialog.Builder builder = new AlertDialog.Builder(this);
+			builder.setMessage(R.string.main_rate_snackbar);
+			builder.setCancelable(false);
+			builder.setPositiveButton(R.string.main_rate_snackbar, new DialogInterface.OnClickListener() {
+				@Override
+				public void onClick(DialogInterface dialog, int which) {
+					finish();
+				}
+			});
+			builder.setNegativeButton("No",null);
+			AlertDialog alertDialog = builder.create();
+			alertDialog.show();
+
 		}
 
 		// increment rate counter

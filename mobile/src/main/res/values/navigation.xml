@@ -38,11 +38,11 @@
 	-->
 	<string-array name="navigation_url_list">
 <!--		<item></item>-->
-		<item>http://mview.infinityitsolution.co.in/web/prod_by_cat/</item>
-		<item>http://mview.infinityitsolution.co.in/web/manpower_show</item>
-		<item>http://mview.infinityitsolution.co.in/web/college_show</item>
-		<item>http://app.infinityitsolution.co.in/temp</item>
-		<item>http://app.infinityitsolution.co.in/</item>
+		<item>http://infinityitsolution.co.in/mview/web/prod_by_cat/</item>
+		<item>http://infinityitsolution.co.in/mview/web/manpower_show</item>
+		<item>http://infinityitsolution.co.in/mview/web/college_show</item>
+		<item>http://infinityitsolution.co.in/app/temp/</item>
+		<item>http://infinityitsolution.co.in/app/</item>
 		<item></item>
 		<item>http://mview.infinityitsolution.co.in/web/contact</item>
 		<item>http://mview.infinityitsolution.co.in/web/about</item>
