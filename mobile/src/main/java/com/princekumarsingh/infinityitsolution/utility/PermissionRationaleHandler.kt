@@ -1,6 +1,7 @@
 package com.princekumarsingh.infinityitsolution.utility
 
 import android.Manifest
+import android.app.AlertDialog
 import android.view.View
 import com.google.android.material.snackbar.Snackbar
 import com.princekumarsingh.infinityitsolution.R
@@ -25,5 +26,6 @@ class PermissionRationaleHandler : RationaleHandler {
                 .make(rootView, rationaleMessage, Snackbar.LENGTH_INDEFINITE)
                 .setAction(android.R.string.ok) { confirmAction.run() }
                 .show()
+
     }
 }

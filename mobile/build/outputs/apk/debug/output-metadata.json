@@ -11,10 +11,10 @@
       "type": "SINGLE",
       "filters": [],
       "properties": [],
-      "versionCode": 202101000,
-      "versionName": "20.21.1-Stable",
+      "versionCode": 202104020,
+      "versionName": "20.21.4-Stable",
       "enabled": true,
-      "outputFile": "com.princekuamrsingh.infinityitsolution-mobile-20.21.1-202101000-20210208-debug.apk"
+      "outputFile": "com.princekuamrsingh.infinityitsolution-mobile-20.21.4-202104020-20210307-debug.apk"
     }
   ]
 }

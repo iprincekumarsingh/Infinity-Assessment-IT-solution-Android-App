@@ -1,0 +1,28 @@
+{
+  "version": 1,
+  "applicationId": "com.princekuamrsingh.infinityitsolution",
+  "variantType": "BASE_APK",
+  "elements": [
+    {
+      "outputType": {
+        "type": "MERGED_MANIFESTS"
+      },
+      "apkData": {
+        "type": "MAIN",
+        "splits": [],
+        "versionCode": 202104020,
+        "versionName": "20.21.4",
+        "outputFile": "com.princekuamrsingh.infinityitsolution-mobile-20.21.4-202104020-20210307-release.apk",
+        "fullName": "release",
+        "baseName": "release",
+        "dirName": ""
+      },
+      "path": "AndroidManifest.xml",
+      "properties": {
+        "packageId": "com.princekuamrsingh.infinityitsolution",
+        "split": "",
+        "minSdkVersion": "19"
+      }
+    }
+  ]
+}

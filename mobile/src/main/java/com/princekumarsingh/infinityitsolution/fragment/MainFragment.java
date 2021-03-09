@@ -225,8 +225,8 @@ public class MainFragment extends TaskFragment implements SwipeRefreshLayout.OnR
 		inflater.inflate(R.menu.fragment_main, menu);
 
 		// show or hide share button
-		MenuItem share = menu.findItem(R.id.menu_main_share);
-		share.setVisible(mShare != null && !mShare.trim().equals(""));
+//		MenuItem share = menu.findItem(R.id.menu_main_share);
+//		share.setVisible(mShare != null && !mShare.trim().equals(""));
 	}
 
 	@Override
@@ -238,9 +238,9 @@ public class MainFragment extends TaskFragment implements SwipeRefreshLayout.OnR
 //		}
 
 		switch (item.getItemId()){
-			case R.id.menu_main_share:
-				IntentUtility.startShareActivity(getContext(), getString(R.string.app_name), getShareText(mShare));
-			break;
+//			case R.id.menu_main_share:
+//				IntentUtility.startShareActivity(getContext(), getString(R.string.app_name), getShareText(mShare));
+//			break;
 			case R.id.menu_setting:
 			Intent sett = new Intent(getActivity(), Setting.class);
 			startActivity(sett);
@@ -398,7 +398,7 @@ public class MainFragment extends TaskFragment implements SwipeRefreshLayout.OnR
 		timerHandler.postDelayed(timerRunnable, 500);
 	}
 
-	@SuppressLint("SetJavaScriptEnabled")
+//	@SuppressLint({"SetJavaScriptEnabled", "ClickableViewAccessibility"})
 	private void setupView() {
 		// webview settings
 		mWebView.getSettings().setJavaScriptEnabled(true);
@@ -420,9 +420,10 @@ public class MainFragment extends TaskFragment implements SwipeRefreshLayout.OnR
 //		});
 
 		// user agent
-		if (WebViewAppConfig.WEBVIEW_USER_AGENT != null && !WebViewAppConfig.WEBVIEW_USER_AGENT.equals("")) {
-			mWebView.getSettings().setUserAgentString(WebViewAppConfig.WEBVIEW_USER_AGENT);
-		}
+//		if (WebViewAppConfig.WEBVIEW_USER_AGENT != null && !WebViewAppConfig.WEBVIEW_USER_AGENT.equals("")) {
+//			mWebView.getSettings().setUserAgentString(WebViewAppConfig.WEBVIEW_USER_AGENT);
+//		}
+
 
 		// advanced webview settings
 		mWebView.setListener(getActivity(), this);

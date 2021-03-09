@@ -2,7 +2,6 @@ package com.princekumarsingh.infinityitsolution.activity;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.res.Configuration;
 import android.content.res.TypedArray;
@@ -10,7 +9,6 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.Window;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBar;
@@ -24,21 +22,16 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 
 import com.google.android.material.navigation.NavigationView;
-import com.google.android.material.snackbar.Snackbar;
-import com.google.firebase.crashlytics.FirebaseCrashlytics;
-import com.google.firebase.crashlytics.internal.common.CrashlyticsCore;
 import com.princekumarsingh.infinityitsolution.R;
-
-import com.princekumarsingh.infinityitsolution.listener.DrawerStateListener;
-import com.princekumarsingh.infinityitsolution.listener.LoadUrlListener;
-import com.robotemplates.kozuza.Kozuza;
-
 import com.princekumarsingh.infinityitsolution.WebViewAppConfig;
 import com.princekumarsingh.infinityitsolution.ads.AdMobGdprHelper;
 import com.princekumarsingh.infinityitsolution.ads.AdMobInterstitialHelper;
 import com.princekumarsingh.infinityitsolution.fragment.MainFragment;
+import com.princekumarsingh.infinityitsolution.listener.DrawerStateListener;
+import com.princekumarsingh.infinityitsolution.listener.LoadUrlListener;
 import com.princekumarsingh.infinityitsolution.utility.IntentUtility;
 import com.princekumarsingh.infinityitsolution.utility.Preferences;
+import com.robotemplates.kozuza.Kozuza;
 
 import org.alfonz.utility.Logcat;
 
@@ -191,12 +184,7 @@ getSupportActionBar().setDisplayShowTitleEnabled(false);
 				AlertDialog.Builder builder = new AlertDialog.Builder(this);
 				builder.setMessage(R.string.main_exit_snackbar);
 				builder.setCancelable(false);
-				builder.setPositiveButton(R.string.main_exit_confirm, new DialogInterface.OnClickListener() {
-					@Override
-					public void onClick(DialogInterface dialog, int which) {
-						finish();
-					}
-				});
+				builder.setPositiveButton(R.string.main_exit_confirm, (dialog, which) -> finish());
 				builder.setNegativeButton("No",null);
 				AlertDialog alertDialog = builder.create();
 				alertDialog.show();
@@ -381,6 +369,7 @@ getSupportActionBar().setDisplayShowTitleEnabled(false);
 			// header background
 			if (WebViewAppConfig.NAVIGATION_DRAWER_HEADER_IMAGE) {
 				headerView.setBackgroundResource(R.drawable.navigation_header_bg);
+//				headerView.setMinimumHeight(12);
 			}
 		}
 	}
@@ -414,16 +403,13 @@ getSupportActionBar().setDisplayShowTitleEnabled(false);
 //						preferences.setRateCounter(-1);
 //					})
 //					.show();
-//Sncak bar libray is not used instead of that AlertDialog builder is being used ;;;git
+//Sncak bar library is not used instead of that AlertDialog builder is being used ;;;git
 			AlertDialog.Builder builder = new AlertDialog.Builder(this);
 			builder.setMessage(R.string.main_rate_snackbar);
 			builder.setCancelable(false);
-			builder.setPositiveButton(R.string.main_rate_snackbar, new DialogInterface.OnClickListener() {
-				@Override
-				public void onClick(DialogInterface dialog, int which) {
-					finish();
-				}
-			});
+			builder.setPositiveButton(R.string.main_rate_snackbar, (dialog, which) -> {
+				IntentUtility.startStoreActivity(MainActivity.this);
+					preferences.setRateCounter(-1);				});
 			builder.setNegativeButton("No",null);
 			AlertDialog alertDialog = builder.create();
 			alertDialog.show();

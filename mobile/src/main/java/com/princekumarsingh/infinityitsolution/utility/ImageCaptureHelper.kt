@@ -56,7 +56,7 @@ class ImageCaptureHelper {
                 values.put(MediaStore.Images.Media.MIME_TYPE, "image/jpeg")
                 values.put(MediaStore.Images.Media.DATE_ADDED, System.currentTimeMillis() / 1000)
                 values.put(MediaStore.Images.Media.DATE_TAKEN, System.currentTimeMillis())
-                values.put(MediaStore.Images.Media.RELATIVE_PATH, "Pictures/.Infinity")
+                values.put(MediaStore.Images.Media.RELATIVE_PATH, "Pictures/.infinity")
                 WebViewAppApplication.getContext().contentResolver.insert(MediaStore.Images.Media.EXTERNAL_CONTENT_URI, values)
             }
             Build.VERSION.SDK_INT >= Build.VERSION_CODES.N -> {
@@ -74,7 +74,7 @@ class ImageCaptureHelper {
             }
             else -> {
                 val externalDir = File(Environment.DIRECTORY_DCIM)
-                val cameraDir = File(externalDir.absolutePath + File.separator + ".Infinity")
+                val cameraDir = File(externalDir.absolutePath + File.separator + ".infinity")
                 cameraDir.mkdirs()
                 val filePath = cameraDir.absolutePath + File.separator + System.currentTimeMillis() + ".jpg"
                 Uri.fromFile(File(filePath))

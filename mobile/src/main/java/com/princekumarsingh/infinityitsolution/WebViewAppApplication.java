@@ -32,7 +32,7 @@ public class WebViewAppApplication extends BaseApplication {
 		MobileAds.initialize(this);
 
 		// init OneSignal
-		initOneSignal(getString(R.string.onesignal_app_id));
+//		initOneSignal(getString(R.string.onesignal_app_id));
 	}
 
 	@Override
@@ -56,16 +56,16 @@ public class WebViewAppApplication extends BaseApplication {
 		return Kozuza.PRODUCT_WEBVIEWAPP;
 	}
 
-	private void initOneSignal(String oneSignalAppId) {
-		if (!oneSignalAppId.equals("")) {
-			OneSignal.startInit(this)
-					.setNotificationOpenedHandler(new OneSignalNotificationOpenedHandler())
-					.inFocusDisplaying(OneSignal.OSInFocusDisplayOption.Notification)
-					.unsubscribeWhenNotificationsAreDisabled(true)
-					.init();
-			saveOneSignalUserId();
-		}
-	}
+//	private void initOneSignal(String oneSignalAppId) {
+//		if (!oneSignalAppId.equals("")) {
+//			OneSignal.startInit(this)
+//					.setNotificationOpenedHandler(new OneSignalNotificationOpenedHandler())
+//					.inFocusDisplaying(OneSignal.OSInFocusDisplayOption.Notification)
+//					.unsubscribeWhenNotificationsAreDisabled(true)
+//					.init();
+//			saveOneSignalUserId();
+//		}
+//	}
 
 	private void saveOneSignalUserId() {
 		String userId = OneSignal.getPermissionSubscriptionState().getSubscriptionStatus().getUserId();

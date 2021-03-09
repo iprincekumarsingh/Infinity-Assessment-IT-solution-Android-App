@@ -159,7 +159,7 @@ public class AdvancedWebView extends WebView {
 		mCustomWebChromeClient = client;
 	}
 
-	@SuppressLint("SetJavaScriptEnabled")
+//	@SuppressLint("SetJavaScriptEnabled")
 	public void setGeolocationEnabled(final boolean enabled) {
 		if (enabled) {
 			getSettings().setJavaScriptEnabled(true);
@@ -447,7 +447,7 @@ public class AdvancedWebView extends WebView {
 		webSettings.setBuiltInZoomControls(enabled);
 	}
 
-	@SuppressLint({ "SetJavaScriptEnabled" })
+//	@SuppressLint({ "SetJavaScriptEnabled" })
 	protected void init(Context context) {
 		// in IDE's preview mode
 		if (isInEditMode()) {
