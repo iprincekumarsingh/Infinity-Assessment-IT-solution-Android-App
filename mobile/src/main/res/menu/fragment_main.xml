@@ -14,4 +14,13 @@
 		android:icon="@drawable/ic_menu_share"
 		android:orderInCategory="1"
 		/>
+
+	<item
+		android:id="@+id/socail_media"
+		android:title="@string/social_media"
+		android:icon="@drawable/ic_menu_share"
+		android:orderInCategory="1"
+		/>
+
+
 </menu>

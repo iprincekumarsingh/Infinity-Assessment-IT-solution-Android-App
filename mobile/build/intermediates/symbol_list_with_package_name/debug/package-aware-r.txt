@@ -1774,6 +1774,7 @@ id SHOW_PROGRESS
 id SYM
 id TOP_END
 id TOP_START
+id aboutt
 id accelerate
 id accessibility_action_clickable_span
 id accessibility_custom_action_0
@@ -1876,6 +1877,7 @@ id clip_horizontal
 id clip_vertical
 id collapseActionView
 id confirm_button
+id contactt
 id container
 id container_content
 id container_content_swipeable
@@ -1929,6 +1931,7 @@ id enterAlwaysCollapsed
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
+id facebook
 id fade
 id fill
 id fill_horizontal
@@ -1964,10 +1967,10 @@ id ignoreRequest
 id image
 id imageView
 id info
+id instagram
 id intro_description
 id intro_img
 id intro_title
-id introt
 id invisible
 id italic
 id item_touch_helper_previous_elevation
@@ -2057,6 +2060,7 @@ id percent
 id pin
 id position
 id postLayout
+id privacy
 id progress
 id progress_circular
 id progress_horizontal
@@ -2103,6 +2107,7 @@ id snackbar_action
 id snackbar_text
 id snap
 id snapMargins
+id socail_media
 id spacer
 id spline
 id split_action_bar
@@ -2163,6 +2168,7 @@ id transition_scene_layoutid_cache
 id transition_transform
 id triangle
 id tv_skip
+id twitter
 id unchecked
 id uniform
 id unlabeled
@@ -2171,6 +2177,7 @@ id useLogo
 id view_offset_helper
 id visible
 id visible_removing_fragment_view_tag
+id websitee
 id wide
 id withText
 id wrap
@@ -2240,6 +2247,7 @@ layout activity_kozuza
 layout activity_main
 layout activity_onboard_screen
 layout activity_setting
+layout activity_socail_meida
 layout activity_splash_screeen
 layout browser_actions_context_menu_page
 layout browser_actions_context_menu_row
@@ -2326,6 +2334,7 @@ mipmap ic_launcher_foreground
 mipmap ic_launcher_round
 plurals mtrl_badge_content_description
 raw consumer_onesignal_keep
+string Youtube
 string abc_action_bar_home_description
 string abc_action_bar_up_description
 string abc_action_menu_overflow_description
@@ -2400,6 +2409,7 @@ string error_icon_content_description
 string exposed_dropdown_menu_content_description
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
+string facebook
 string fcm_default_notification_channel_id
 string fcm_default_notification_channel_title
 string fcm_fallback_notification_channel_label
@@ -2412,6 +2422,7 @@ string google_crash_reporting_api_key
 string google_storage_bucket
 string hide_bottom_view_on_scroll_behavior
 string icon_content_description
+string instaagram
 string location_not_available_message
 string location_not_available_open_settings_message
 string location_not_available_open_settings_option
@@ -2494,8 +2505,10 @@ string s7
 string search_menu_title
 string setting
 string skip
+string social_media
 string status_bar_notification_info_overflow
 string todo
+string twitter
 string v_1_0
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light

@@ -5,7 +5,7 @@
 
 final VERSION_MAJOR = 20 // max two digits
 final VERSION_MINOR = 21 // max two digits
-final VERSION_PATCH = 4 // max two digits
+final VERSION_PATCH = 5 // max two digits
 final VERSION_BUILD = 20 // max three digits
 
 apply plugin: "com.onesignal.androidsdk.onesignal-gradle-plugin"
@@ -14,13 +14,13 @@ apply from: "../utils.gradle"
 apply plugin: 'com.google.firebase.crashlytics'
 
 android {
-	compileSdkVersion 29
+	compileSdkVersion 30
 	buildToolsVersion "29.0.3"
 
 	defaultConfig {
 		applicationId "com.princekuamrsingh.infinityitsolution"
 		minSdkVersion 19
-		targetSdkVersion 29
+		targetSdkVersion 30
 		versionCode getVersionCode(VERSION_MAJOR, VERSION_MINOR, VERSION_PATCH, VERSION_BUILD)
 		versionName getVersionName(VERSION_MAJOR, VERSION_MINOR, VERSION_PATCH)
 		multiDexEnabled true

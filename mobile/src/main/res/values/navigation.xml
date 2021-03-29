@@ -15,17 +15,13 @@
 		<item>Temporary Staff</item>
 		<item>Manpower</item>
 
-		<item>Application</item>
-		<item>Contact us</item>
-		<item>About us</item>
-		<item>Privacy Policy</item>
-		<item>Website</item>
+<!--		<item>Application</item>-->
+<!--&lt;!&ndash;		<item>Contact us</item>&ndash;&gt;-->
+<!--		<item>About us</item>-->
+<!--		<item>Privacy Policy</item>-->
+<!--		<item>Website</item>-->
 
-		<item>Social Network</item>
-
-		<item>Instagram</item>
-		<item>Facebook</item>
-		<item>Twitter</item>
+<!--		.-->
 <!--		<item>Youtube</item>-->
 	</string-array>
 
@@ -41,17 +37,17 @@
 		<item>http://mview.infinityitsolution.co.in/web/prod_by_cat/</item>
 		<item>http://mview.infinityitsolution.co.in/web/manpower_show</item>
 		<item>http://mview.infinityitsolution.co.in/web/college_show</item>
-		<item>http://infinityitsolution.co.in/app/temp/</item>
-		<item>http://infinityitsolution.co.in/app/</item>
-		<item></item>
-		<item>http://mview.infinityitsolution.co.in/web/contact</item>
-		<item>http://mview.infinityitsolution.co.in/web/about</item>
-		<item>http://infinityitsolution.co.in/privacy/privacy.html</item>
-		<item>http://infinityitsolution.co.in</item>
-		<item></item>
-		<item>https://www.instagram.com/infinityassessmentitsolution/?hl=en</item>
-		<item>https://m.facebook.com/infinityassessmentanditsolution/</item>
-		<item>https://twitter.com/InfinitySolut18/</item>
+		<item>https://infinityitsolution.co.in/app/temp/</item>
+		<item>https://infinityitsolution.co.in/app/</item>
+<!--		<item></item>-->
+<!--&lt;!&ndash;		<item>http://mview.infinityitsolution.co.in/web/contact</item>&ndash;&gt;-->
+<!--		<item>http://mview.infinityitsolution.co.in/web/about</item>-->
+<!--		<item>http://infinityitsolution.co.in/privacy/privacy.html</item>-->
+<!--		<item>http://infinityitsolution.co.in</item>-->
+<!--		<item></item>-->
+<!--		<item>https://www.instagram.com/infinityassessmentitsolution/?hl=en</item>-->
+<!--		<item>https://m.facebook.com/infinityassessmentanditsolution/</item>-->
+<!--		<item>https://twitter.com/InfinitySolut18/</item>-->
 
 <!--		<item>https://m.youtube.com/</item>-->
 	</string-array>
@@ -64,16 +60,16 @@
 		<item>@drawable/college</item>
 		<item>@drawable/login</item>
 		<item>@drawable/login</item>
-		<item></item>
-		<item>@drawable/phonebook</item>
-		<item>@drawable/ii</item>
-		<item>@drawable/privacy</item>
-		<item>@drawable/ic_sharp_web_24</item>
+<!--		<item></item>-->
+<!--		<item>@drawable/phonebook</item>-->
+<!--		<item>@drawable/ii</item>-->
+<!--		<item>@drawable/privacy</item>-->
+<!--		<item>@drawable/ic_sharp_web_24</item>-->
 
-		<item></item>
-		<item>@drawable/instagram</item>
-		<item>@drawable/facebook</item>
-		<item>@drawable/twitter</item>
+<!--		<item></item>-->
+<!--		<item>@drawable/instagram</item>-->
+<!--		<item>@drawable/facebook</item>-->
+<!--		<item>@drawable/twitter</item>-->
 <!--		<item>@drawable/youtube</item>-->
 	</string-array>
 
@@ -90,15 +86,15 @@
 		<item>See this page: {TITLE} - {URL}</item>
 		<item>See this page: {TITLE} - {URL}</item>
 		<item>See this page: {TITLE} - {URL}</item>
-		<item></item>
-		<item>See this page: {TITLE} - {URL}</item>
-		<item>See this page: {TITLE} - {URL}</item>
-		<item>See this page: {TITLE} - {URL}</item>
-		<item>See this page: {TITLE} - {URL}</item>
-		<item></item>
-		<item>See this page: {TITLE} - {URL}</item>
-		<item>See this page: {TITLE} - {URL}</item>
-		<item>See this page: {TITLE} - {URL}</item>
+<!--		<item></item>-->
+<!--		<item>See this page: {TITLE} - {URL}</item>-->
+<!--		<item>See this page: {TITLE} - {URL}</item>-->
+<!--		<item>See this page: {TITLE} - {URL}</item>-->
+<!--		<item>See this page: {TITLE} - {URL}</item>-->
+<!--		<item></item>-->
+<!--		<item>See this page: {TITLE} - {URL}</item>-->
+<!--		<item>See this page: {TITLE} - {URL}</item>-->
+<!--		<item>See this page: {TITLE} - {URL}</item>-->
 
 <!--		<item></item>-->
 	</string-array>

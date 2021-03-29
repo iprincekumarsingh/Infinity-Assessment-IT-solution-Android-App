@@ -23,8 +23,10 @@
         android:theme="@style/main"
         android:usesCleartextTraffic="true"
         tools:ignore="AllowBackup,UnusedAttribute">
-        <activity android:name=".activity.SplashScreeen"
-            android:theme="@style/splashteme"></activity>
+        <activity android:name=".activity.Socail_meida"></activity>
+        <activity
+            android:name=".activity.SplashScreeen"
+            android:theme="@style/splashteme" />
         <activity
             android:name=".activity.Setting"
             android:theme="@style/into" />

@@ -38,9 +38,15 @@
 
     <string name="app_version">App Version</string>
     <string name="todo">TODO</string>
-    <string name="v_1_0">V 1.0</string>
+    <string name="v_1_0">V - 20.21.5</string>
     <string name="get_started">Get Started</string>
     <string name="next">Next</string>
     <string name="skip">Skip</string>
-    <string name="setting">Setting</string>
+    <string name="setting">About</string>
+    <string name="social_media">Social-media</string>
+    <string name="instaagram">Instagram</string>
+    <string name="facebook">Facebook</string>
+    <string name="twitter">Twitter</string>
+    <string name="Youtube">Youtube</string>
+    <!--    <string name="contact_us">Contact-us</string>-->
 </resources>

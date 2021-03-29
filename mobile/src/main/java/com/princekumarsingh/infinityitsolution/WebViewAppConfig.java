@@ -5,7 +5,7 @@ import com.princekumarsingh.infinityitsolution.view.PullToRefreshMode;
 
 public class WebViewAppConfig {
 	// Envato purchase code
-//	public static final String PURCHASE_CODE = "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX";
+	public static final String PURCHASE_CODE = "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX";
 
 	// true for showing action bar
 	public static final boolean ACTION_BAR = true;
@@ -31,7 +31,6 @@ public class WebViewAppConfig {
 
 	// true for enabling geolocation
 	public static final boolean GEOLOCATION = true;
-	public static final boolean STOREAGE = true;
 
 	// true for enabling progress placeholder when loading a first page
 	public static final boolean PROGRESS_PLACEHOLDER = true;
@@ -55,7 +54,7 @@ public class WebViewAppConfig {
 
 	// frequency of showing AdMob interstitial ad,
 	// ad will be shown after each x url loadings or clicks on navigation drawer menu
-	public static final int ADMOB_INTERSTITIAL_FREQUENCY = 5;
+	public static final int ADMOB_INTERSTITIAL_FREQUENCY = 3;
 
 	// URL link to your privacy policy for GDPR consent form,
 	// leave this constant empty if you do not want to show GDPR consent form
@@ -70,12 +69,10 @@ public class WebViewAppConfig {
 	public static final String[] LINKS_OPENED_IN_EXTERNAL_BROWSER = {
 			"target=blank",
 			"target=external",
-			"play.google.com/",
-			"youtube.com/",
-			"facebook.com/",
-			"instagram.com/",
-			"instagram.com/infinityassessmentitsolution/?hl=en",
-			"twitter.com/"
+			"play.google.com/store",
+			"youtube.com/watch",
+			"facebook.com/sharer",
+			"twitter.com/share"
 	};
 
 	// rules for opening links in internal webview,

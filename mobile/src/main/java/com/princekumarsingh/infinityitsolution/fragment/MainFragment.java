@@ -33,6 +33,7 @@ import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 import com.princekumarsingh.infinityitsolution.R;
 import com.princekumarsingh.infinityitsolution.activity.Setting;
+import com.princekumarsingh.infinityitsolution.activity.Socail_meida;
 import com.princekumarsingh.infinityitsolution.listener.DrawerStateListener;
 import com.princekumarsingh.infinityitsolution.listener.LoadUrlListener;
 import com.princekumarsingh.infinityitsolution.listener.WebViewOnKeyListener;
@@ -244,6 +245,10 @@ public class MainFragment extends TaskFragment implements SwipeRefreshLayout.OnR
 			case R.id.menu_setting:
 			Intent sett = new Intent(getActivity(), Setting.class);
 			startActivity(sett);
+				break;
+			case R.id.socail_media:
+				Intent social = new Intent(getActivity(), Socail_meida.class);
+				startActivity(social);
 				break;
 
 

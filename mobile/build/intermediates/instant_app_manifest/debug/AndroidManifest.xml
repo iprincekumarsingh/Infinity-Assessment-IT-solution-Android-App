@@ -3,12 +3,12 @@
     package="com.princekuamrsingh.infinityitsolution"
     android:installLocation="auto"
     android:targetSandboxVersion="2"
-    android:versionCode="202104020"
-    android:versionName="20.21.4-Stable" >
+    android:versionCode="202105020"
+    android:versionName="20.21.5-Stable" >
 
     <uses-sdk
         android:minSdkVersion="19"
-        android:targetSdkVersion="29" />
+        android:targetSdkVersion="30" />
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -81,8 +81,10 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
+        android:testOnly="true"
         android:theme="@style/main"
         android:usesCleartextTraffic="true" >
+        <activity android:name="com.princekumarsingh.infinityitsolution.activity.Socail_meida" />
         <activity
             android:name="com.princekumarsingh.infinityitsolution.activity.SplashScreeen"
             android:theme="@style/splashteme" />

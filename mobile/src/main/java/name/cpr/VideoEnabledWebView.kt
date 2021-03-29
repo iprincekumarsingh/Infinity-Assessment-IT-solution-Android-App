@@ -61,7 +61,7 @@ open class VideoEnabledWebView : AdvancedWebView {
      * Pass only a VideoEnabledWebChromeClient instance.
      */
     @SuppressLint("SetJavaScriptEnabled")
-    override fun setWebChromeClient(client: WebChromeClient) {
+    override fun setWebChromeClient(client: WebChromeClient?) {
         settings.javaScriptEnabled = true
         if (client is VideoEnabledWebChromeClient) {
             videoEnabledWebChromeClient = client

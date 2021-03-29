@@ -21,6 +21,10 @@ class Setting : AppCompatActivity() {
         actionBar.setDisplayHomeAsUpEnabled(true)
         toolbar.setNavigationOnClickListener { finish() }
         clearcache()
+        contacts()
+        about()
+        website()
+        privacy()
     }
 
     private fun clearcache() {
@@ -29,6 +33,46 @@ class Setting : AppCompatActivity() {
             val ii = Intent(Settings.ACTION_APPLICATION_DETAILS_SETTINGS)
             ii.data = Uri.parse("package:$packageName")
             startActivity(ii)
+        }
+    }
+
+    private  fun contacts(){
+        val contactt = findViewById<LinearLayout>(R.id.contactt)
+//        val url ="http://mview.infinityitsolution.co.in/web/contact"
+        contactt.setOnClickListener {
+            val privacyurl = Intent(android.content.Intent.ACTION_VIEW)
+            privacyurl.data = Uri.parse("http://mview.infinityitsolution.co.in/web/contact")
+            startActivity (privacyurl)
+        }
+    }
+
+
+    private  fun about(){
+        val contactt = findViewById<LinearLayout>(R.id.aboutt)
+//        val url ="http://mview.infinityitsolution.co.in/web/about"
+        contactt.setOnClickListener {
+            val privacyurl = Intent(android.content.Intent.ACTION_VIEW)
+            privacyurl.data = Uri.parse("http://infinityitsolution.co.in/web/about")
+            startActivity (privacyurl)
+        }
+    }
+    private  fun website(){
+        val contactt = findViewById<LinearLayout>(R.id.websitee)
+//        val url ="https://infinityitsolution.co.in"
+        contactt.setOnClickListener {
+            val ci = Intent(android.content.Intent.ACTION_VIEW)
+            ci.data = Uri.parse("https://infinityitsolution.co.in")
+            startActivity (ci)
+        }
+    }
+
+    private  fun privacy(){
+        val contactt = findViewById<LinearLayout>(R.id.privacy)
+//        val url ="https://infinityitsolution.co.in/privacy/privacy.html"
+        contactt.setOnClickListener {
+           val privacyurl = Intent(android.content.Intent.ACTION_VIEW)
+            privacyurl.data = Uri.parse("https://infinityitsolution.co.in/privacy/privacy.html")
+            startActivity (privacyurl)
         }
     }
 }
