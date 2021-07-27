@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "artifactType": {
+    "type": "APK",
+    "kind": "Directory"
+  },
+  "applicationId": "com.princekuamrsingh.infinityitsolution",
+  "variantName": "processDebugResources",
+  "elements": [
+    {
+      "type": "SINGLE",
+      "filters": [],
+      "versionCode": 202105020,
+      "versionName": "20.21.5-Stable",
+      "outputFile": "com.princekuamrsingh.infinityitsolution-app-20.21.5-202105020-20210512-debug.apk"
+    }
+  ]
+}
