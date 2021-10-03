@@ -1,5 +1,6 @@
 package com.infinity_it_solution_assement.intro
 
+import android.annotation.SuppressLint
 import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
@@ -10,6 +11,7 @@ import androidx.viewpager.widget.PagerAdapter
 import com.infinity_it_solution_assement.R
 
 class IntroViewPagerAdapter(var mContext: Context, var mListScreen: List<ScreenItem>) : PagerAdapter() {
+    @SuppressLint("InflateParams")
     override fun instantiateItem(container: ViewGroup, position: Int): Any {
         val inflater = mContext.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
         val layoutScreen = inflater.inflate(R.layout.layout_screen, null)

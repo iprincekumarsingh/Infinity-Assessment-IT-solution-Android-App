@@ -3,10 +3,10 @@
 // Usage: gradlew assembleDebug           Build debug APK
 //        gradlew assembleRelease         Build release APK
 
-final VERSION_MAJOR = 20 // max two digits
-final VERSION_MINOR = 21 // max two digits
-final VERSION_PATCH = 7 // max two digits
-final VERSION_BUILD = 20 // max three digits
+final VERSION_MAJOR = 1 // max two digits
+final VERSION_MINOR = 0 // max two digits
+final VERSION_PATCH = 0 // max two digits
+final VERSION_BUILD =  0// max three digits
 
 apply plugin: "com.onesignal.androidsdk.onesignal-gradle-plugin"
 apply plugin: "com.android.application"
@@ -14,13 +14,13 @@ apply from: "../utils.gradle"
 apply plugin: 'com.google.firebase.crashlytics'
 
 android {
-	compileSdkVersion 30
+	compileSdkVersion 31
 	buildToolsVersion "29.0.3"
 
 	defaultConfig {
 		applicationId "com.infinity_it_solution_assement"
 		minSdkVersion 19
-		targetSdkVersion 30
+		targetSdkVersion 31
 		versionCode getVersionCode(VERSION_MAJOR, VERSION_MINOR, VERSION_PATCH, VERSION_BUILD)
 		versionName getVersionName(VERSION_MAJOR, VERSION_MINOR, VERSION_PATCH)
 		multiDexEnabled true
@@ -40,7 +40,7 @@ android {
 	buildTypes {
 		debug {
 			buildConfigField "boolean", "LOGS", "true"
-			buildConfigField "boolean", "DEV_ENVIRONMENT", "true"
+			buildConfigField "boolean", "DEV_ENVIRONMENT", "false"
 			buildConfigField "boolean", "TEST_ADS", "false"
 
 			versionNameSuffix "-Stable"
@@ -83,9 +83,9 @@ dependencies {
 	implementation "com.google.android.ads.consent:consent-library:1.0.8"
 	implementation "com.google.android.material:material:1.1.0"
 	implementation "com.google.firebase:firebase-ads:19.7.0"
-	implementation "com.google.firebase:firebase-analytics:18.0.2"
-//	implementation 'com.android.fireabase:firebase-crashlytics'
-	implementation "com.google.firebase:firebase-messaging:21.0.1"
+	implementation 'com.google.firebase:firebase-crashlytics'
+	implementation 'com.google.firebase:firebase-analytics'
+	implementation 'com.google.firebase:firebase-messaging'
 	implementation "com.onesignal:OneSignal:3.15.1"
 	implementation "org.alfonz:alfonz-utility:0.9.2"
 	implementation "org.alfonz:alfonz-view:0.9.2"

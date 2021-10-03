@@ -1,33 +1,33 @@
 {
   "project_info": {
-    "project_number": "480898520000",
-    "project_id": "infinitysolutionapp",
-    "storage_bucket": "infinitysolutionapp.appspot.com"
+    "project_number": "239816489527",
+    "project_id": "client-infinityapp",
+    "storage_bucket": "client-infinityapp.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:480898520000:android:863d6655c1787f7e3aae25",
+        "mobilesdk_app_id": "1:239816489527:android:53d1b9ae7a40430d265db2",
         "android_client_info": {
           "package_name": "com.infinity_it_solution_assement"
         }
       },
       "oauth_client": [
         {
-          "client_id": "480898520000-bna0t9k1ckk6u79s66puqqai3p539u1n.apps.googleusercontent.com",
+          "client_id": "239816489527-fpde4kdjrdva1op5dcdqgcuvvllg4rgp.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDsnLzSIjjZqFUuO-ZUdd02QA2w_hu9xzI"
+          "current_key": "AIzaSyAgvLoyEff8eGUZFJDR_3hUgTYDWSnjWKk"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "480898520000-bna0t9k1ckk6u79s66puqqai3p539u1n.apps.googleusercontent.com",
+              "client_id": "239816489527-fpde4kdjrdva1op5dcdqgcuvvllg4rgp.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

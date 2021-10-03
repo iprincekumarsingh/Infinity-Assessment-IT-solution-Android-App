@@ -16,7 +16,7 @@
     <string name="drawer_open">Open navigation drawer</string>
     <string name="drawer_close">Close navigation drawer</string>
 
-    <string name="placeholder_empty">Not found</string>
+    <string name="placeholder_empty">Data Not found !</string>
     <string name="placeholder_offline">No Internet connection available</string>
 
     <string name="permission_read_external_storage">Permission to read files is required</string>
@@ -48,5 +48,8 @@
     <string name="facebook">Facebook</string>
     <string name="twitter">Twitter</string>
     <string name="Youtube">Youtube</string>
+    <string name="about_us">About-us</string>
+    <string name="privacy_policy">Privacy-policy</string>
+    <string name="website">Website</string>
     <!--    <string name="contact_us">Contact-us</string>-->
 </resources>

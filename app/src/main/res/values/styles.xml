@@ -160,8 +160,8 @@
 
 	<style name="into" parent="Theme.MaterialComponents.DayNight.NoActionBar">
 		<item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
-	<item name="colorPrimary">@color/global_color_red_primary</item>
-	<item name="colorPrimaryDark">@color/global_color_red_primary_dark</item>
+	<item name="colorPrimary">@color/global_color_primary</item>
+	<item name="colorPrimaryDark">@color/global_color_primary</item>
 	</style>
 
 	<style name="onboard" parent="@style/Theme.WebViewApp">
@@ -177,7 +177,9 @@
 <!--		<item name="android:windowBackground">@drawable/splash_screen</item>-->
 	</style>
 	<style name="main" parent="Theme.MaterialComponents.DayNight.NoActionBar">
-
+		<!-- Customize your theme here. -->
+		<item name="colorPrimary">@color/global_color_primary</item>
+		<item name="colorPrimaryDark">@color/global_color_primary</item>
 		<item name="android:windowDrawsSystemBarBackgrounds" tools:targetApi="lollipop">true</item>
 <!--		<item name="android:windowBackground">@drawable/splash_screen</item>-->
 

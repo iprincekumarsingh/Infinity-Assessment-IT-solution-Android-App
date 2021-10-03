@@ -35,7 +35,7 @@ import com.robotemplates.kozuza.Kozuza;
 
 import org.alfonz.utility.Logcat;
 
-public class MainActivity extends AppCompatActivity implements LoadUrlListener, DrawerStateListener {
+public class  MainActivity extends AppCompatActivity implements LoadUrlListener, DrawerStateListener {
 	public static final String EXTRA_URL = "url";
 
 	private DrawerLayout mDrawerLayout;

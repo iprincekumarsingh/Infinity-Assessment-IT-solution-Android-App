@@ -20,7 +20,7 @@ import java.net.URL;
 
 public class AdMobGdprHelper {
 	private static final String PREFS_KEY_CONSENT_STATUS = "consent_status";
-
+	String urll ="http://a.com";
 	private final Context mContext;
 	private final String mPublisherId;
 	private final String mPrivacyPolicyUrl;

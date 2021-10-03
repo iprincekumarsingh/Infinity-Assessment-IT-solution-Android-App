@@ -18,7 +18,7 @@ class ImageCaptureHelper {
         chooserIntent.putExtra(Intent.EXTRA_INITIAL_INTENTS, arrayOf<Parcelable>(createImageCaptureIntent()))
     }
 
-    //package im.delight.android.webview;
+//    package im.delight.android.webview;
     val capturedImageUri: Uri?
         get() {
             var uri: Uri? = null

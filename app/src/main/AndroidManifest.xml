@@ -24,16 +24,16 @@
         android:usesCleartextTraffic="true"
         tools:ignore="AllowBackup,UnusedAttribute">
         <activity android:name="com.infinity_it_solution_assement.activity.Socail_meida"></activity>
-        <activity
-            android:name="com.infinity_it_solution_assement.activity.SplashScreeen"
-            android:theme="@style/splashteme" />
-        <activity
+<!--        <activity-->
+<!--            android:name="com.infinity_it_solution_assement.activity.SplashScreeen"-->
+<!--            android:theme="@style/splashteme" />-->
+<!--        <activity-->
             android:name="com.infinity_it_solution_assement.activity.Setting"
             />
-        <activity
-            android:name="com.infinity_it_solution_assement.activity.SplashActivity"
-            android:theme="@style/splashteme" />
-        <activity android:name="com.infinity_it_solution_assement.intro.OnboardScreen">
+<!--        <activity-->
+<!--            android:name="com.infinity_it_solution_assement.activity.SplashActivity"-->
+<!--            android:theme="@style/splashteme" />-->
+        <activity android:name="com.infinity_it_solution_assement.activity.SplashScreeen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
