@@ -94,7 +94,7 @@ getSupportActionBar().setDisplayShowTitleEnabled(false);
 
 
 		// rate prompt
-		checkRateCounter();
+//		checkRateCounter();
 
 		// kozuza
 		Kozuza.process(this);
@@ -374,49 +374,49 @@ getSupportActionBar().setDisplayShowTitleEnabled(false);
 		}
 	}
 
-	@SuppressLint("WrongConstant")
-	private void checkRateCounter() {
-		// check if rate prompt is disabled
-		if (WebViewAppConfig.RATE_APP_PROMPT_FREQUENCY == 0) return;
-
-		// get current rate counter
-		final Preferences preferences = new Preferences();
-		final int rateCounter = preferences.getRateCounter();
-		Logcat.d("" + rateCounter);
-
-		// check rate counter
-		boolean showMessage = false;
-		if (rateCounter != -1) {
-			if (rateCounter >= WebViewAppConfig.RATE_APP_PROMPT_FREQUENCY && rateCounter % WebViewAppConfig.RATE_APP_PROMPT_FREQUENCY == 0) {
-				showMessage = true;
-			}
-		} else {
-			return;
-		}
-
-		// show rate message
-		if (showMessage) {
-//			Snackbar
-//					.make(findViewById(R.id.main_coordinator_layout), R.string.main_rate_snackbar, WebViewAppConfig.RATE_APP_PROMPT_DURATION)
-//					.setAction(R.string.main_rate_confirm, view -> {
-//						IntentUtility.startStoreActivity(MainActivity.this);
-//						preferences.setRateCounter(-1);
-//					})
-//					.show();
-//Sncak bar library is not used instead of that AlertDialog builder is being used ;;;git
-			AlertDialog.Builder builder = new AlertDialog.Builder(this);
-			builder.setMessage(R.string.main_rate_snackbar);
-			builder.setCancelable(false);
-			builder.setPositiveButton(R.string.main_rate_snackbar, (dialog, which) -> {
-				IntentUtility.startStoreActivity(MainActivity.this);
-					preferences.setRateCounter(-1);				});
-			builder.setNegativeButton("No",null);
-			AlertDialog alertDialog = builder.create();
-			alertDialog.show();
-
-		}
-
-		// increment rate counter
-		preferences.setRateCounter(rateCounter + 1);
-	}
+//	@SuppressLint("WrongConstant")
+//	private void checkRateCounter() {
+//		// check if rate prompt is disabled
+//		if (WebViewAppConfig.RATE_APP_PROMPT_FREQUENCY == 0) return;
+//
+//		// get current rate counter
+//		final Preferences preferences = new Preferences();
+//		final int rateCounter = preferences.getRateCounter();
+//		Logcat.d("" + rateCounter);
+//
+//		// check rate counter
+//		boolean showMessage = false;
+//		if (rateCounter != -1) {
+//			if (rateCounter >= WebViewAppConfig.RATE_APP_PROMPT_FREQUENCY && rateCounter % WebViewAppConfig.RATE_APP_PROMPT_FREQUENCY == 0) {
+//				showMessage = true;
+//			}
+//		} else {
+//			return;
+//		}
+//
+//		// show rate message
+//		if (showMessage) {
+////			Snackbar
+////					.make(findViewById(R.id.main_coordinator_layout), R.string.main_rate_snackbar, WebViewAppConfig.RATE_APP_PROMPT_DURATION)
+////					.setAction(R.string.main_rate_confirm, view -> {
+////						IntentUtility.startStoreActivity(MainActivity.this);
+////						preferences.setRateCounter(-1);
+////					})
+////					.show();
+////Sncak bar library is not used instead of that AlertDialog builder is being used ;;;git
+//			AlertDialog.Builder builder = new AlertDialog.Builder(this);
+//			builder.setMessage(R.string.main_rate_snackbar);
+//			builder.setCancelable(false);
+//			builder.setPositiveButton(R.string.main_rate_snackbar, (dialog, which) -> {
+//				IntentUtility.startStoreActivity(MainActivity.this);
+//					preferences.setRateCounter(-1);				});
+//			builder.setNegativeButton("No",null);
+//			AlertDialog alertDialog = builder.create();
+//			alertDialog.show();
+//
+//		}
+//
+//		// increment rate counter
+//		preferences.setRateCounter(rateCounter + 1);
+//	}
 }

@@ -21,19 +21,17 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/main"
+        android:allowClearUserData="true"
         android:usesCleartextTraffic="true"
         tools:ignore="AllowBackup,UnusedAttribute">
         <activity android:name="com.infinity_it_solution_assement.activity.Socail_meida"></activity>
-<!--        <activity-->
-<!--            android:name="com.infinity_it_solution_assement.activity.SplashScreeen"-->
-<!--            android:theme="@style/splashteme" />-->
-<!--        <activity-->
+
+   <activity
             android:name="com.infinity_it_solution_assement.activity.Setting"
             />
-<!--        <activity-->
-<!--            android:name="com.infinity_it_solution_assement.activity.SplashActivity"-->
-<!--            android:theme="@style/splashteme" />-->
-        <activity android:name="com.infinity_it_solution_assement.activity.SplashScreeen">
+
+        <activity android:name="com.infinity_it_solution_assement.activity.SplashScreeen"
+            tools:ignore="IntentFilterExportedReceiver">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -44,7 +42,8 @@
             android:name="com.infinity_it_solution_assement.activity.MainActivity"
             android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
             android:label=""
-            android:launchMode="standard">
+            android:launchMode="standard"
+            tools:ignore="IntentFilterExportedReceiver">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
 

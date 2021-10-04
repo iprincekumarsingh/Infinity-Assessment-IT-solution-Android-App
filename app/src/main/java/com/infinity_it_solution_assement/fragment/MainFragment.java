@@ -217,40 +217,6 @@ public class MainFragment extends TaskFragment implements SwipeRefreshLayout.OnR
 		mWebView.saveState(outState);
 	}
 
-	@Override
-	public void onCreateOptionsMenu(@NonNull Menu menu, @NonNull MenuInflater inflater) {
-		// action bar menu
-		super.onCreateOptionsMenu(menu, inflater);
-		inflater.inflate(R.menu.fragment_main, menu);
-
-		// show or hide share button
-//		MenuItem share = menu.findItem(R.id.menu_main_share);
-//		share.setVisible(mShare != null && !mShare.trim().equals(""));
-	}
-
-	@Override
-	public boolean onOptionsItemSelected(MenuItem item) {
-		// action bar menu behavior
-//		if (item.getItemId() == R.id.menu_main_share) {
-//			IntentUtility.startShareActivity(getContext(), getString(R.string.app_name), getShareText(mShare));
-//			return true;
-//		}
-
-		switch (item.getItemId()){
-//			case R.id.menu_main_share:
-//				IntentUtility.startShareActivity(getContext(), getString(R.string.app_name), getShareText(mShare));
-//			break;
-			case R.id.menu_setting:
-			Intent sett = new Intent(getActivity(), Setting.class);
-			startActivity(sett);
-				break;
-
-
-		}
-
-
-		return super.onOptionsItemSelected(item);
-	}
 
 	@Override
 	public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {

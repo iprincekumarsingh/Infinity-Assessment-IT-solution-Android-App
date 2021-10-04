@@ -3,10 +3,10 @@
 // Usage: gradlew assembleDebug           Build debug APK
 //        gradlew assembleRelease         Build release APK
 
-final VERSION_MAJOR = 1 // max two digits
-final VERSION_MINOR = 0 // max two digits
-final VERSION_PATCH = 0 // max two digits
-final VERSION_BUILD =  0// max three digits
+final VERSION_MAJOR = 10 // max two digits month
+final VERSION_MINOR = 4 // max two digits day
+final VERSION_PATCH = 21// max two digits year last two digit
+final VERSION_BUILD =  1// max three digits  version
 
 apply plugin: "com.onesignal.androidsdk.onesignal-gradle-plugin"
 apply plugin: "com.android.application"
@@ -53,9 +53,11 @@ android {
 
 			signingConfig signingConfigs.release
 			zipAlignEnabled true
-			minifyEnabled false
-			shrinkResources false
-			proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
+			minifyEnabled true
+			shrinkResources true
+			proguardFiles
+			getDefaultProguardFile('proguard-android.txt')
+			'proguard-rules.pro'
 		}
 	}
 

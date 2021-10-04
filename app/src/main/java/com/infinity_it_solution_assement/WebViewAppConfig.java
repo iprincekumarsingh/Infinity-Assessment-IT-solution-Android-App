@@ -2,8 +2,6 @@ package com.infinity_it_solution_assement;
 
 
 public class WebViewAppConfig {
-	// Envato purchase code
-	public static final String PURCHASE_CODE = "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX";
 
 	// true for showing action bar
 	public static final boolean ACTION_BAR = true;
@@ -38,17 +36,7 @@ public class WebViewAppConfig {
 	// set PROGRESS to disable the gesture and show only progress indicator
 	public static final PullToRefreshMode PULL_TO_REFRESH = PullToRefreshMode.ENABLED;
 
-	// frequency of showing rate my app prompt,
-	// prompt will be shown after each x launches of the app,
-	// set 0 if you do not want to show rate my app prompt
-	public static final int RATE_APP_PROMPT_FREQUENCY = 0;
 
-	// duration of showing rate my app prompt in milliseconds
-	public static final int RATE_APP_PROMPT_DURATION = 0;
-
-	// custom user agent string for the webview,
-	// leave this constant empty if you do not want to set custom user agent string
-	public static final String WEBVIEW_USER_AGENT = "";
 
 	// frequency of showing AdMob interstitial ad,
 	// ad will be shown after each x url loadings or clicks on navigation drawer menu
