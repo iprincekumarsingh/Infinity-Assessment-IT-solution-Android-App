@@ -9,26 +9,36 @@ import android.view.ViewGroup;
 import android.view.WindowManager;
 import android.widget.LinearLayout;
 
-
 import com.google.ads.mediation.admob.AdMobAdapter;
 import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdSize;
 import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.LoadAdError;
+import com.google.android.gms.ads.RequestConfiguration;
 import com.infinity_it_solution_assement.R;
-import com.infinity_it_solution_assement.utility.AnimationUtility;
-
 import com.infinity_it_solution_assement.WebViewAppApplication;
 import com.infinity_it_solution_assement.WebViewAppConfig;
+import com.infinity_it_solution_assement.utility.AnimationUtility;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public final class AdMobUtility {
 	private AdMobUtility() {}
 
+	public static RequestConfiguration createRequestConfiguration() {
+		List<String> testDeviceIds = new ArrayList<>();
+		testDeviceIds.add(AdRequest.DEVICE_ID_EMULATOR);
+		testDeviceIds.add(WebViewAppApplication.getContext().getString(R.string.admob_test_device_id));
+
+		return new RequestConfiguration.Builder()
+				.setTestDeviceIds(testDeviceIds)
+				.build();
+	}
+
 	public static AdRequest createAdRequest() {
-		String testDeviceId = WebViewAppApplication.getContext().getString(R.string.admob_test_device_id);
-		AdRequest.Builder builder = new AdRequest.Builder()
-				.addTestDevice(AdRequest.DEVICE_ID_EMULATOR)
-				.addTestDevice(testDeviceId);
+		AdRequest.Builder builder = new AdRequest.Builder();
 
 		if (WebViewAppConfig.GDPR_PRIVACY_POLICY_URL != null && !WebViewAppConfig.GDPR_PRIVACY_POLICY_URL.equals("")) {
 			builder.addNetworkExtrasBundle(AdMobAdapter.class, AdMobGdprHelper.getConsentStatusBundle());
@@ -46,8 +56,8 @@ public final class AdMobUtility {
 			}
 
 			@Override
-			public void onAdFailedToLoad(int errorCode) {
-				super.onAdFailedToLoad(errorCode);
+			public void onAdFailedToLoad(LoadAdError loadAdError) {
+				super.onAdFailedToLoad(loadAdError);
 				adView.setVisibility(View.GONE);
 			}
 		};

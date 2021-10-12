@@ -1,6 +1,6 @@
 package com.infinity_it_solution_assement.fragment;
-
 import android.Manifest;
+import android.annotation.SuppressLint;
 import android.annotation.TargetApi;
 import android.content.Context;
 import android.content.Intent;
@@ -29,21 +29,19 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
+import com.infinity_it_solution_assement.PullToRefreshMode;
 import com.infinity_it_solution_assement.R;
-import com.infinity_it_solution_assement.activity.Setting;
-import com.infinity_it_solution_assement.activity.Socail_meida;
+import com.infinity_it_solution_assement.WebViewAppConfig;
+import com.infinity_it_solution_assement.ads.AdMobUtility;
+import com.infinity_it_solution_assement.js.JavaScriptAPI;
 import com.infinity_it_solution_assement.listener.DrawerStateListener;
 import com.infinity_it_solution_assement.listener.LoadUrlListener;
 import com.infinity_it_solution_assement.listener.WebViewOnKeyListener;
 import com.infinity_it_solution_assement.listener.WebViewOnTouchListener;
-import com.infinity_it_solution_assement.utility.PermissionRationaleHandler;
-
-import com.infinity_it_solution_assement.WebViewAppConfig;
-import com.infinity_it_solution_assement.ads.AdMobUtility;
 import com.infinity_it_solution_assement.utility.DownloadFileUtility;
 import com.infinity_it_solution_assement.utility.IntentUtility;
+import com.infinity_it_solution_assement.utility.PermissionRationaleHandler;
 import com.infinity_it_solution_assement.utility.Preferences;
-import com.infinity_it_solution_assement.PullToRefreshMode;
 
 import org.alfonz.utility.Logcat;
 import org.alfonz.utility.NetworkUtility;
@@ -68,7 +66,7 @@ public class MainFragment extends TaskFragment implements SwipeRefreshLayout.OnR
 	private int mStoredActivityRequestCode;
 	private int mStoredActivityResultCode;
 	private Intent mStoredActivityResultIntent;
-	private final PermissionManager mPermissionManager = new PermissionManager(new PermissionRationaleHandler());
+	private PermissionManager mPermissionManager = new PermissionManager(new PermissionRationaleHandler());
 
 	public static MainFragment newInstance(String url, String share) {
 		MainFragment fragment = new MainFragment();
@@ -87,6 +85,7 @@ public class MainFragment extends TaskFragment implements SwipeRefreshLayout.OnR
 		super.onAttach(context);
 	}
 
+	@SuppressWarnings("deprecation")
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -109,8 +108,8 @@ public class MainFragment extends TaskFragment implements SwipeRefreshLayout.OnR
 	}
 
 	@Override
-	public void onActivityCreated(Bundle savedInstanceState) {
-		super.onActivityCreated(savedInstanceState);
+	public void onViewCreated(View view, Bundle savedInstanceState) {
+		super.onViewCreated(view, savedInstanceState);
 
 		// restore webview state
 		if (savedInstanceState != null) {
@@ -119,7 +118,6 @@ public class MainFragment extends TaskFragment implements SwipeRefreshLayout.OnR
 
 		// setup webview
 		setupView();
-
 
 		// pull to refresh
 		setupSwipeRefreshLayout();
@@ -132,14 +130,6 @@ public class MainFragment extends TaskFragment implements SwipeRefreshLayout.OnR
 
 		// progress popup
 		showProgress(mProgress);
-
-		// check permissions
-		if (WebViewAppConfig.GEOLOCATION) {
-			mPermissionManager.request(
-					this,
-					new String[]{Manifest.permission.ACCESS_COARSE_LOCATION, Manifest.permission.ACCESS_FINE_LOCATION},
-					(requestable, permissionsResult) -> handleLocationPermissionsResult(permissionsResult));
-		}
 	}
 
 	@Override
@@ -217,6 +207,27 @@ public class MainFragment extends TaskFragment implements SwipeRefreshLayout.OnR
 		mWebView.saveState(outState);
 	}
 
+	@Override
+	public void onCreateOptionsMenu(@NonNull Menu menu, @NonNull MenuInflater inflater) {
+		// action bar menu
+		super.onCreateOptionsMenu(menu, inflater);
+		inflater.inflate(R.menu.fragment_main, menu);
+
+		// show or hide share button
+//		MenuItem share = menu.findItem(R.id.menu_main_share);
+//		share.setVisible(mShare != null && !mShare.trim().equals(""));
+	}
+
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+		// action bar menu behavior
+//		if (item.getItemId() == R.id.menu_main_share) {
+//			IntentUtility.startShareActivity(getContext(), getString(R.string.app_name), getShareText(mShare));
+//			return true;
+//		}
+
+		return super.onOptionsItemSelected(item);
+	}
 
 	@Override
 	public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
@@ -243,25 +254,28 @@ public class MainFragment extends TaskFragment implements SwipeRefreshLayout.OnR
 		Logcat.d("");
 	}
 
-//	@Override
-//	public void onDownloadRequested(String url, String userAgent, String contentDisposition, String mimetype, long contentLength) {
-//
-//	}
-
 	@Override
 	public void onDownloadRequested(String url, String suggestedFilename, String mimeType, long contentLength, String contentDisposition, String userAgent) {
 		Logcat.d(url + " / " + suggestedFilename + " / " + mimeType + " / " + userAgent);
 		mPermissionManager.request(this,
-				Manifest.permission.WRITE_EXTERNAL_STORAGE,
+				Manifest.permission.READ_EXTERNAL_STORAGE,
 				requestable -> requestable.handleDownloadPermissionGranted(url, suggestedFilename, mimeType, userAgent));
-
 	}
-
-
 
 	@Override
 	public void onExternalPageRequest(String url) {
 		Logcat.d("");
+	}
+
+	@Override
+	public void onGeolocationPermissionsShowPrompt() {
+		// check permissions
+		if (WebViewAppConfig.GEOLOCATION) {
+			mPermissionManager.request(
+					this,
+					new String[]{Manifest.permission.ACCESS_COARSE_LOCATION, Manifest.permission.ACCESS_FINE_LOCATION},
+					(requestable, permissionsResult) -> handleLocationPermissionsResult(permissionsResult));
+		}
 	}
 
 	public void refreshData() {
@@ -352,7 +366,7 @@ public class MainFragment extends TaskFragment implements SwipeRefreshLayout.OnR
 		mProgress = visible;
 	}
 
-	private void showContent() {
+	private void showContent(final long delay) {
 		final Handler timerHandler = new Handler();
 		final Runnable timerRunnable = () -> runTaskCallback(() -> {
 			if (getActivity() != null && mRootView != null) {
@@ -360,10 +374,10 @@ public class MainFragment extends TaskFragment implements SwipeRefreshLayout.OnR
 				mStatefulLayout.showContent();
 			}
 		});
-		timerHandler.postDelayed(timerRunnable, 500);
+		timerHandler.postDelayed(timerRunnable, delay);
 	}
 
-//	@SuppressLint({"SetJavaScriptEnabled", "ClickableViewAccessibility"})
+	@SuppressLint("SetJavaScriptEnabled")
 	private void setupView() {
 		// webview settings
 		mWebView.getSettings().setJavaScriptEnabled(true);
@@ -376,19 +390,15 @@ public class MainFragment extends TaskFragment implements SwipeRefreshLayout.OnR
 		mWebView.getSettings().setSupportZoom(true);
 		mWebView.getSettings().setBuiltInZoomControls(false);
 
-		mWebView.setOnLongClickListener(view -> true);
-		mWebView.setLongClickable(false);
-		mWebView.setHapticFeedbackEnabled(false);
-
-//		mWebView.setWebChromeClient(new WebChromeClient(){
-//			public void openfileChooser(ValueCallback<Uri>)
-//		});
-
 		// user agent
-//		if (WebViewAppConfig.WEBVIEW_USER_AGENT != null && !WebViewAppConfig.WEBVIEW_USER_AGENT.equals("")) {
-//			mWebView.getSettings().setUserAgentString(WebViewAppConfig.WEBVIEW_USER_AGENT);
-//		}
+		if (WebViewAppConfig.WEBVIEW_USER_AGENT != null && !WebViewAppConfig.WEBVIEW_USER_AGENT.equals("")) {
+			mWebView.getSettings().setUserAgentString(WebViewAppConfig.WEBVIEW_USER_AGENT);
+		}
 
+		// java script interface
+		if (WebViewAppConfig.JAVA_SCRIPT_API) {
+			mWebView.addJavascriptInterface(new JavaScriptAPI(getActivity()), "RoboTemplatesWebViewApp");
+		}
 
 		// advanced webview settings
 		mWebView.setListener(getActivity(), this);
@@ -398,11 +408,7 @@ public class MainFragment extends TaskFragment implements SwipeRefreshLayout.OnR
 		mWebView.setScrollBarStyle(WebView.SCROLLBARS_OUTSIDE_OVERLAY); // fixes scrollbar on Froyo
 
 		// webview hardware acceleration
-		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
-			mWebView.setLayerType(View.LAYER_TYPE_HARDWARE, null);
-		} else {
-			mWebView.setLayerType(View.LAYER_TYPE_SOFTWARE, null);
-		}
+		mWebView.setLayerType(View.LAYER_TYPE_HARDWARE, null);
 
 		// webview chrome client
 		View nonVideoLayout = getActivity().findViewById(R.id.main_non_video_layout);
@@ -547,7 +553,7 @@ public class MainFragment extends TaskFragment implements SwipeRefreshLayout.OnR
 		public void onPageFinished(final WebView view, final String url) {
 			runTaskCallback(() -> {
 				if (getActivity() != null && mSuccess) {
-					showContent(); // hide progress bar with delay to show webview content smoothly
+					showContent(500); // hide progress bar with delay to show webview content smoothly
 					showProgress(false);
 					if (WebViewAppConfig.ACTION_BAR_HTML_TITLE) {
 						((AppCompatActivity) getActivity()).getSupportActionBar().setTitle(view.getTitle());

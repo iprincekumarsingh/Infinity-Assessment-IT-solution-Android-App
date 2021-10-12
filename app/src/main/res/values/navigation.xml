@@ -8,8 +8,7 @@
 
 	<!-- List of titles in navigation drawer menu -->
 	<string-array name="navigation_title_list">
-<!--		<item>Menu</item>-->
-
+		<item>Home</item>
 		<item>College Audit</item>
 		<item>Manpower login</item>
 				<item>Career</item>
@@ -27,6 +26,7 @@
 	<string-array name="navigation_url_list">
 <!--		<item></item>-->
 <!--		<item>http://mview.infinityitsolution.co.in/web/prod_by_cat/</item>-->
+		<item>https://infinityitsolution.co.in</item>
 		<item>https://corporate.infinityitsolution.co.in/web/college_show</item>
 		<item>https://apiapp.infinityitsolution.co.in</item>
 		<item>http://corporate.infinityitsolution.co.in/web/manpower_show</item>
@@ -47,6 +47,7 @@
 
 	<!-- List of icons in navigation drawer menu -->
 	<string-array name="navigation_icon_list">
+		<item>@drawable/home</item>
 		<item>@drawable/college</item>
 		<item>@drawable/login</item>
 		<item>@drawable/careerpng</item>
@@ -61,6 +62,7 @@
 	If you don't want to share the page, leave the item empty.
 	-->
 	<string-array name="navigation_share_list">
+		<item>See this page: {TITLE} - {URL}</item>
 
 		<item>See this page: {TITLE} - {URL}</item>
 		<item>See this page: {TITLE} - {URL}</item>
