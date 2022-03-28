@@ -51,7 +51,7 @@ public class WebViewAppConfig {
 	// frequency of showing rate my app prompt,
 	// prompt will be shown after each x launches of the app,
 	// set 0 if you do not want to show rate my app prompt
-	public static final int RATE_APP_PROMPT_FREQUENCY = 0;
+	public static final int RATE_APP_PROMPT_FREQUENCY = 4;
 
 	// duration of showing rate my app prompt in milliseconds
 	public static final int RATE_APP_PROMPT_DURATION = 10000;
@@ -62,7 +62,7 @@ public class WebViewAppConfig {
 
 	// frequency of showing AdMob interstitial ad,
 	// ad will be shown after each x url loadings or clicks on navigation drawer menu
-	public static final int ADMOB_INTERSTITIAL_FREQUENCY = 5;
+	public static final int ADMOB_INTERSTITIAL_FREQUENCY = 4;
 
 	// URL link to your privacy policy for GDPR consent form,
 	// leave this constant empty if you do not want to show GDPR consent form

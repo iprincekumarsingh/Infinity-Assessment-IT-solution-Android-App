@@ -10,7 +10,7 @@
 	<!-- unit ids for AdMob -->
 	<!-- leave these strings empty if you do not want to use AdMob -->
 	<string name="admob_unit_id_banner" translatable="false">ca-app-pub-6761544349472437/5701384903</string>
-	<string name="admob_unit_id_interstitial" translatable="false">ca-app-pub-6761544349472437~8631139888</string>
+	<string name="admob_unit_id_interstitial" translatable="false">ca-app-pub-6761544349472437/9219131544</string>
 
 	<!-- test device id for AdMob -->
 	<!-- setup this string if you want to avoid invalid impressions -->

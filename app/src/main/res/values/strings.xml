@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name" translatable="false">	Infinity Assessment and IT solution</string>
+    <string name="app_name" translatable="false">Infinity Assessment and IT solution</string>
     <string name="app_store_uri" translatable="false">https://play.google.com/store/apps/details?id=%1$s</string>
     <string name="app_deep_link_host" translatable="false">infinityitsolutions.co.in</string>
     <string name="app_deep_link_path" translatable="false">/.*</string>
@@ -16,7 +16,7 @@
     <string name="drawer_open">Open navigation drawer</string>
     <string name="drawer_close">Close navigation drawer</string>
 
-    <string name="placeholder_empty">Data Not found !</string>
+    <string name="placeholder_empty">Error 404 ! Restart or Refresh the App</string>
     <string name="placeholder_offline">No Internet connection available</string>
 
     <string name="permission_read_external_storage">Permission to read files is required</string>
@@ -38,7 +38,7 @@
 
     <string name="app_version">App Version</string>
     <string name="todo">TODO</string>
-    <string name="v_1_0">Version - 1.0.0.1</string>
+    <string name="v_1_0">10.13.21</string>
     <string name="get_started">Get Started</string>
     <string name="next">Next</string>
     <string name="skip">Skip</string>
