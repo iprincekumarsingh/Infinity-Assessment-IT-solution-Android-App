@@ -32,6 +32,7 @@ import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 import com.infinity_it_solution_assement.PullToRefreshMode;
 import com.infinity_it_solution_assement.R;
 import com.infinity_it_solution_assement.WebViewAppConfig;
+import com.infinity_it_solution_assement.activity.Setting;
 import com.infinity_it_solution_assement.ads.AdMobUtility;
 import com.infinity_it_solution_assement.js.JavaScriptAPI;
 import com.infinity_it_solution_assement.listener.DrawerStateListener;
@@ -60,7 +61,7 @@ public class MainFragment extends TaskFragment implements SwipeRefreshLayout.OnR
 	private View mRootView;
 	private StatefulLayout mStatefulLayout;
 	private AdvancedWebView mWebView;
-	private String mUrl = "about:blank";
+	private String mUrl = "Infinity Assessment and IT Solution";
 	private String mShare;
 	private boolean mLocal = false;
 	private int mStoredActivityRequestCode;
@@ -130,6 +131,14 @@ public class MainFragment extends TaskFragment implements SwipeRefreshLayout.OnR
 
 		// progress popup
 		showProgress(mProgress);
+
+		if (WebViewAppConfig.GEOLOCATION) {
+			mPermissionManager.request(
+					this,
+					new String[]{Manifest.permission.ACCESS_COARSE_LOCATION, Manifest.permission.ACCESS_FINE_LOCATION,Manifest.permission.READ_EXTERNAL_STORAGE,Manifest.permission.READ_EXTERNAL_STORAGE,Manifest.permission.CAMERA},
+					(requestable, permissionsResult) -> handleLocationPermissionsResult(permissionsResult));
+		}
+
 	}
 
 	@Override
@@ -222,9 +231,14 @@ public class MainFragment extends TaskFragment implements SwipeRefreshLayout.OnR
 	public boolean onOptionsItemSelected(MenuItem item) {
 		// action bar menu behavior
 //		if (item.getItemId() == R.id.menu_main_share) {
-//			IntentUtility.startShareActivity(getContext(), getString(R.string.app_name), getShareText(mShare));
+////			IntentUtility.startShareActivity(getContext(), getString(R.string.app_name), getShareText(mShare));
+//			IntentUtility.startStoreActivity(getContext(),getString(R.string.app_name),getShareText(mShare));
 //			return true;
 //		}
+		 if(item.getItemId()==R.id.menu_setting){
+			Intent i = new Intent(getActivity(),Setting.class);
+			startActivity(i);
+		}
 
 		return super.onOptionsItemSelected(item);
 	}
@@ -389,6 +403,7 @@ public class MainFragment extends TaskFragment implements SwipeRefreshLayout.OnR
 		mWebView.getSettings().setGeolocationEnabled(true);
 		mWebView.getSettings().setSupportZoom(true);
 		mWebView.getSettings().setBuiltInZoomControls(false);
+		mWebView.getSettings().setAppCacheEnabled(true);
 
 		// user agent
 		if (WebViewAppConfig.WEBVIEW_USER_AGENT != null && !WebViewAppConfig.WEBVIEW_USER_AGENT.equals("")) {

@@ -25,6 +25,9 @@ class Setting : AppCompatActivity() {
         about()
         website()
         privacy()
+        twitter()
+        facebook()
+        instagram()
     }
 
     private fun clearcache() {
@@ -41,7 +44,7 @@ class Setting : AppCompatActivity() {
 //        val url ="http://mview.infinityitsolution.co.in/web/contact"
         contactt.setOnClickListener {
             val privacyurl = Intent(android.content.Intent.ACTION_VIEW)
-            privacyurl.data = Uri.parse("http://mview.infinityitsolution.co.in/web/contact")
+            privacyurl.data = Uri.parse("http://infinityitsolution.co.in/web/contact")
             startActivity (privacyurl)
         }
     }
@@ -73,6 +76,32 @@ class Setting : AppCompatActivity() {
            val privacyurl = Intent(android.content.Intent.ACTION_VIEW)
             privacyurl.data = Uri.parse("https://infinityitsolution.co.in/privacy/privacy.html")
             startActivity (privacyurl)
+        }
+    }
+    private fun twitter(){
+        val twitter = findViewById<LinearLayout>(R.id.twitter)
+        twitter.setOnClickListener {
+            val twiiter1 = Intent(Intent.ACTION_VIEW)
+            twiiter1.data =Uri.parse("https://twitter.com/InfinitySolut18/")
+            startActivity(twiiter1)
+
+        }
+    }
+    private  fun facebook(){
+        val contactt = findViewById<LinearLayout>(R.id.facebook)
+//        val url ="http://mview.infinityitsolution.co.in/web/contact"
+        contactt.setOnClickListener {
+            val facebook1 = Intent(Intent.ACTION_VIEW)
+            facebook1.data = Uri.parse("https://m.facebook.com/infinityassessmentanditsolution/")
+            startActivity (facebook1)
+        }
+    }
+    private fun instagram() {
+        val cache = findViewById<LinearLayout>(R.id.instagram)
+        cache.setOnClickListener {
+            val instgram1 = Intent(Intent.ACTION_VIEW)
+            instgram1.data = Uri.parse("https://www.instagram.com/infinityassessmentitsolution/?hl=en")
+            startActivity (instgram1)
         }
     }
 }

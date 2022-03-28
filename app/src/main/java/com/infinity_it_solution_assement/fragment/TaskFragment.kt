@@ -5,7 +5,7 @@ import androidx.fragment.app.Fragment
 import org.alfonz.utility.Logcat
 import java.util.*
 
-abstract class TaskFragment() : Fragment() {
+abstract class TaskFragment : Fragment() {
     private val mLock = Any()
     private var mReady = false
     private val mPendingCallbacks: MutableList<Runnable> = LinkedList()
@@ -34,7 +34,7 @@ abstract class TaskFragment() : Fragment() {
         if (mReady) runNow(runnable) else addPending(runnable)
     }
 
-//    	protected void executeTask(AsyncTask<Void, ?, ?> task) {
+    //    	protected void executeTask(AsyncTask<Void, ?, ?> task) {
 //    		 use AsyncTask.THREAD_POOL_EXECUTOR or AsyncTask.SERIAL_EXECUTOR
 //    		task.executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR);
 //    	}
