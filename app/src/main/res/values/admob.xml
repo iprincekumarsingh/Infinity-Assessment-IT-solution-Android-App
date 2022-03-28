@@ -4,13 +4,13 @@
 	<!-- default values are test publisher id and test app id -->
 	<!-- change the values to your own publisher id and app id -->
 	<!-- keep the default values if you do not want to use AdMob -->
-	<string name="admob_publisher_id" translatable="false">pub-6823877417140022</string>
-	<string name="admob_app_id" translatable="false">ca-app-pub-6823877417140022~8925967288</string>
+	<string name="admob_publisher_id" translatable="false">pub-6761544349472437</string>
+	<string name="admob_app_id" translatable="false">ca-app-pub-6761544349472437~8631139888</string>
 
 	<!-- unit ids for AdMob -->
 	<!-- leave these strings empty if you do not want to use AdMob -->
-	<string name="admob_unit_id_banner" translatable="false">ca-app-pub-6823877417140022/4176203487</string>
-	<string name="admob_unit_id_interstitial" translatable="false">ca-app-pub-6823877417140022/3098925538</string>
+	<string name="admob_unit_id_banner" translatable="false">ca-app-pub-6761544349472437/5701384903</string>
+	<string name="admob_unit_id_interstitial" translatable="false">ca-app-pub-6761544349472437~8631139888</string>
 
 	<!-- test device id for AdMob -->
 	<!-- setup this string if you want to avoid invalid impressions -->
@@ -21,6 +21,6 @@
 	<!-- do not change these strings -->
 	<!-- test ads can be enabled in build.gradle -->
 	<!-- more info here: https://developers.google.com/admob/android/test-ads -->
-	<string name="admob_test_unit_id_banner" translatable="false">ca-app-pub-6823877417140022/4176203487</string>
+	<string name="admob_test_unit_id_banner" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
 	<string name="admob_test_unit_id_interstitial" translatable="false">ca-app-pub-6823877417140022/4176203487</string>
 </resources>

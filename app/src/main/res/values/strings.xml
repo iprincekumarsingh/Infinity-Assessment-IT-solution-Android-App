@@ -38,7 +38,7 @@
 
     <string name="app_version">App Version</string>
     <string name="todo">TODO</string>
-    <string name="v_1_0">V - 20.21.8</string>
+    <string name="v_1_0">Version - 1.0.0.1</string>
     <string name="get_started">Get Started</string>
     <string name="next">Next</string>
     <string name="skip">Skip</string>
@@ -51,5 +51,7 @@
     <string name="about_us">About-us</string>
     <string name="privacy_policy">Privacy-policy</string>
     <string name="website">Website</string>
+    <string name="prefs_key_inapp_review_dialog_counter" />
+    <string name="prefs_key_rate_app_prompt_counter" />
     <!--    <string name="contact_us">Contact-us</string>-->
 </resources>

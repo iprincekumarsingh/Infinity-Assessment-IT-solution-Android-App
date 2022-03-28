@@ -5,13 +5,13 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 
-
 import com.google.ads.consent.ConsentForm;
 import com.google.ads.consent.ConsentFormListener;
 import com.google.ads.consent.ConsentInfoUpdateListener;
 import com.google.ads.consent.ConsentInformation;
 import com.google.ads.consent.ConsentStatus;
 import com.infinity_it_solution_assement.WebViewAppApplication;
+
 
 import org.alfonz.utility.Logcat;
 
@@ -20,11 +20,11 @@ import java.net.URL;
 
 public class AdMobGdprHelper {
 	private static final String PREFS_KEY_CONSENT_STATUS = "consent_status";
-	String urll ="http://a.com";
-	private final Context mContext;
-	private final String mPublisherId;
-	private final String mPrivacyPolicyUrl;
-	private final ConsentInformation mConsentInformation;
+
+	private Context mContext;
+	private String mPublisherId;
+	private String mPrivacyPolicyUrl;
+	private ConsentInformation mConsentInformation;
 	private ConsentForm mConsentForm;
 
 	public AdMobGdprHelper(Context context, String publisherId, String privacyPolicyUrl) {

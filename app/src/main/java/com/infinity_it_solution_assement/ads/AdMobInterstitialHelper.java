@@ -1,10 +1,14 @@
 package com.infinity_it_solution_assement.ads;
 
+import android.app.Activity;
 import android.content.Context;
 
-import com.google.android.gms.ads.AdListener;
-import com.google.android.gms.ads.InterstitialAd;
+import androidx.annotation.NonNull;
 
+import com.google.android.gms.ads.FullScreenContentCallback;
+import com.google.android.gms.ads.LoadAdError;
+import com.google.android.gms.ads.interstitial.InterstitialAd;
+import com.google.android.gms.ads.interstitial.InterstitialAdLoadCallback;
 import com.infinity_it_solution_assement.R;
 import com.infinity_it_solution_assement.WebViewAppApplication;
 import com.infinity_it_solution_assement.WebViewAppConfig;
@@ -13,40 +17,59 @@ public class AdMobInterstitialHelper {
 	private static int sInterstitialCounter = 1;
 
 	private InterstitialAd mInterstitialAd;
+	private InterstitialAdLoadCallback mInterstitialAdLoadCallback;
 
 	public void setupAd(Context context) {
 		String unitId = getUnitId();
 		if (!unitId.equals("")) {
-			mInterstitialAd = new InterstitialAd(context);
-			mInterstitialAd.setAdUnitId(unitId);
-			mInterstitialAd.setAdListener(new AdListener() {
+			mInterstitialAdLoadCallback = new InterstitialAdLoadCallback() {
 				@Override
-				public void onAdClosed() {
-					loadAd();
+				public void onAdLoaded(@NonNull InterstitialAd interstitialAd) {
+					mInterstitialAd = interstitialAd;
+					mInterstitialAd.setFullScreenContentCallback(new FullScreenContentCallback() {
+						@Override
+						public void onAdShowedFullScreenContent() {
+							mInterstitialAd = null;
+						}
+
+						@Override
+						public void onAdDismissedFullScreenContent() {
+							loadAd(context, unitId);
+						}
+					});
 				}
-			});
-			loadAd();
+
+				@Override
+				public void onAdFailedToLoad(@NonNull LoadAdError loadAdError) {
+					mInterstitialAd = null;
+				}
+			};
+
+			loadAd(context, unitId);
 		}
 	}
 
-	public void checkAd() {
+	public void checkAd(Activity activity) {
 		if (WebViewAppConfig.ADMOB_INTERSTITIAL_FREQUENCY > 0 && sInterstitialCounter % WebViewAppConfig.ADMOB_INTERSTITIAL_FREQUENCY == 0) {
-			showAd();
+			showAd(activity);
 		}
 		sInterstitialCounter++;
 	}
 
-	private void loadAd() {
-		if (mInterstitialAd != null) {
-			mInterstitialAd.loadAd(AdMobUtility.createAdRequest());
-		}
+	public void forceAd(Activity activity) {
+		showAd(activity);
+		sInterstitialCounter++;
 	}
 
-	private void showAd() {
+	private void loadAd(Context context, String unitId) {
+		InterstitialAd.load(context, unitId, AdMobUtility.createAdRequest(), mInterstitialAdLoadCallback);
+	}
+
+	private void showAd(Activity activity) {
 		String unitId = getUnitId();
 		if (!unitId.equals("")) {
-			if (mInterstitialAd != null && mInterstitialAd.isLoaded()) {
-				mInterstitialAd.show();
+			if (mInterstitialAd != null) {
+				mInterstitialAd.show(activity);
 			}
 		}
 	}

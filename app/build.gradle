@@ -3,10 +3,10 @@
 // Usage: gradlew assembleDebug           Build debug APK
 //        gradlew assembleRelease         Build release APK
 
-final VERSION_MAJOR = 1 // max two digits
-final VERSION_MINOR = 0 // max two digits
-final VERSION_PATCH = 0 // max two digits
-final VERSION_BUILD =  0// max three digits
+final VERSION_MAJOR = 10 // max two digits month
+final VERSION_MINOR = 12 // max two digits day date patch is realeased
+final VERSION_PATCH = 21// max two digits year last two digit
+final VERSION_BUILD =  2 // max three digits  version patch
 
 apply plugin: "com.onesignal.androidsdk.onesignal-gradle-plugin"
 apply plugin: "com.android.application"
@@ -53,9 +53,11 @@ android {
 
 			signingConfig signingConfigs.release
 			zipAlignEnabled true
-			minifyEnabled false
-			shrinkResources false
-			proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
+			minifyEnabled true
+			shrinkResources true
+			proguardFiles
+			getDefaultProguardFile('proguard-android.txt')
+			'proguard-rules.pro'
 		}
 	}
 
@@ -92,12 +94,13 @@ dependencies {
     implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
     implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.2.0'
     implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0'
-
+	implementation 'com.google.android.gms:play-services-ads:20.4.0'
 	implementation platform('com.google.firebase:firebase-bom:28.3.0')
 			implementation 'com.google.firebase:firebase-crashlytics'
 //	implementation 'com.google.firebase:firebase-inappmessaging-display'
 	implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
 	implementation 'androidx.annotation:annotation:1.1.0'
+    implementation 'com.google.android.play:core:1.10.2'
 }
 
 apply plugin: "com.google.gms.google-services"

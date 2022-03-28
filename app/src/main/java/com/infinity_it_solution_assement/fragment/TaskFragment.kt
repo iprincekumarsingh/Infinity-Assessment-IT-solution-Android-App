@@ -5,7 +5,7 @@ import androidx.fragment.app.Fragment
 import org.alfonz.utility.Logcat
 import java.util.*
 
-abstract class TaskFragment : Fragment() {
+abstract class TaskFragment() : Fragment() {
     private val mLock = Any()
     private var mReady = false
     private val mPendingCallbacks: MutableList<Runnable> = LinkedList()
@@ -51,4 +51,5 @@ abstract class TaskFragment : Fragment() {
     }
 
     abstract fun onDownloadRequested(url: String?, suggestedFilename: String?, mimeType: String?, contentLength: Long, contentDisposition: String?, userAgent: String?)
+    abstract fun onGeolocationPermissionsShowPrompt()
 }

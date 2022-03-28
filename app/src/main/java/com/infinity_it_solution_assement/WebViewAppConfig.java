@@ -1,6 +1,8 @@
 package com.infinity_it_solution_assement;
 
 
+import static com.infinity_it_solution_assement.PullToRefreshMode.ENABLED;
+
 public class WebViewAppConfig {
 	// Envato purchase code
 	public static final String PURCHASE_CODE = "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX";
@@ -33,10 +35,18 @@ public class WebViewAppConfig {
 	// true for enabling progress placeholder when loading a first page
 	public static final boolean PROGRESS_PLACEHOLDER = true;
 
+	// true for enabling javascript api
+	public static final boolean JAVA_SCRIPT_API = true;
+
 	// pull-to-refresh gesture for refreshing the content,
 	// set ENABLED to enable the gesture, set DISABLED to disable the gesture,
 	// set PROGRESS to disable the gesture and show only progress indicator
-	public static final PullToRefreshMode PULL_TO_REFRESH = PullToRefreshMode.ENABLED;
+	public static final PullToRefreshMode PULL_TO_REFRESH = ENABLED;
+
+	// frequency of showing in-app review dialog,
+	// review dialog will be shown after each x url loadings or clicks on navigation drawer menu,
+	// set 0 if you do not want to show in-app review dialog
+	public static final int INAPP_REVIEW_DIALOG_FREQUENCY = 30;
 
 	// frequency of showing rate my app prompt,
 	// prompt will be shown after each x launches of the app,
@@ -44,7 +54,7 @@ public class WebViewAppConfig {
 	public static final int RATE_APP_PROMPT_FREQUENCY = 0;
 
 	// duration of showing rate my app prompt in milliseconds
-	public static final int RATE_APP_PROMPT_DURATION = 0;
+	public static final int RATE_APP_PROMPT_DURATION = 10000;
 
 	// custom user agent string for the webview,
 	// leave this constant empty if you do not want to set custom user agent string
@@ -52,7 +62,7 @@ public class WebViewAppConfig {
 
 	// frequency of showing AdMob interstitial ad,
 	// ad will be shown after each x url loadings or clicks on navigation drawer menu
-	public static final int ADMOB_INTERSTITIAL_FREQUENCY = 3;
+	public static final int ADMOB_INTERSTITIAL_FREQUENCY = 5;
 
 	// URL link to your privacy policy for GDPR consent form,
 	// leave this constant empty if you do not want to show GDPR consent form
@@ -70,7 +80,8 @@ public class WebViewAppConfig {
 			"play.google.com/store",
 			"youtube.com/watch",
 			"facebook.com/sharer",
-			"twitter.com/share"
+			"twitter.com/share",
+			"t.me"
 	};
 
 	// rules for opening links in internal webview,
@@ -101,3 +112,4 @@ public class WebViewAppConfig {
 	// AdMob test ads, value is set via build config in build.gradle
 	public static final boolean TEST_ADS = BuildConfig.TEST_ADS;
 }
+

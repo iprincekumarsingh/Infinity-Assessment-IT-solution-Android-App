@@ -8,9 +8,9 @@
 	android:gravity="center">
 
 	<ProgressBar
+		style="?android:attr/progressBarStyleLarge"
 		android:layout_width="wrap_content"
-		android:layout_height="wrap_content"
 
-		style="?android:attr/progressBarStyleLarge" />
+		android:layout_height="49dp" />
 
 </LinearLayout>

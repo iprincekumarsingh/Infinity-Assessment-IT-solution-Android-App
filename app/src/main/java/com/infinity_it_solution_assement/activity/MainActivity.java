@@ -1,6 +1,5 @@
 package com.infinity_it_solution_assement.activity;
 
-import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
 import android.content.res.Configuration;
@@ -13,7 +12,6 @@ import android.view.View;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.ActionBarDrawerToggle;
-import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
@@ -22,6 +20,7 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 
 import com.google.android.material.navigation.NavigationView;
+import com.google.android.material.snackbar.Snackbar;
 import com.infinity_it_solution_assement.R;
 import com.infinity_it_solution_assement.WebViewAppConfig;
 import com.infinity_it_solution_assement.ads.AdMobGdprHelper;
@@ -30,19 +29,18 @@ import com.infinity_it_solution_assement.fragment.MainFragment;
 import com.infinity_it_solution_assement.listener.DrawerStateListener;
 import com.infinity_it_solution_assement.listener.LoadUrlListener;
 import com.infinity_it_solution_assement.utility.IntentUtility;
-import com.infinity_it_solution_assement.utility.Preferences;
+import com.infinity_it_solution_assement.utility.RatingUtility;
 import com.robotemplates.kozuza.Kozuza;
 
-import org.alfonz.utility.Logcat;
 
-public class  MainActivity extends AppCompatActivity implements LoadUrlListener, DrawerStateListener {
+public class MainActivity extends AppCompatActivity implements LoadUrlListener, DrawerStateListener {
 	public static final String EXTRA_URL = "url";
 
 	private DrawerLayout mDrawerLayout;
 	private NavigationView mNavigationView;
 	private ActionBarDrawerToggle mDrawerToggle;
 	private String mUrl;
-	private final AdMobInterstitialHelper mAdMobInterstitialHelper = new AdMobInterstitialHelper();
+	private AdMobInterstitialHelper mAdMobInterstitialHelper = new AdMobInterstitialHelper();
 
 	public static Intent newIntent(Context context) {
 		Intent intent = new Intent(context, MainActivity.class);
@@ -62,8 +60,6 @@ public class  MainActivity extends AppCompatActivity implements LoadUrlListener,
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 
-
-
 		// handle intent extras
 		Bundle extras = getIntent().getExtras();
 		if (extras != null) {
@@ -80,8 +76,6 @@ public class  MainActivity extends AppCompatActivity implements LoadUrlListener,
 		setupActionBar();
 		setupDrawer(savedInstanceState);
 
-//		getActionBar().setDisplayShowTitleEnabled(false);
-getSupportActionBar().setDisplayShowTitleEnabled(false);
 		// bind data
 		setupView();
 
@@ -92,9 +86,8 @@ getSupportActionBar().setDisplayShowTitleEnabled(false);
 		// admob
 		mAdMobInterstitialHelper.setupAd(this);
 
-
-		// rate prompt
-		checkRateCounter();
+		// check rate app prompt
+		RatingUtility.checkRateAppPrompt(this);
 
 		// kozuza
 		Kozuza.process(this);
@@ -177,17 +170,10 @@ getSupportActionBar().setDisplayShowTitleEnabled(false);
 			mDrawerLayout.closeDrawer(GravityCompat.START);
 		} else {
 			if (WebViewAppConfig.EXIT_CONFIRMATION) {
-//				Snackbar
-//						.make(findViewById(R.id.main_coordinator_layout), R.string.main_exit_snackbar, Snackbar.LENGTH_LONG)
-//						.setAction(R.string.main_exit_confirm, view -> MainActivity.super.onBackPressed())
-//						.show();
-				AlertDialog.Builder builder = new AlertDialog.Builder(this);
-				builder.setMessage(R.string.main_exit_snackbar);
-				builder.setCancelable(false);
-				builder.setPositiveButton(R.string.main_exit_confirm, (dialog, which) -> finish());
-				builder.setNegativeButton("No",null);
-				AlertDialog alertDialog = builder.create();
-				alertDialog.show();
+				Snackbar
+						.make(findViewById(R.id.main_coordinator_layout), R.string.main_exit_snackbar, Snackbar.LENGTH_LONG)
+						.setAction(R.string.main_exit_confirm, view -> MainActivity.super.onBackPressed())
+						.show();
 			} else {
 				super.onBackPressed();
 			}
@@ -196,7 +182,10 @@ getSupportActionBar().setDisplayShowTitleEnabled(false);
 
 	@Override
 	public void onLoadUrl(String url) {
-		mAdMobInterstitialHelper.checkAd();
+		boolean showInAppReviewDialog = RatingUtility.checkInAppReviewDialog(this);
+		if (!showInAppReviewDialog) {
+			mAdMobInterstitialHelper.checkAd(this);
+		}
 	}
 
 	@Override
@@ -207,6 +196,10 @@ getSupportActionBar().setDisplayShowTitleEnabled(false);
 	@Override
 	public void onBackButtonPressed() {
 		onBackPressed();
+	}
+
+	public void showInterstitialAd() {
+		mAdMobInterstitialHelper.forceAd(this);
 	}
 
 	private void setupActionBar() {
@@ -237,8 +230,12 @@ getSupportActionBar().setDisplayShowTitleEnabled(false);
 
 		// navigation listener
 		mNavigationView.setNavigationItemSelectedListener(item -> {
-			// check interstitial ad
-			mAdMobInterstitialHelper.checkAd();
+			// check in-app review dialog
+			boolean showInAppReviewDialog = RatingUtility.checkInAppReviewDialog(this);
+			if (!showInAppReviewDialog) {
+				// check interstitial ad
+				mAdMobInterstitialHelper.checkAd(this);
+			}
 
 			// select drawer item
 			selectDrawerItem(item);
@@ -369,54 +366,7 @@ getSupportActionBar().setDisplayShowTitleEnabled(false);
 			// header background
 			if (WebViewAppConfig.NAVIGATION_DRAWER_HEADER_IMAGE) {
 				headerView.setBackgroundResource(R.drawable.navigation_header_bg);
-//				headerView.setMinimumHeight(12);
 			}
 		}
-	}
-
-	@SuppressLint("WrongConstant")
-	private void checkRateCounter() {
-		// check if rate prompt is disabled
-		if (WebViewAppConfig.RATE_APP_PROMPT_FREQUENCY == 0) return;
-
-		// get current rate counter
-		final Preferences preferences = new Preferences();
-		final int rateCounter = preferences.getRateCounter();
-		Logcat.d("" + rateCounter);
-
-		// check rate counter
-		boolean showMessage = false;
-		if (rateCounter != -1) {
-			if (rateCounter >= WebViewAppConfig.RATE_APP_PROMPT_FREQUENCY && rateCounter % WebViewAppConfig.RATE_APP_PROMPT_FREQUENCY == 0) {
-				showMessage = true;
-			}
-		} else {
-			return;
-		}
-
-		// show rate message
-		if (showMessage) {
-//			Snackbar
-//					.make(findViewById(R.id.main_coordinator_layout), R.string.main_rate_snackbar, WebViewAppConfig.RATE_APP_PROMPT_DURATION)
-//					.setAction(R.string.main_rate_confirm, view -> {
-//						IntentUtility.startStoreActivity(MainActivity.this);
-//						preferences.setRateCounter(-1);
-//					})
-//					.show();
-//Sncak bar library is not used instead of that AlertDialog builder is being used ;;;git
-			AlertDialog.Builder builder = new AlertDialog.Builder(this);
-			builder.setMessage(R.string.main_rate_snackbar);
-			builder.setCancelable(false);
-			builder.setPositiveButton(R.string.main_rate_snackbar, (dialog, which) -> {
-				IntentUtility.startStoreActivity(MainActivity.this);
-					preferences.setRateCounter(-1);				});
-			builder.setNegativeButton("No",null);
-			AlertDialog alertDialog = builder.create();
-			alertDialog.show();
-
-		}
-
-		// increment rate counter
-		preferences.setRateCounter(rateCounter + 1);
 	}
 }
